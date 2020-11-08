@@ -34,5 +34,5 @@ jobs:
         with:
           deploy_key: ${{ secrets.PRIVATE_DEPLOY_KEY }}
           external_repository: Jeonghun-Ban/Jeonghun-Ban.github.io
-          publish_branch: gh-pages
+          publish_branch: main
           publish_dir: ./public
