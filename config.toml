@@ -2,3 +2,9 @@ baseURL = "http://Jeonghun-Ban.github.io"
 languageCode = "ko-kr"
 title = "Jeonghun-Ban"
 theme = "docsy"
+
+defaultContentLanguage = "ko"
+
+[languages.ko]
+time_format_default = "2006.01.02"
+time_format_blog = "2006.01.02"
