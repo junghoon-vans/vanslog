@@ -9,6 +9,9 @@ defaultContentLanguage = "ko"
 time_format_default = "2006.01.02"
 time_format_blog = "2006.01.02"
 
+[params]
+copyright_website = "Jeonghun-Ban"
+
 # Enable Lunr.js offline search
 offlineSearch = true
 
