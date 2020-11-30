@@ -8,3 +8,6 @@ defaultContentLanguage = "ko"
 [languages.ko]
 time_format_default = "2006.01.02"
 time_format_blog = "2006.01.02"
+
+# Enable Lunr.js offline search
+offlineSearch = true
