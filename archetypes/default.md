@@ -1,9 +1,10 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
+categories: []
+tags: []
 type: docs
 draft: true
-weight: 1
 description: >
     
 ---
