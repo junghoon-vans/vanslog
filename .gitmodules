@@ -4,3 +4,6 @@
 [submodule "content/til"]
 	path = content/til
 	url = https://github.com/Jeonghun-Ban/TIL
+[submodule "themes/zzo"]
+	path = themes/zzo
+	url = https://github.com/zzossig/hugo-theme-zzo.git

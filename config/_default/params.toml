@@ -1,0 +1,194 @@
+logoText = "Jeonghun"
+logoType = "short"
+logo = true
+description = ""
+useFaviconGenerator = true
+
+themeOptions = ["dark", "light", "hacker", "solarized", "kimbie"] # select options for site color theme
+notAllowedTypesInHome = ["contact", "talks", "about", "showcase"] # not allowed page types in home page. type can be set in front matter or default to folder name.
+notAllowedTypesInHomeSidebar = ["about", "archive", "showcase"] # not allowed page types in home page sidebar(recent post titles).
+notAllowedTypesInArchive = ["about", "talks", "showcase"] # not allowed page types in archive page
+notAllowedTypesInHomeFeed = ["about", "archive", "contact", "talks", "showcase", "publication", "presentation", "resume", "gallery"]
+enablePinnedPosts = true # show pinned posts first in the main view
+
+viewportSize = "normal" # widest, wider, wide, normal, narrow
+enableUiAnimation = true
+hideSingleContentsWhenJSDisabled = false
+minItemsToShowInTagCloud = 1 # Minimum items to show in tag cloud
+
+# appbar
+enableAppbarSearchIcon = true
+enableAppbarLangIcon = true
+
+# header
+homeHeaderType = "text" # text, img, slide, typewriter
+hideHomeHeaderWhenMobile = false
+
+# menu
+showMobileMenuTerms = ["tags", "categories", "series"]
+
+# navbar
+enableThemeChange = true # site color theme
+
+# body
+enableBreadcrumb = true # breadcrumb for list, single page
+enableSearch = true # site search with Fuse
+enableSearchHighlight = true # when true, search keyword will be highlighted
+enableGoToTop = true # scroll to top
+enableWhoami = true # at the end of single page
+summaryShape = "classic" # card, classic, compact
+archiveGroupByDate = "2006" # "2006-01": group by month, "2006": group by year
+archivePaginate = 13 # items per page
+paginateWindow = 1 # setting it to 1 gives 7 buttons, 2 gives 9, etc. If set 1: [1 ... 4 5 6 ... 356] [1 2 3 4 5 ... 356] etc
+talksPaginate = 8 # items per page
+talksGroupByDate = "2006" # "2006-01": group by month, "2006": group by year
+
+# whoami
+myname = "Jeonghun"
+email = "junghoon.ban@gmail.com"
+whoami = "Backend Developer"
+bioImageUrl = "https://avatars2.githubusercontent.com/u/44942700" # github profile image
+useGravatar = false # we use this option highest priority
+location = "Gwangmyeong, Korea"
+organization = ""
+link = "https://github.com/Jeonghun-Ban"
+
+# sidebar
+enableBio = true # in home page sidebar
+enableBioImage = true # in home page sidebar
+enableSidebar = true # Set to false to create the full width of the content.
+enableSidebarTags = true # if you want to use tags.
+enableSidebarSeries = true
+enableSidebarCategories = true
+enableHomeSidebarTitles = true
+enableListSidebarTitles = true
+enableToc = true # single page table of contents, you can replace this param to toc(toc = true)
+hideToc = false # Hide or Show toc
+tocPosition = "inner" # inner, outer
+tocFolding = false
+enableTocSwitch = true # single page table of contents visibility switch
+itemsPerCategory = 5 # maximum number of posts shown in the sidebar.
+sidebarPosition = "left" # bio, profile component layout position
+tocLevels = ["h2", "h3", "h4"] # minimum h2, maximum h4 in your article
+enableSidebarPostsByOrder = false # another lists in the sidebar
+
+# footer
+showPoweredBy = true 
+showFeedLinks = true # RSS Feed 
+showSocialLinks = true
+enableLangChange = true
+
+# service
+googleTagManager = "" # GTM-XXXXXX
+baiduAnalytics = "" # alternative of google analytics
+enableBusuanzi = false # if set true, total page view, total unique visitors show up in the footer.
+busuanziSiteUV = true # unique visitors (total number of visitors)
+busuanziSitePV = true # site total page view count
+busuanziPagePV = true # post view count
+
+# comment
+enableComment = true
+disqus_shortname = "" 
+commento = false
+
+[gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
+  owner = ""              # Your GitHub ID
+  repo = ""               # The repo to store comments
+  clientId = ""           # Your client ID
+  clientSecret = ""       # Your client secret
+
+[utterances]       # https://utteranc.es/
+  owner = ""              # Your GitHub ID
+  repo = ""               # The repo to store comments
+  message = ""      # Optional
+  link = ""         # Optional
+
+[gitalk]           # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
+  owner = ""              # Your GitHub ID
+  repo = ""               # The repo to store comments
+  clientId = ""           # Your client ID
+  clientSecret = ""       # Your client secret
+
+# Valine.
+# You can get your appid and appkey from https://leancloud.cn
+# more info please open https://valine.js.org
+[valine]
+  enable = false
+  appId = '你的appId'
+  appKey = '你的appKey'
+  notify = false  # mail notifier , https://github.com/xCss/Valine/wiki
+  verify = false # Verification code
+  avatar = 'mm' 
+  placeholder = '说点什么吧...'
+  visitor = false
+
+[changyan]
+  changyanAppid = ""        # Changyan app id             # 畅言
+  changyanAppkey = ""       # Changyan app key
+
+[livere]
+  livereUID = ""            # LiveRe UID                  # 来必力
+
+# Isso: https://posativ.org/isso/
+[isso]
+  enable = false
+  scriptSrc = "" # "https://isso.example.com/js/embed.min.js"
+  dataAttrs = "" # "data-isso='https://isso.example.com' data-isso-require-author='true'"
+
+[socialOptions] 
+  email = "mailto:junghoon.ban@email.com"
+  phone = ""
+  facebook = "https://www.facebook.com/profile.php?id=100008030658971"
+  twitter = ""
+  github = "https://github.com/Jeonghun-Ban"
+  stack-overflow = ""
+  instagram = "https://www.instagram.com/bj_h00n/"
+  google-plus = ""
+  youtube = ""
+  medium = ""
+  tumblr = ""
+  linkedin = "https://www.linkedin.com/in/%EC%A0%95%ED%9B%88-%EB%B0%98-81683b17a/"
+  pinterest = ""
+  stack-exchange = ""
+  telegram = ""
+  steam = ""
+  weibo = ""
+  douban = ""
+  csdn = ""
+  gitlab = ""
+  mastodon = ""
+  jianshu = ""
+  zhihu = ""
+  signal = ""
+  whatsapp = ""
+  matrix = ""
+  xmpp = ""
+  dev-to = ""
+  gitea = ""
+  google-scholar = ""
+  twitch = ""
+
+[donationOptions]
+  enable = false # if set, the donation button will show up on the single page.
+  alipay = "" # Alipay QR Code image (example path: images/donation/alipay-qrcode.png) and put your file at root/static/images/donation/
+  wechat = "" # Wechat pay QR Code image (example path: same as above)
+  paypal = "" # Paypal URL
+  patreon = "" # Patreon URL
+  bitcoin = "" # example path: images/donation/bitcoin-code-image.png
+
+[copyrightOptions]
+  enableCopyrightLink = false # if set, you can add copyright link
+  copyrightLink = ""
+  copyrightLinkImage = ""
+  copyrightLinkText = ""
+
+# possible share name: "facebook","twitter", "reddit", "linkedin", "tumblr", "weibo", "douban", "line", "whatsapp", "telegram"
+[[share]]
+  name = "facebook"
+
+[[footerLinks]]
+  name = ""
+  link = ""
+[[footerLinks]]
+  name = ""
+  link = ""

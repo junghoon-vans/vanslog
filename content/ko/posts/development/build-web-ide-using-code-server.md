@@ -1,8 +1,12 @@
 ---
 title: "code-server를 이용해서 웹 IDE 구축하기"
 date: 2020-12-03T04:34:19Z
-categories: ["개발"]
-tags: ["군대에서 코딩하기", "code-server"]
+categories:
+- development
+tags:
+- code-server
+series:
+- 군대에서 코딩하기
 draft: false
 description: >
   나만의 웹 IDE 만들기

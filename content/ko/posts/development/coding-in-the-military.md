@@ -1,8 +1,10 @@
 ---
 title: "군대에서 코딩하기"
 date: 2020-12-01
-categories: ["개발"]
-tags: ["군대에서 코딩하기"]
+categories:
+- development
+series:
+- 군대에서 코딩하기
 draft: false
 description: >
     군대에서 코딩을 어떻게 할 수 있을까? 그 답을 찾기 위한 여정
