@@ -9,3 +9,9 @@
   name = "📝 Posts"
   url = "posts"
   weight = 2
+
+[[main]]
+  identifier = "tils"
+  name = "🔥 TIL"
+  url = "TIL"
+  weight = 2
