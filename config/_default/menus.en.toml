@@ -1,17 +1,17 @@
 [[main]]
   identifier = "about"
   name = "👨‍💻 About"
-  url = "about"
+  url = "/about/"
   weight = 1
 
 [[main]]
   identifier = "posts"
   name = "📝 Posts"
-  url = "posts"
+  url = "/posts/"
   weight = 2
 
 [[main]]
   identifier = "tils"
   name = "🔥 TIL"
-  url = "TIL/docs"
+  url = "/TIL/docs/"
   weight = 2
