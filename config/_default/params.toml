@@ -99,8 +99,8 @@ commento = false
   clientSecret = ""       # Your client secret
 
 [utterances]       # https://utteranc.es/
-  owner = ""              # Your GitHub ID
-  repo = ""               # The repo to store comments
+  owner = "Jeonghun-Ban"              # Your GitHub ID
+  repo = "blog"               # The repo to store comments
   message = ""      # Optional
   link = ""         # Optional
 
