@@ -1,13 +1,13 @@
 ---
 title: "GCP 인스턴스 만들기"
 date: 2020-12-02
+series:
+- 군대에서 코딩하기
 categories:
 - development
 tags:
 - GCP
 - Cloud
-series:
-- 군대에서 코딩하기
 draft: false
 description: >
     나만의 평생 무료 인스턴스 만들기
