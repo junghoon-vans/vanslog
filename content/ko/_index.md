@@ -24,7 +24,7 @@ header:
     paddingX: 50
     align: center
     title:
-      - Jeonghun's blog
+      - Home
     subtitle:
       - Hello World!
     titleColor: 
