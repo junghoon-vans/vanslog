@@ -4,7 +4,7 @@ date: 2020-12-01
 series:
 - 군대에서 코딩하기
 categories:
-- development
+- Development
 draft: false
 description: >
     군대에서 코딩을 어떻게 할 수 있을까? 그 답을 찾기 위한 여정

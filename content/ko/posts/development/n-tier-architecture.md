@@ -2,9 +2,9 @@
 title: "N Tier Architecture"
 date: 2020-12-26T10:12:54Z
 categories:
-- development
-- structure
+- Development
 tags:
+- Software Architecture
 - n-tier-architecture
 draft: false
 description: >
@@ -27,7 +27,7 @@ n-tier architecture를 구성하는 계층(layer)은 아래 3가지이다.
 2-tier vs 3-tier
 ---
 
-{{< img src="images/posts/development/2-tier-vs-3-tier.jpeg" alt="2-tier vs 3-tier">}}
+{{< img src="images/posts/development/n-tier-architecture/2-tier-vs-3-tier.jpeg" alt="2-tier vs 3-tier">}}
 
 ### 2-tier
 

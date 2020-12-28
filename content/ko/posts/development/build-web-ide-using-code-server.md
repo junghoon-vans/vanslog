@@ -4,7 +4,7 @@ date: 2020-12-03T04:34:19Z
 series:
 - 군대에서 코딩하기
 categories:
-- development
+- Development
 tags:
 - code-server
 draft: false
@@ -103,7 +103,7 @@ server {
 
 #### 설정 적용
 
-```
+```bash
 sudo rm /etc/nginx/sites-enabled/default
 sudo ln -s ../sites-available/code-server /etc/nginx/sites-enabled/code-server
 sudo systemctl reload nginx.service
