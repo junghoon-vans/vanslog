@@ -2,11 +2,15 @@
 title: "2020년 백엔드 개발자 회고"
 date: 2021-01-01T19:59:18+09:00
 series:
-- 개발자 회고
+- 개발 환경
 categories:
-- development
+- 회고
 tags:
-- retrospective
+- 회고
+- 멋쟁이 사자처럼
+- 취업
+- 군대
+- 목표
 draft: false
 description: >
     2020년을 되돌아보며, 그리고 그 이후

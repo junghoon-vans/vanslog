@@ -2,10 +2,9 @@
 title: "웹 애플리케이션 구조(SSR, CSR, SPA, MPA)"
 date: 2020-12-26T14:06:55Z
 categories:
-- Development
 - Web
 tags:
-- Software Architecture
+- Architecture
 - SSR
 - CSR
 - SPA
@@ -32,13 +31,13 @@ Dynamic Page
 
 ### CSR(Clent-Side Rendering)
 
-{{< img src="images/posts/development/web-application-structure/csr.png" alt="csr">}}
+{{< img src="images/posts/web/web-application-structure/csr.png" alt="csr">}}
 
 클라이언트 단에서 렌더링을 하는 방식을 말한다. `브라우저 상`에서 HTML, JS 등 렌더링을 위해 필요한 것들을 모두 다운로드하고 렌더링한다. 이후에 `필요한 데이터만 서버에 요청`해서 JS로 동적으로 처리한다.
 
 ### SSR(Server-Side Rendering)
 
-{{< img src="images/posts/development/web-application-structure/ssr.png" alt="ssr">}}
+{{< img src="images/posts/web/web-application-structure/ssr.png" alt="ssr">}}
 
 전통적인 웹 애플리케이션의 동작방식이다. `서버 상`에서 렌더링을 마치고 클라이언트는 이것을 받아서 실행한다. `CSR`과 달리 페이지를 처음 접속할 때만이 아니라 다른 페이지로 이동할 때마다 새로고침이 일어난다.
 

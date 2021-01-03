@@ -4,8 +4,9 @@ date: 2020-12-03T04:34:19Z
 series:
 - 군대에서 코딩하기
 categories:
-- Development
+- 개발 환경
 tags:
+- 개발 환경
 - code-server
 draft: false
 description: >
