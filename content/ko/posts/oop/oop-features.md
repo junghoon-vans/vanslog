@@ -8,9 +8,9 @@ categories:
 tags:
 - OOP
 - Java
-draft: true
+draft: false
 description: >
-    객체지향 프로그래밍(OOP)의 특징
+    객체지향 프로그래밍(OOP)의 네가지 특징
 ---
 
 추상화(Abstraction)
