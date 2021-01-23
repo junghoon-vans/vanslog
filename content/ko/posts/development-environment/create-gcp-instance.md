@@ -39,7 +39,7 @@ GCP가 신규 회원에게 제공하는 혜택은 아래와 같다.
 
 인스턴스 생성에 앞서 [구글 클라우드 플랫폼(GCP)](https://cloud.google.com/)에 가입하자. 가입하는 과정은 그리 어렵지 않으니 따로 설명하진 않겠다. 회원가입이 되었다면 우선 아무런 이름이든 상관없으니 프로젝트를 생성한다. 이를 위해서 [콘솔](https://console.cloud.google.com/)로 접속해서 진행한다.
 
-{{< img src="images/posts/development-environment-environment/create-gcp-instance/create-gcp-instance1.png" alt="create-gcp-instance1">}}
+{{< img src="images/posts/development-environment/create-gcp-instance/create-gcp-instance1.png" alt="create-gcp-instance1">}}
 
 앞에서의 과정이 모두 끝났다면 인스턴스를 생성해준다. 생성한 프로젝트에서 햄버거 메뉴를 눌러 `Compute Engine-VM 인스턴스`를 클릭해서 들어가주고, 위 사진에 보이는 플러스 버튼을 눌러 인스턴스 생성을 시작하자.
 

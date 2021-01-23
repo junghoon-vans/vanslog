@@ -1,5 +1,5 @@
 ---
-title: "UML 클래스 다이어그램"
+title: "[UML 2.0] 클래스 다이어그램(Class Diagram)"
 date: 2021-01-08T19:20:43+09:00
 series:
 - 객체 지향 설계
