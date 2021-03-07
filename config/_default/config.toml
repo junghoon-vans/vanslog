@@ -16,6 +16,7 @@ paginate = 13
 rssLimit = 100
 
 enableGitInfo = false
+disableAdsense = false
 googleAnalytics = "UA-186109814-1"
 
 [markup]
