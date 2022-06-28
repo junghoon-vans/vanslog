@@ -1,10 +1,36 @@
 {{- /* Comments area start */ -}}
-<script src="https://utteranc.es/client.js"
-        repo="junghoon-vans/blog"
-        issue-term="pathname"
-        label="comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
+<div class="comments">
+        <script>
+                var getTheme = window.localStorage && window.localStorage.getItem("pref-theme");
+                getTheme = getTheme == null ? '{{$.Site.Params.defaultTheme}}' : getTheme;
+
+                let theme = getTheme === 'dark' ? 'github-dark' : 'github-light';
+                let s = document.createElement('script');
+                s.src = 'https://utteranc.es/client.js';
+                s.setAttribute('repo', 'junghoon-vans/blog');
+                s.setAttribute('issue-term', 'pathname');
+                s.setAttribute('theme', theme);
+                s.setAttribute('crossorigin', 'anonymous');
+                s.setAttribute('async', '');
+                document.querySelector('div.comments').innerHTML = '';
+                document.querySelector('div.comments').appendChild(s);
+
+                const mutationObserver = new MutationObserver((mutationsList, observer) => {
+                mutationsList.forEach(mutation => {
+                        if (mutation.attributeName === "class") {
+                        if (document.querySelector('.utterances-frame')) {
+                                const theme = mutation.target.classList.contains("dark") ? 'github-dark' : 'github-light'
+                                const message = {
+                                type: 'set-theme',
+                                theme: theme
+                                };
+                                const iframe = document.querySelector('.utterances-frame');
+                                iframe.contentWindow.postMessage(message, 'https://utteranc.es');
+                        }
+                        }
+                })
+                });
+                mutationObserver.observe(document.body, { attributes: true });
+        </script>
+</div>
 {{- /* Comments area end */ -}}
