@@ -28,9 +28,3 @@ editPost:
   URL: "https://github.com/junghoon-vans/blog/tree/master/content"
   Text: "수정"
   appendFilePath: true
-
-utterances:
-  - owner: junghoon-vans
-  - repo: "blog"
-  - message: ""
-  - link: ""
