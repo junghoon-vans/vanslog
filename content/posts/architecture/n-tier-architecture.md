@@ -44,7 +44,7 @@ n-tier architecture를 구성하는 계층(layer)은 아래 3가지이다.
 구현 사례
 ---
 
-내가 대학교 2학년 때 전공 프로젝트로 진행한 [대학 수강신청 시스템](https://github.com/Jeonghun-Ban/Course-Enrollment-System)은 다층구조를 설명하기 좋은 사례이다. 2학기에 걸쳐 구현한 이 프로그램은 1-tier 구조에서 시작해서 3-tier로 진화시켰다. 아래는 프로그램 버전별 특성을 간략하게 정리한 것이다.
+내가 대학교 2학년 때 전공 프로젝트로 진행한 [대학 수강신청 시스템](https://github.com/junghoon-vans/Course-Enrollment-System)은 다층구조를 설명하기 좋은 사례이다. 2학기에 걸쳐 구현한 이 프로그램은 1-tier 구조에서 시작해서 3-tier로 진화시켰다. 아래는 프로그램 버전별 특성을 간략하게 정리한 것이다.
 
 - v1.0
   - 1-tier Program
