@@ -1,4 +1,4 @@
-name: Build & Deploy
+name: Deploy Blog
 
 on:
   push:
@@ -13,17 +13,10 @@ jobs:
         with:
           submodules: recursive
 
-      - name: npm install
-        uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: '15.3.0'
-      - run: npm install
-
       - name: Setup hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.78.1'
+          hugo-version: 'latest'
           extended: true
 
       - name: Build
@@ -33,6 +26,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.PRIVATE_DEPLOY_KEY }}
-          external_repository: Jeonghun-Ban/Jeonghun-Ban.github.io
+          external_repository: junghoon-vans/junghoon-vans.github.io
           publish_branch: main
           publish_dir: ./public
