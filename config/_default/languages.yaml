@@ -1,0 +1,7 @@
+ko:
+  languageName: Korean
+  weight: 1
+  taxonomies:
+    category: categories
+    tag: tags
+    series: series

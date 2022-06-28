@@ -1,0 +1,27 @@
+baseURL: https://jeonghun-ban.github.io/
+title: Vanslog
+theme: papermod
+paginate: 5
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+googleAnalytics: UA-186109814-1
+defaultContentLanguage: ko
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    highlight:
+        noClasses: false
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON

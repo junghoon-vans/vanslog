@@ -1,0 +1,36 @@
+env: production
+author: junghoon-vans
+
+defaultTheme: auto
+ShowReadingTime: true
+ShowBreadCrumbs: true
+ShowPostNavLinks: true
+ShowCodeCopyButtons: true
+showtoc: true
+comments: true
+
+homeInfoParams:
+  Title: "Hello World!"
+
+socialIcons:
+  - name: github
+    url: "https://github.com/junghoon-vans"
+  - name: instagram
+    url: "https://www.instagram.com/junghoon.vans"
+  - name: facebook
+    url: "https://www.facebook.com/profile.php?id=100008030658971"
+  - name: linkedin
+    url: "https://www.linkedin.com/in/junghoon-ban-783744243"
+  - name: email
+    url: "mailto:junghoon.ban@email.com"
+
+editPost:
+  URL: "https://github.com/junghoon-vans/blog/content"
+  Text: "수정"
+  appendFilePath: true
+
+utterances:
+  - owner: junghoon-vans
+  - repo: "blog"
+  - message: ""
+  - link: ""
