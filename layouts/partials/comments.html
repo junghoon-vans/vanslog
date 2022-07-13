@@ -2,9 +2,7 @@
 <div class="comments">
     <script>
         var getTheme = window.localStorage && window.localStorage.getItem("pref-theme");
-        getTheme = getTheme == null ? '{{$.Site.Params.defaultTheme}}' : getTheme;
-
-        if(getTheme === 'auto') {
+        if (getTheme == null) {
             getTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
         }
         
