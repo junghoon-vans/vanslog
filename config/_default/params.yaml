@@ -25,6 +25,6 @@ socialIcons:
     url: "mailto:junghoon.ban@email.com"
 
 editPost:
-  URL: "https://github.com/junghoon-vans/blog/tree/master/content"
+  URL: "https://github.com/junghoon-vans/vanslog/tree/master/content"
   Text: "수정"
   appendFilePath: true
