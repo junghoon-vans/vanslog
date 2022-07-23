@@ -54,7 +54,7 @@ J2EE의 목적은 자바의 플랫폼 독립적인 특성을 활용하여, `환�
 
 `EJB(Enterprise Java Bean)`은 J2EE 환경에서 비즈니스 로직을 처리하는 분산 컴포넌트 기술입니다. 이것의 취지는 좋았으나 사용하기에 너무나도 복잡성이 높았습니다. `Spring Framework`의 개발자인 `Rod Johnson`은 `J2EE Development without EJB`라는 책에서 아래와 같이 말했습니다.
 
-*"EJB와 갈은 실패를 만들지 않기 위해서 가장 먼저 생각할 것은 기본 핵심가치(core values)인데 그 것은 6가지로 구성된다."*
+*"EJB와 같은 실패를 만들지 않기 위해서 가장 먼저 생각할 것은 기본 핵심가치(core values)인데 그것은 6가지로 구성된다."*
 
 ```plaintext
 - Simplicity
