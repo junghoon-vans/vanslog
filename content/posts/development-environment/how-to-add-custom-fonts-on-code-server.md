@@ -5,7 +5,7 @@ categories:
 - 개발 환경
 tags:
 - 개발 환경
-- 코드 서버
+- code-server
 draft: false
 description: >
     코드 서버에 커스텀 폰트 적용하기

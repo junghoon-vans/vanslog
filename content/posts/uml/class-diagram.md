@@ -8,9 +8,9 @@ categories:
 tags:
 - UML
 - OOP
-- Java
-- Class
-- Modeling
+- ☕️ Java
+- 클래스
+- 모델링
 draft: false
 description: >
     

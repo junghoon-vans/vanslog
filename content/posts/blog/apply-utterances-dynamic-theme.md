@@ -5,8 +5,8 @@ draft: false
 categories:
     - 블로그
 tags:
-    - hugo
     - utterances
+    - 휴고
     - 블로그
 ---
 

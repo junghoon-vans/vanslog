@@ -8,7 +8,7 @@ categories:
 tags:
 - UML
 - OOP
-- Java
+- ☕️ Java
 draft: false
 description: >
     객체들의 상호작용을 나타내는 다이어그램

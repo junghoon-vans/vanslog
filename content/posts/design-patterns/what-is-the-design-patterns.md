@@ -1,14 +1,12 @@
 ---
 title: "디자인 패턴이란?"
 date: 2021-01-16T10:52:57+09:00
-series:
-- 디자인 패턴
 categories:
 - 디자인 패턴
 tags:
 - 디자인 패턴
 - OOP
-- Java
+- ☕️ Java
 - GoF
 draft: false
 description: >

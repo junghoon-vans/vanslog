@@ -7,7 +7,7 @@ categories:
 - OOP
 tags:
 - OOP
-- JAVA
+- ☕️ JAVA
 draft: false
 description: >
     객제지향 설계 원칙

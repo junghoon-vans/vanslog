@@ -1,13 +1,11 @@
 ---
 title: "[Refactoring] 리팩터링이란?"
 date: 2021-02-06T02:34:16Z
-series:
-- 리팩터링
 categories:
-- refactoring
+- 리팩터링
 tags:
-- refactoring
-- agile
+- 리팩터링
+- 애자일
 draft: false
 description: >
   코드의 재구성, 리팩터링

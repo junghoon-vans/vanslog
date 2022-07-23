@@ -2,13 +2,13 @@
 title: "N Tier Architecture"
 date: 2020-12-26T10:12:54Z
 categories:
-- Architecture
+- 아키텍쳐
 tags:
-- Architecture
-- n-tier-architecture
+- N-tier 아키텍쳐
+- 아키텍쳐
 draft: false
 description: >
-    전공 수업 프로젝트에서 찾은 다층구조 아키텍처
+  전공 수업 프로젝트에서 찾은 다층구조 아키텍처
 ---
 
 다층구조 아키텍쳐는 일반적으로 `클라이언트-서버` 애플리케이션에서 사용된다. 웹 애플리케이션을 비롯한 대다수 애플리케이션에서 활용되는 기본적인 구조인 만큼 익혀두어야 하는 개념이라 생각한다.

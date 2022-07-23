@@ -4,9 +4,9 @@ date: 2021-07-16T14:06:26Z
 series:
 - 자바 스터디
 categories:
-- Java
+- ☕️ Java
 tags:
-- Java
+- ☕️ Java
 - 자료형
 - 기본 자료형
 - 참조 자료형

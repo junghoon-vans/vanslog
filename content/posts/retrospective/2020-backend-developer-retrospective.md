@@ -10,7 +10,6 @@ tags:
 - 멋쟁이 사자처럼
 - 취업
 - 군대
-- 목표
 draft: false
 description: >
     2020년을 되돌아보며, 그리고 그 이후

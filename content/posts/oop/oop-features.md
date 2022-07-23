@@ -7,7 +7,7 @@ categories:
 - OOP
 tags:
 - OOP
-- Java
+- ☕️ Java
 draft: false
 description: >
     객체지향 프로그래밍(OOP)의 네가지 특징

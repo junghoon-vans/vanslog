@@ -1,8 +1,6 @@
 ---
 title: "군대에서 코딩하기"
 date: 2020-12-01
-series:
-- 군대에서 코딩하기
 categories:
 - 개발 환경
 tags:

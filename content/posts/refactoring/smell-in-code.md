@@ -4,10 +4,10 @@ date: 2021-04-13T13:51:13Z
 series:
 - 리팩터링
 categories:
-- refactoring
+- 리팩터링
 tags:
-- refactoring
-- agile
+- 리팩터링
+- 애자일
 draft: false
 description: >
   코드에서 나는 악취, 코드 스멜

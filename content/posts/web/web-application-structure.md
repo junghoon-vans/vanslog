@@ -4,7 +4,7 @@ date: 2020-12-26T14:06:55Z
 categories:
 - Web
 tags:
-- Architecture
+- 아키텍쳐
 - SSR
 - CSR
 - SPA
