@@ -2,13 +2,13 @@
 title: "[UML 2.0] UML이란?"
 date: 2021-01-03T11:22:49+09:00
 series:
-- 객체 지향 설계
+  - UML 설계
 categories:
-- UML
+  - UML
 tags:
-- UML
-- OOP
-- 모델링
+  - UML
+  - OOP
+  - 모델링
 draft: false
 description: >
   객체 지향 애플리케이션을 모델링하기 위한 언어, UML

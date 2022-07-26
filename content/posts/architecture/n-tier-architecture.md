@@ -2,10 +2,10 @@
 title: "N Tier Architecture"
 date: 2020-12-26T10:12:54Z
 categories:
-- 아키텍쳐
+  - 아키텍쳐
 tags:
-- N-tier 아키텍쳐
-- 아키텍쳐
+  - N-tier 아키텍쳐
+  - 아키텍쳐
 draft: false
 description: >
   전공 수업 프로젝트에서 찾은 다층구조 아키텍처

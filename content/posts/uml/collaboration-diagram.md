@@ -2,16 +2,16 @@
 title: "[UML 2.0] 컬레보레이션 다이어그램(Collaboration Diagram)"
 date: 2021-01-16T18:48:45+09:00
 series:
-- 객체 지향 설계
+  - UML 설계
 categories:
-- UML
+  - UML
 tags:
-- UML
-- OOP
-- ☕️ Java
+  - UML
+  - OOP
+  - ☕️ Java
 draft: false
 description: >
-    UML2.0에서 디자인 패턴을 표현하는 도구
+  UML2.0에서 디자인 패턴을 표현하는 도구
 ---
 
 - UML 2.0에서 `디자인 패턴`을 표현하는 도구

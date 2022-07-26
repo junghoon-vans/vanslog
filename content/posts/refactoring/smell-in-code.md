@@ -2,12 +2,12 @@
 title: "[Refactoring] 코드에서 나는 악취"
 date: 2021-04-13T13:51:13Z
 series:
-- 리팩터링
+  - 리팩터링 정리
 categories:
-- 리팩터링
+  - 리팩터링
 tags:
-- 리팩터링
-- 애자일
+  - 리팩터링
+  - 애자일
 draft: false
 description: >
   코드에서 나는 악취, 코드 스멜

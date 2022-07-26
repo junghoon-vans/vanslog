@@ -2,15 +2,15 @@
 title: "[OOP] 객체지향 설계 원칙: SOLID 원칙"
 date: 2021-01-10T19:53:10+09:00
 series:
-- 객체지향 개념
+  - OOP 개념 정리
 categories:
-- OOP
+  - OOP
 tags:
-- OOP
-- ☕️ JAVA
+  - OOP
+  - ☕️ JAVA
 draft: false
 description: >
-    객제지향 설계 원칙
+  객제지향 설계 원칙
 ---
 
 단일 책임 원칙(SRP)

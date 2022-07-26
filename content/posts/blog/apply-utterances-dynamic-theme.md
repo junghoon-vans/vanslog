@@ -3,11 +3,11 @@ title: "🔮 utterances 다이나믹 테마 적용하기"
 date: 2022-07-17T15:12:13+09:00
 draft: false
 categories:
-    - 블로그
+  - 블로그
 tags:
-    - utterances
-    - 휴고
-    - 블로그
+  - utterances
+  - 휴고
+  - 블로그
 ---
 
 `utterances`는 개인 기술 블로그에서 많이 사용되는 오픈소스 댓글 서비스입니다. `깃헙 스타일`의 깔끔한 디자인과 `다크 모드`를 지원한다는 특징을 가지고 있습니다.

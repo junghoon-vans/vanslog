@@ -2,16 +2,16 @@
 title: "[UML 2.0] 순차 다이어그램(Sequence Diagram)"
 date: 2021-01-23T16:10:03+09:00
 series:
-- 객체 지향 설계
+  - UML 설계
 categories:
-- UML
+  - UML
 tags:
-- UML
-- OOP
-- ☕️ Java
+  - UML
+  - OOP
+  - ☕️ Java
 draft: false
 description: >
-    객체들의 상호작용을 나타내는 다이어그램
+  객체들의 상호작용을 나타내는 다이어그램
 ---
 
 객체들의 상호작용을 나타내는 다이어그램 중 하나로 객체들 사이의 메시지 송신과 그들의 순서를 나타낸다.

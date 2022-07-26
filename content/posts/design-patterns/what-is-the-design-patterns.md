@@ -2,15 +2,15 @@
 title: "디자인 패턴이란?"
 date: 2021-01-16T10:52:57+09:00
 categories:
-- 디자인 패턴
+  - 디자인 패턴
 tags:
-- 디자인 패턴
-- OOP
-- ☕️ Java
-- GoF
+  - 디자인 패턴
+  - OOP
+  - ☕️ Java
+  - GoF
 draft: false
 description: >
-    좋은 객체지향 설계를 위한 디자인 패턴
+  좋은 객체지향 설계를 위한 디자인 패턴
 ---
 
 좋은 객체지향 설계

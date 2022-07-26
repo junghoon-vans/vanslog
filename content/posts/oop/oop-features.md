@@ -2,15 +2,15 @@
 title: "[OOP] 객체지향 프로그래밍(OOP) 특징"
 date: 2021-01-09T17:18:32+09:00
 series:
-- 객체지향 개념
+  - OOP 개념 정리
 categories:
-- OOP
+  - OOP
 tags:
-- OOP
-- ☕️ Java
+  - OOP
+  - ☕️ Java
 draft: false
 description: >
-    객체지향 프로그래밍(OOP)의 네가지 특징
+  객체지향 프로그래밍(OOP)의 네가지 특징
 ---
 
 추상화(Abstraction)

@@ -2,6 +2,8 @@
 title: "[Spring] 왜 스프링인가"
 date: 2022-07-21T22:47:38+09:00
 draft: false
+series: 
+  - 🍃 Spring 스터디
 categories: 🍃 Spring
 tags:
   - ☕️ Java

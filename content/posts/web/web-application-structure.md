@@ -2,16 +2,16 @@
 title: "웹 애플리케이션 구조(SSR, CSR, SPA, MPA)"
 date: 2020-12-26T14:06:55Z
 categories:
-- Web
+    - Web
 tags:
-- 아키텍쳐
-- SSR
-- CSR
-- SPA
-- MPA
+  - 아키텍쳐
+  - SSR
+  - CSR
+  - SPA
+  - MPA
 draft: false
 description: >
-    최근 웹 프론트엔드에서 트랜드인 용어를 정리해보았다.
+  최근 웹 프론트엔드에서 트랜드인 용어를 정리해보았다.
 ---
 
 서론
