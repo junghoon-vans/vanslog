@@ -1,4 +1,5 @@
 env: production
+description: &description "백엔드 개발자 반정훈의 기술 블로그입니다."
 author: junghoon-vans
 
 defaultTheme: auto
@@ -11,6 +12,7 @@ comments: true
 
 homeInfoParams:
   Title: "Hello World!"
+  Content: *description
 
 socialIcons:
   - name: github
