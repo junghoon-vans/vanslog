@@ -7,8 +7,12 @@ jobs:
   update-profile:
     runs-on: ubuntu-latest
     steps:
-      - name: Wait for deployment
-        run: sleep 30s
+      - name: Await for Vercel deployment
+        uses: UnlyEd/github-action-await-vercel@v1.1.2
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        with:
+          deployment-url: vanslog.io
       - name: Run workflow in profile repository
         run: >
           curl -XPOST -u "${{secrets.USERNAME}}:${{secrets.PAT_TOKEN}}"
