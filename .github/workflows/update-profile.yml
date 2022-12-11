@@ -1,3 +1,5 @@
+name: Update Profile
+
 on:
   push:
     branches:    
