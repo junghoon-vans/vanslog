@@ -15,7 +15,7 @@ jobs:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         with:
           deployment-url: vanslog.io
-      - name: Run workflow in profile repository
+      - name: Apply changes to profile repository
         run: >
           curl -XPOST -u "${{ secrets.USERNAME }}:${{ secrets.PAT_TOKEN }}"
           -H "Accept: application/vnd.github.everest-preview+json"
