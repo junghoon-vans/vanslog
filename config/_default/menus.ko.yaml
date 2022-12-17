@@ -1,16 +1,16 @@
 main:
-  - name: Archive
+  - name: 아카이브
     url: archives/
     weight: 1
-  - name: Tags
+  - name: 태그
     url: tags/
     weight: 2
-  - name: Categories
+  - name: 카테고리
     url: categories/
     weight: 3
-  - name: Series
+  - name: 시리즈
     url: series/
     weight: 4
-  - name: Search
+  - name: 검색
     url: search/
     weight: 5
