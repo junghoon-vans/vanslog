@@ -14,3 +14,6 @@ main:
   - name: 검색
     url: search/
     weight: 5
+  - name: TIL
+    url: https://til.vanslog.io
+    weight: 6
