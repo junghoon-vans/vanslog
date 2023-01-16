@@ -1,5 +1,5 @@
 env: production
-description: "백엔드 개발자 반정훈의 기술 블로그입니다."
+description: &description "백엔드 개발자 반정훈의 기술 블로그입니다."
 author: junghoon-vans
 
 defaultTheme: auto
@@ -12,9 +12,7 @@ comments: true
 
 homeInfoParams:
   Title: "Hello World!"
-  Content: |
-    백엔드 개발자 반정훈의 기술 블로그입니다.
-    TIL 컨텐츠는 [Vanstil](https://til.vanslog.io)에서 확인하실 수 있습니다. 
+  Content: *description
 
 socialIcons:
   - name: github
