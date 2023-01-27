@@ -14,11 +14,11 @@ description: >
   공식 Actions를 활용한 GitHub Pages 배포 방법을 소개합니다.
 ---
 
-[DND](https://www.dnd.ac)에서 진행하는 프로젝트에서 `API 문서화`를 위해 [Spring Rest Docs](https://spring.io/projects/spring-restdocs)를 사용하고 있습니다. 이렇게 빌드된 문서화 페이지는 공식 `GitHub Actions`를 사용하여 `GitHub Pages`로 배포하고 있습니다. 공식 액션을 사용하는 방법이 아직까지 잘 알려지지 않은 것 같아 이를 소개하고자 포스팅을 작성하게 되었습니다.
+[DND](https://www.dnd.ac)에서 진행하는 프로젝트에서 [Spring Rest Docs](https://spring.io/projects/spring-restdocs)를 사용하여 `API 문서화`를 진행하고 있으며, 이렇게 만들어진 문서화 페이지는 [GitHub Pages](https://pages.github.com/)를 통해 배포하고 있습니다. GitHub Pages는 워낙 잘 알려진 서비스이므로 이를 통해 배포하는 방법은 다양한 자료들이 존재합니다. 하지만 공식 액션을 사용하는 방법은 아직까지 잘 알려지지 않은 것 같아 이를 소개하고자 합니다.
 
 # GitHub Pages
 
-GitHub Pages는 GitHub에서 제공하는 `정적 웹사이트 호스팅 서비스`입니다. 무료로 제공되는 서비스이므로 간단한 웹사이트를 호스팅하기에 적합합니다. 사이드 프로젝트를 진행하는 과정에서 프론트 팀과 API 문서를 공유하기에 적합하다는 생각이 들어 사용하게 되었습니다.
+GitHub Pages는 GitHub에서 제공하는 `정적 웹사이트 호스팅 서비스`입니다. 무료로 제공되는 서비스이므로 간단한 웹사이트를 호스팅하기에 적합합니다. 사이드 프로젝트를 진행하는 과정에서 프론트 팀과 API 문서를 공유하기에 적합합니다.
 
 ## Branch를 통한 배포
 
@@ -93,13 +93,17 @@ jobs:
         uses: actions/deploy-pages@v1
 ```
 
+## 에러 해결
+
+> **Branch "<브랜치명>" is not allowed to deploy to github-pages due to environment protection rules.**
+
+GitHub Pages를 배포하는 과정에서 다음과 같은 에러가 발생할 수 있습니다. 이는 특정 브랜치에 대해서 배포가 제한되어 있는 경우 발생합니다.
+이를 해결하는 방법은 프로젝트 내 `Settings > Environments > github-pages > Deployment branches` 에서 `허용할 브랜치`를 지정하거나 `All branches`를 선택해주시면 됩니다.
+
+
 # 마치며
 
 지금까지 공식 GitHub Actions를 사용하여 GitHub Pages에 배포하는 방법에 대해 알아보았습니다. 이러한 방법을 사용하여 스프링 부트의 API 문서를 생성하고 GitHub Pages에 배포하는 과정을 자동화할 수 있었습니다.
-
-하지만 저 같은 경우는 진행하는 과정에서 **Branch "<브랜치명>" is not allowed to deploy to github-pages due to environment protection rules.** 에러가 발생하였습니다. 만약 이러한 에러를 맞닥뜨리셨다면 프로젝트 내 `Settings > Environments > github-pages > Deployment branches` 에서 배포할 브랜치를 추가해주시거나 All branches를 선택해주시면 됩니다.
-
-
 
 # 참고 문헌
 
