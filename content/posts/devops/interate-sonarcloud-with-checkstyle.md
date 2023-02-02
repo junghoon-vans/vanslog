@@ -169,7 +169,7 @@ sonar {
 
 # 마치며
 
-이렇게 SonarCloud와 Checkstyle을 연동하여 코드 품질을 관리할 수 있습니다. 이번 글에서는 SonarCloud와 Checkstyle을 연동하는 방법을 소개했습니다. 하지만 다른 정적 분석 도구와도 연동할 수 있습니다. 예를 들어 `JaCoCo`를 사용한다면 `sonar.jacoco.reportPaths` 속성을 추가하면 됩니다. 이외 다른 분석기의 리포트를 전달하는 방법에 대해 알고 싶으시다면 [External Analyzer Reports](https://docs.sonarcloud.io/enriching/external-analyzer-reports/)를 참고해주세요.
+이렇게 SonarCloud와 Checkstyle을 연동하여 코드 품질을 관리할 수 있습니다. 이번 글에서는 SonarCloud와 Checkstyle을 연동하는 방법을 소개했습니다. 하지만 다른 정적 분석 도구와도 연동할 수 있습니다. 예를 들어 `JaCoCo`를 사용한다면 `sonar.jacoco.reportPaths` 속성을 추가하면 됩니다. 만약 JaCoCo를 함께 연동하여 코드 커버리지를 관리하고 싶다면 [Java test coverage](https://docs.sonarqube.org/latest/analyzing-source-code/test-coverage/java-test-coverage/)를 참고하시면 됩니다.
 
 저희 프로젝트는 `SonarCloud`와 `Checkstyle`, `JaCoCo`를 연동하여 코드 품질을 관리하고 있습니다. 만약 설정 파일을 직접 보고 싶으시다면 저희 프로젝트의 [GitHub Actions](https://github.com/dnd-side-project/dnd-8th-8-backend/blob/d8525a13afcb3160b1dcd244b65ccbc975a4c943/.github/workflows/ci.yml) 설정 파일 혹은 [build.gradle](https://github.com/dnd-side-project/dnd-8th-8-backend/blob/d8525a13afcb3160b1dcd244b65ccbc975a4c943/build.gradle) 파일을 참고해주세요.
 
