@@ -1,13 +1,11 @@
 ---
-title: "[DND 8기] 백엔드 파트 합격 후기"
+title: "[DND 8기] 백엔드 개발자 합격 후기"
 date: 2023-01-08T16:39:37+09:00
 draft: false
 series: 
-  - DND
+  - DND 8기
 categories:
-  - DND
-  - 대외활동
-  - 후기
+  - 회고
 tags:
   - DND
   - 대외활동
