@@ -6,11 +6,11 @@
             mutationsList.forEach(mutation => {
                 if (mutation.attributeName === "class" && document.querySelector('.utterances-frame')) {
                     const message = {
-                    type: 'set-theme',
-                    theme: getTheme()
-                };
-                const iframe = document.querySelector('.utterances-frame');
-                iframe.contentWindow.postMessage(message, 'https://utteranc.es');
+                        type: 'set-theme',
+                        theme: getTheme()
+                    };
+                    const iframe = document.querySelector('.utterances-frame');
+                    iframe.contentWindow.postMessage(message, 'https://utteranc.es');
                 }
             })
         }
