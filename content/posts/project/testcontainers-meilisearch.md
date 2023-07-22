@@ -1,5 +1,5 @@
 ---
-title: "Testcontainers Meilisearch"
+title: "Meilisearch를 위한 Testcontainers 라이브러리 개발기"
 date: 2023-07-21T22:47:52+09:00
 draft: false
 categories: 프로젝트
@@ -9,7 +9,7 @@ tags:
   - Meilisearch
   - 라이브러리
 summary: >
-  Testcontainers Meilisearch
+  Testcontainers Meilisearch를 소개하고, 개발하면서 느낀 점을 공유합니다.
 ---
 
 프로젝트 동기
