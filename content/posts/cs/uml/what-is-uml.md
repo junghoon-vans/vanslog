@@ -10,7 +10,7 @@ tags:
   - OOP
   - 모델링
 draft: false
-description: >
+summary: >
   객체 지향 애플리케이션을 모델링하기 위한 언어, UML
 ---
 

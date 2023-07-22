@@ -12,7 +12,7 @@ tags:
   - 파이프라인
   - 코딩테스트
 draft: false
-description: >
+summary: >
   자바8에서 등장한 스트림 언제사용하는 것이 좋은가?
 ---
 

@@ -11,7 +11,7 @@ tags:
   - 🍃 Spring
   - Meilisearch
   - 라이브러리
-description: >
+summary: >
   Spring Data MeiliSearch 프로젝트를 시작하게 된 계기와 목표에 대해 소개합니다.
 ---
 

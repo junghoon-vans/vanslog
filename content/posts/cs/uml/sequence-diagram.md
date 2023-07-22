@@ -10,7 +10,7 @@ tags:
   - OOP
   - ☕️ Java
 draft: false
-description: >
+summary: >
   객체들의 상호작용을 나타내는 다이어그램
 ---
 

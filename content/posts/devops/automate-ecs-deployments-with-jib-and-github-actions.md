@@ -9,7 +9,7 @@ tags:
   - GitHub Actions
   - Amazon ECR
   - Amazon ECS
-description: >
+summary: >
   개발에 집중하기 위한 배포 파이프라인 구축
 ---
 

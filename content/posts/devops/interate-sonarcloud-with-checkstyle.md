@@ -10,7 +10,7 @@ tags:
   - DND
   - SonarCloud
   - Checkstyle
-description: >
+summary: >
   SonarCloud를 사용하면서 코딩 스타일을 체크하는 방법
 ---
 

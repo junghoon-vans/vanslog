@@ -9,7 +9,7 @@ tags:
   - 리팩터링
   - 애자일
 draft: false
-description: >
+summary: >
   코드에서 나는 악취, 코드 스멜
 ---
 

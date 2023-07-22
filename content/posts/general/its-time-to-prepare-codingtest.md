@@ -6,7 +6,7 @@ categories:
 tags:
   - 코딩테스트
 draft: false
-description: >
+summary: >
   코딩테스트를 준비하기로 결심한 이유와 언어 선택에 대한 고민
 ---
 

@@ -11,7 +11,7 @@ tags:
   - 취업
   - 군대
 draft: false
-description: >
+summary: >
   2020년을 되돌아보며, 그리고 그 이후
 ---
 

@@ -10,7 +10,7 @@ tags:
   - SPA
   - MPA
 draft: false
-description: >
+summary: >
   최근 웹 프론트엔드에서 트랜드인 용어를 정리해보았다.
 ---
 

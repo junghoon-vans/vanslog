@@ -10,7 +10,7 @@ tags:
   - GitHub Actions
   - GitHub Pages
   - Spring REST Docs
-description: >
+summary: >
   공식 Actions를 활용한 GitHub Pages 배포 방법을 소개합니다.
 ---
 

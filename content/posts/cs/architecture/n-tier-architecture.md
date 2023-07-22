@@ -7,7 +7,7 @@ tags:
   - N-tier 아키텍쳐
   - 아키텍쳐
 draft: false
-description: >
+summary: >
   전공 수업 프로젝트에서 찾은 다층구조 아키텍처
 ---
 

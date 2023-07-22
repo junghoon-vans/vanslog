@@ -9,7 +9,7 @@ tags:
   - 개발 환경
   - code-server
 draft: false
-description: >
+summary: >
   나만의 웹 IDE 만들기
 ---
 

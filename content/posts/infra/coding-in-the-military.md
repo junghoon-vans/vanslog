@@ -8,7 +8,7 @@ categories:
 tags:
   - 개발 환경
 draft: false
-description: >
+summary: >
   군대에서 코딩을 어떻게 할 수 있을까? 그 답을 찾기 위한 여정
 ---
 

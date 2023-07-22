@@ -9,7 +9,7 @@ tags:
   - 리팩터링
   - 애자일
 draft: false
-description: >
+summary: >
   코드의 재구성, 리팩터링
 ---
 

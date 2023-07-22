@@ -10,7 +10,7 @@ tags:
   - GCP
   - 클라우드
 draft: false
-description: >
+summary: >
   나만의 평생 무료 인스턴스 만들기
 ---
 

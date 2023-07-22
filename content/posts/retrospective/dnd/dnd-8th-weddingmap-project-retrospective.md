@@ -10,7 +10,7 @@ tags:
   - DND
   - 대외활동
   - 회고
-description: >
+summary: >
   DND 8기 활동을 마치며
 images:
   - https://user-images.githubusercontent.com/44942700/224090941-95e8715e-5e2a-4b6e-93a9-eccd8b380306.png

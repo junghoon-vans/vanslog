@@ -10,7 +10,7 @@ tags:
   - OOP
   - ☕️ Java
 draft: false
-description: >
+summary: >
   UML2.0에서 디자인 패턴을 표현하는 도구
 ---
 

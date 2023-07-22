@@ -9,7 +9,7 @@ tags:
   - ☕️ Java
   - GoF
 draft: false
-description: >
+summary: >
   좋은 객체지향 설계를 위한 디자인 패턴
 ---
 

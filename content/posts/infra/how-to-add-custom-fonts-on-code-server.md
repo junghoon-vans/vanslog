@@ -7,7 +7,7 @@ tags:
   - 개발 환경
   - code-server
 draft: false
-description: >
+summary: >
   코드 서버에 커스텀 폰트 적용하기
 ---
 

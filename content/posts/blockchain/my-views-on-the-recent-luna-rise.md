@@ -8,7 +8,7 @@ tags:
   - 루나
   - 암호화폐
 draft: false
-description: >
+summary: >
   $Luna to the moon 🌕
 ---
 

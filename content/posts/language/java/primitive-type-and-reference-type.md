@@ -11,7 +11,7 @@ tags:
   - 기본 자료형
   - 참조 자료형
 draft: false
-description: >
+summary: >
   자바의 기본 자료형과 참조 자료형에 대해서 알아보자!
 ---
 
