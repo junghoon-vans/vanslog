@@ -1,7 +1,7 @@
 ---
 title: "Spring Data MeiliSearch #0 - 프로젝트 소개"
 date: 2023-06-28T13:48:31+09:00
-draft: true
+draft: false
 series: 
   - Spring Data MeiliSearch
 categories:
@@ -9,8 +9,8 @@ categories:
 tags:
   - ☕️ Java
   - 🍃 Spring
-  - 검색엔진
-  - 자바 라이브러리
+  - Meilisearch
+  - 라이브러리
 description: >
   Spring Data MeiliSearch 프로젝트를 시작하게 된 계기와 목표에 대해 소개합니다.
 ---
