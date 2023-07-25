@@ -55,15 +55,24 @@ class MeilisearchContainerTest {
 
   @Container
   private final MeilisearchContainer container = new MeilisearchContainer()
-    withMasterKey("masterKey");
+    .withMasterKey("masterKey");
 
   @Test
-  void test() throws MeilisearchException {
-    // write your test code
+  void shouldConnectToMeilisearch() throws MeilisearchException {
+    Config config = new Config(
+      "http://" + container.getHost() + ":" + container.getMappedPort(7700),
+      "masterKey"
+    );
+    Client client = new Client(config);
+    assertThat(client.isHealthy()).isTrue();
 }
 ```
 
-> `Master Key`를 지정하지 않을 경우 랜덤으로 생성됩니다. 테스트 코드 진행 시 클라이언트의 `Master Key`와 동일하게 설정해두시는 것이 좋습니다.
+위 예제 코드는 간단하게 Meilisearch 클라이언트를 생성해서 테스트컨테이너와 통신이 되는 지 확인합니다.
+여기서 주의할 점은 테스트 컨테이너는 포트를 랜덤하게 바인딩하므로, `getMappedPort()`를 통해 포트를 가져와야 한다는 점입니다.
+MeilisearchContainer는 `7700` 포트를 사용하여 컨테이너를 실행하므로, `getMappedPort(7700)`을 통해 포트를 가져올 수 있습니다.
+
+> `Master Key`를 지정하지 않을 경우 랜덤으로 생성됩니다. 따라서 반드시 클라이언트와 연결을 위해서 설정해주셔야 합니다.
 
 프로젝트 후기
 ===
