@@ -1,9 +1,9 @@
 ---
-title: "Spring Data MeiliSearch #1 - 네임스페이스 기반 설정"
+title: "Spring Data Meilisearch #1 - 네임스페이스 기반 설정"
 date: 2023-07-26T14:16:08+09:00
 draft: false
 series: 
-  - Spring Data MeiliSearch
+  - Spring Data Meilisearch
 categories: 
   - 프로젝트
 tags:
