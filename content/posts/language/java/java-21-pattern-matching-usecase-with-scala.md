@@ -14,7 +14,7 @@ summary: >
 
 2023년 9월 19일, 그토록 기다리던 Java 21가 출시되었습니다. 대부분의 사람들의 관심이 `Virtual Thread`으로 집중되어 있는 한편 저는 `매턴 매칭(Pattern Matching)`에 눈길이 갔습니다. 현재 `오픈소스 컨트리뷰션 아카데미`에서 `ZIO` 팀의 멘티로 활동하며 해당 기능을 자주 활용한 경험이 있기 때문입니다.
 
-> 참고로 ZIO는 Scala의 비동기 동시성 라이브러리입니다.
+> ZIO는 Scala의 비동기 동시성 라이브러리입니다.
 
 그래서 이번 포스팅에서는 ZIO 스터디에서 진행하였던 예시를 통해 `패턴 매칭`이 무엇인지에 대해 알아보고, Java에 패턴 매칭을 구현하기 위한 프로젝트인 `Project Amber`에 대해 소개해드리고자 합니다.  끝으로는 Scala와 동일한 예시를 Java 21의 패턴 매칭을 활용하여 구현해보겠습니다.
 
@@ -316,6 +316,40 @@ record VoiceRecording(String contactName, String link) implements Notification {
 ```java
 public static String showNotification(Notification notification) {
     return switch (notification) {
+        case Email(String sender, String title, String body) ->
+            String.format("You got an email from %s with title: %s", sender, title);
+        case SMS(String caller, String message) ->
+            String.format("You got an SMS from %s! Message: %s", caller, message);
+        case VoiceRecording(String contactName, String link) ->
+            String.format("You received a Voice Recording from %s! Click the link to hear it: %s", contactName, link);
+    };
+}
+```
+
+이제 `showNotification` 메서드도 작성해주겠습니다. Java 21에서 [Pattern Matching for switch](#pattern-matching-for-switch)을 적용된 덕분에 Notification의 `타입을 비교`하고, 필요한 로직을 수행할 수 있습니다. 또한 Notification의 하위 타입들은 모두 Record이므로 [Record Patterns](#record-patterns)를 적용할 수 있으므로, `구조분해 할당`을 통해 필요한 멤버 변수만 가져올 수 있습니다.
+
+```java
+var someSms = new SMS("12345", "Are you there?");
+var someVoiceRecording = new VoiceRecording("Tom", "voicerecording.org/id/123");
+
+System.out.println(showNotification(someSms)); // prints You got an SMS from 12345! Message: Are you there?
+System.out.println(showNotification(someVoiceRecording)); // prints You received a Voice Recording from Tom! Click the link to hear it: voicerecording.org/id/123
+```
+
+최종적으로 완성된 코드를 실행하면 앞서 Scala에서 실행한 것과 동일한 결과를 얻으실 수 있습니다.
+
+# 프리뷰 기능까지 적용하기
+
+하지만 여전히 레코드 패턴 내 불필요한 인자를 무시할 수 없다는 점과 문자열 생성을 위해 `String.format`을 사용하는 방법은 아쉬움이 남습니다. 이러한 것을 보완한 기능들은 이번 Java 21의 `프리뷰 기능`으로 릴리즈 되었습니다.
+
+관련 JEP는 다음과 같습니다.
+
+- [JEP 430: String Templates](https://openjdk.org/jeps/430)
+- [JEP 443: Unnamed Patterns and Variables](https://openjdk.org/jeps/443)
+
+```java
+public static String showNotification(Notification notification) {
+    return switch (notification) {
         case Email(String sender, String title, _) ->
             STR."You got an email from \{sender} with title: \{title}"; // String interpolation
         case SMS(String caller, String message) ->
@@ -326,20 +360,9 @@ public static String showNotification(Notification notification) {
 }
 ```
 
-이제 `showNotification` 메서드도 작성해주겠습니다. Java 21에서 [Pattern Matching for switch](#pattern-matching-for-switch)을 적용된 덕분에 Notification의 `타입을 비교`하고, 필요한 로직을 수행할 수 있습니다. 또한 Notification의 하위 타입들은 모두 Record이므로 [Record Patterns](#record-patterns)를 적용할 수 있으므로, `구조분해 할당`을 통해 필요한 멤버 변수만 가져올 수 있습니다. 여기서  `언더스코어(_)`는 Scala와 동일하게 필요없는 인자를 무시하는 문법입니다.
+이러한 기능들이 모두 적용된 자바 예제는 위와 같습니다. `STR` 키워드는 `String Templates`를 사용하기 위한 키워드입니다. 이를 통해 문자열 내부에 변수를 삽입할 수 있습니다. 또한 `record`의 멤버 변수 중 불필요한 인자는 `_`를 통해 무시할 수 있습니다.
 
-> `STR`은 Java 21에 추가된 `String Template`이라는 기능입니다.
-> Python의 `f-string`이나 Scala의 `s-string`과 유사한 `String Interpolation`을 제공합니다.
-
-```java
-var someSms = new SMS("12345", "Are you there?");
-var someVoiceRecording = new VoiceRecording("Tom", "voicerecording.org/id/123");
-
-System.out.println(showNotification(someSms)); // prints You got an SMS from 12345! Message: Are you there?
-System.out.println(showNotification(someVoiceRecording)); // prints You received a Voice Recording from Tom! Click the link to hear it: voicerecording.org/id/123
-```
-
-최종적으로 완성된 코드를 실행하면 앞서 Scala에서 실행한 것과 동일한 결과를 얻으실 수 있습니다. 또한 전체적으로 살펴본다면 Scala와 Java의 코드가 매우 유사하다는 것을 알 수 있습니다. 이는 Project Amber가 추구하는 방향성이 Scala와 같은 함수형의 장점을 Java에 적용하는 것이라는 사실을 보여줍니다.
+최종적으로 프리뷰 기능까지 적용한 코드를 보면 Scala의 코드와 매우 유사하다는 사실을 깨달을 수 있습니다. 이는 `Project Amber`가 추구하는 방향성이 Scala와 같은 함수형의 장점을 Java에 적용하는 것이라는 사실을 보여줍니다.
 
 # 마치며
 
