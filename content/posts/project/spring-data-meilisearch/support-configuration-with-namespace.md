@@ -25,7 +25,7 @@ summary: >
 
 > 만약 `어노테이션 기반의 설정`을 지원하는 방법에 대해 알고 싶다면 [다음 글](/posts/project/spring-data-meilisearch/support-configuration-with-annotation)을 참고해주세요.
 
-# 네임스페이스 설정하는 방법
+## 네임스페이스 설정하는 방법
 
 `namespace.xml`에 다음과 같이 정의하면 Meilisearch 클라이언트를 생성하고 스프링 Bean으로 등록할 수 있습니다.
 
@@ -41,7 +41,7 @@ summary: >
 </beans>
 ```
 
-# 구현 방법
+## 구현 방법
 
 XML 기반 설정을 지원하기 위해서는 다음과 같은 구현이 필요합니다.
 
@@ -50,7 +50,7 @@ XML 기반 설정을 지원하기 위해서는 다음과 같은 구현이 필요
 - `BeanDefinitionParser`를 통해 Bean 등록에 필요한 `속성 파싱`
 - `FactoryBean`을 통해 Meilisearch `클라이언트 생성 및 Bean 등록`
 
-## XSD 정의
+### XSD 정의
 
 XSD는 XML 문서의 구조와 내용을 정의하는 스키마 언어입니다. Spring에서는 XML을 통한 설정을 지원하기 위해 XSD를 사용합니다. Spring Data Meilisearch에서 XML 기반 설정을 지원하기 위해 `spring-meilisearch-1.0.xsd`라는 파일을 정의하였습니다.
 
@@ -136,7 +136,7 @@ XSD는 XML 문서의 구조와 내용을 정의하는 스키마 언어입니다.
 ```
 </details>
 
-### 엘리먼트 및 속성
+#### 엘리먼트 및 속성
 
 위 XSD는 `meilisearch-client` 엘리먼트를 정의하고 있습니다. 해당 엘리먼트는 다음과 같은 속성을 가지고 있습니다.
 
@@ -152,7 +152,7 @@ XSD는 XML 문서의 구조와 내용을 정의하는 스키마 언어입니다.
   - Meilisearch 클라이언트의 에이전트를 지정합니다.
   - 기본값은 빈 배열입니다.
 
-## NamespaceHandler
+### NamespaceHandler
 
 ```java
 public class MeilisearchNamespaceHandler extends NamespaceHandlerSupport {
@@ -172,7 +172,7 @@ http\://www.vanslog.io/spring/data/meilisearch=io.vanslog.spring.data.meilisearc
 
 이후 `MeilisearchNamespaceHandler`를 `spring.handlers` 파일에 등록하여 Spring에서 해당 핸들러를 사용할 수 있도록 했습니다.
 
-## BeanDefinitionParser
+### BeanDefinitionParser
 
 ```java
 public class MeilisearchClientBeanDefinitionParser
@@ -221,7 +221,7 @@ public class MeilisearchClientBeanDefinitionParser
 
 Meilisearch 클라이언트를 생성하는데 필요한 정보는 4가지입니다. 그래서 hostUrl, apiKey, clientAgents, jsonHandler를 파싱하여 `MeilisearchClientFactoryBean`이 Client 객체를 생성할 수 있도록 했습니다.
 
-## FactoryBean
+### FactoryBean
 
 `MeilisearchClientFactoryBean`은 `FactoryBean`을 상속한 클래스로 Meilisearch 클라이언트를 생성하고 `Spring Bean`으로 등록하는 역할을 합니다.
 
@@ -275,7 +275,7 @@ public final class MeilisearchClientFactoryBean
 
 BeanDefinitionParser가 파싱한 속성값들을 이용하여 `MeilisearchClientFactoryBean`의 `afterPropertiesSet` 메소드로 Meilisearch 클라이언트를 생성합니다.
 
-# 마치며
+## 마치며
 
 네임스페이스를 직접 정의하고, `BeanDefinitionParser`와 `FactoryBean`으로 스프링 Bean을 등록하는 로직을 구현해봤습니다. 
 이러한 과정에서 스프링의 내부 동작 방식에 대해 이해할 수 있었고, 앞으로 진행할 기능 구현에서 또 어떤 경험을 할 수 있을 지 기대됩니다.
