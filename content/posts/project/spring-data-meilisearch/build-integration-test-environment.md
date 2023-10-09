@@ -236,7 +236,7 @@ class MeilisearchTemplateTest {
 
 테스트 코드를 어떻게 작성하는 것이 좋은 방법인지에 대해서 많은 고민을 하였고, 이러한 시간 속에서 `관점 지향 프로그래밍`과도 연관지어 생각해볼 수 있었습니다.
 
-Meilisearch 생태계의 부족한 스프링 통합 환경을 만들어 나가자는 [프로젝트 초기 목표](http://localhost:1313/posts/project/spring-data-meilisearch/introduction/)가 점차 달성되어 가는 것이 뿌듯합니다.
+Meilisearch 생태계의 부족한 스프링 통합 환경을 만들어 나가자는 [프로젝트 초기 목표](/posts/project/spring-data-meilisearch/introduction)가 점차 달성되어 가는 것이 뿌듯합니다.
 앞으로도 더욱 많은 기능을 추가하여 사용자가 편리하게 사용할 수 있도록 노력하겠습니다.
 
 # 참고문헌
