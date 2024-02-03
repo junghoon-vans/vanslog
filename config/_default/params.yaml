@@ -17,10 +17,8 @@ homeInfoParams:
 socialIcons:
   - name: github
     url: "https://github.com/junghoon-vans"
-  - name: instagram
-    url: "https://www.instagram.com/vanslog.io"
-  - name: facebook
-    url: "https://www.facebook.com/junghoon.vans"
+  - name: X
+    url: "https://twitter.com/junghoon_vans"
   - name: linkedin
     url: "https://www.linkedin.com/in/junghoon-ban"
   - name: email
