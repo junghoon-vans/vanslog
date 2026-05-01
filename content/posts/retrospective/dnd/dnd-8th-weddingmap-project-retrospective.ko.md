@@ -1,5 +1,6 @@
 ---
 title: "[DND 8기] 웨딩맵 프로젝트 회고"
+translationKey: posts/retrospective/dnd/dnd-8th-weddingmap-project-retrospective
 date: 2023-03-08T22:43:47+09:00
 draft: false
 series:

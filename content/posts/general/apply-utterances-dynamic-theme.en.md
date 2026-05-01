@@ -1,5 +1,6 @@
 ---
 title: "Apply Utterances Dynamic Theme"
+translationKey: posts/general/apply-utterances-dynamic-theme
 date: 2022-07-17T15:12:13+09:00
 draft: false
 categories:

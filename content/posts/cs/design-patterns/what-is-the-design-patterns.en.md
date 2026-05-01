@@ -1,5 +1,6 @@
 ---
 title: "What Is The Design Patterns"
+translationKey: posts/cs/design-patterns/what-is-the-design-patterns
 date: 2021-01-16T10:52:57+09:00
 categories:
   - Design Patterns

@@ -1,5 +1,6 @@
 ---
 title: "Jib과 GitHub Actions를 사용한 ECS 배포 자동화"
+translationKey: posts/devops/automate-ecs-deployments-with-jib-and-github-actions
 date: 2023-03-24T01:01:51+09:00
 draft: false
 categories:

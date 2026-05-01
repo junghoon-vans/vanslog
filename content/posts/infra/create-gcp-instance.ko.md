@@ -1,5 +1,6 @@
 ---
 title: "GCP 인스턴스 만들기"
+translationKey: posts/infra/create-gcp-instance
 date: 2020-12-02
 series:
   - General

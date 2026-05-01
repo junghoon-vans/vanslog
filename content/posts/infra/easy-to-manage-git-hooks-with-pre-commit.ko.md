@@ -1,5 +1,6 @@
 ---
 title: "pre-commit로 Git Hooks 쉽게 관리하기"
+translationKey: posts/infra/easy-to-manage-git-hooks-with-pre-commit
 date: 2022-10-12T00:15:32+09:00
 draft: false
 categories:

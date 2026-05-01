@@ -1,5 +1,6 @@
 ---
 title: "Spring Data Meilisearch #3 - 통합테스트 환경 구축"
+translationKey: posts/project/spring-data-meilisearch/build-integration-test-environment
 date: 2023-08-30T14:03:48+09:00
 draft: false
 series:

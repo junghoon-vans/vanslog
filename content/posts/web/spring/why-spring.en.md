@@ -1,5 +1,6 @@
 ---
 title: "Why Spring"
+translationKey: posts/web/spring/why-spring
 date: 2022-07-21T22:47:38+09:00
 draft: false
 series:

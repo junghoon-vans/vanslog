@@ -1,5 +1,6 @@
 ---
 title: "code-server를 이용해서 웹 IDE 구축하기"
+translationKey: posts/infra/build-web-ide-using-code-server
 date: 2020-12-03T04:34:19Z
 series:
   - General

@@ -1,5 +1,6 @@
 ---
 title: "Java 21 패턴 매칭 제대로 활용하기(with Scala)"
+translationKey: posts/language/java/java-21-pattern-matching-usecase-with-scala
 date: 2023-09-21T22:27:53+09:00
 series:
   - Java

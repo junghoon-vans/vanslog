@@ -1,5 +1,6 @@
 ---
 title: "공식 Actions를 활용한 GitHub Pages 배포"
+translationKey: posts/devops/deploy-github-pages-with-actions
 date: 2023-01-21T21:50:42+09:00
 draft: false
 series:

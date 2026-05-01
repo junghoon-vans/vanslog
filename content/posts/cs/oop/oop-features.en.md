@@ -1,5 +1,6 @@
 ---
 title: "Oop Features"
+translationKey: posts/cs/oop/oop-features
 date: 2021-01-09T17:18:32+09:00
 series:
   - OOP

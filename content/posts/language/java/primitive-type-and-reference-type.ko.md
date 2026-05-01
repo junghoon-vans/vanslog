@@ -1,5 +1,6 @@
 ---
 title: "[Java] 기본 자료형과 참조 자료형"
+translationKey: posts/language/java/primitive-type-and-reference-type
 date: 2021-07-16T14:06:26Z
 series:
   - Java

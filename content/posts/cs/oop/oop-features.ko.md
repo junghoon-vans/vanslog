@@ -1,5 +1,6 @@
 ---
 title: "[OOP] 객체지향 프로그래밍(OOP) 특징"
+translationKey: posts/cs/oop/oop-features
 date: 2021-01-09T17:18:32+09:00
 series:
   - OOP

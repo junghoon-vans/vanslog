@@ -1,5 +1,6 @@
 ---
 title: "2020 Backend Developer Retrospective"
+translationKey: posts/retrospective/2020-backend-developer-retrospective
 date: 2021-01-01T19:59:18+09:00
 series:
   - General

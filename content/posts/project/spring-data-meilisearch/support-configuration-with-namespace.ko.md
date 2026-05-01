@@ -1,5 +1,6 @@
 ---
 title: "Spring Data Meilisearch #1 - 네임스페이스 기반 설정"
+translationKey: posts/project/spring-data-meilisearch/support-configuration-with-namespace
 date: 2023-07-26T14:16:08+09:00
 draft: false
 series:

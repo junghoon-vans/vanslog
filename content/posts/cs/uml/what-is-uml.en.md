@@ -1,5 +1,6 @@
 ---
 title: "What Is Uml"
+translationKey: posts/cs/uml/what-is-uml
 date: 2021-01-03T11:22:49+09:00
 series:
   - UML

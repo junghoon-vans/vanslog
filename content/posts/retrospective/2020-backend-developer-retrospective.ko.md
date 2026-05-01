@@ -1,5 +1,6 @@
 ---
 title: "2020년 백엔드 개발자 회고"
+translationKey: posts/retrospective/2020-backend-developer-retrospective
 date: 2021-01-01T19:59:18+09:00
 series:
   - General

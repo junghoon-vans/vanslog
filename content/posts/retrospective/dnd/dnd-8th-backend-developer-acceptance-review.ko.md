@@ -1,5 +1,6 @@
 ---
 title: "[DND 8기] 백엔드 개발자 합격 후기"
+translationKey: posts/retrospective/dnd/dnd-8th-backend-developer-acceptance-review
 date: 2023-01-08T16:39:37+09:00
 draft: false
 series:

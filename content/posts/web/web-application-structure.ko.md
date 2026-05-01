@@ -1,5 +1,6 @@
 ---
 title: "웹 애플리케이션 구조(SSR, CSR, SPA, MPA)"
+translationKey: posts/web/web-application-structure
 date: 2020-12-26T14:06:55Z
 categories:
   - Web

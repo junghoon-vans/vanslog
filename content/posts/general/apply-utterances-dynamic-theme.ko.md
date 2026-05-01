@@ -1,5 +1,6 @@
 ---
 title: "🔮 utterances 다이나믹 테마 적용하기"
+translationKey: posts/general/apply-utterances-dynamic-theme
 date: 2022-07-17T15:12:13+09:00
 draft: false
 categories:

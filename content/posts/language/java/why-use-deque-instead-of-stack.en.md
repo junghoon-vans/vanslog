@@ -1,5 +1,6 @@
 ---
 title: "Why Use Deque Instead Of Stack"
+translationKey: posts/language/java/why-use-deque-instead-of-stack
 date: 2023-05-05T22:30:19+09:00
 draft: false
 series:

@@ -1,5 +1,6 @@
 ---
 title: "What Is Refactoring"
+translationKey: posts/cs/refactoring/what-is-refactoring
 date: 2021-02-06T02:34:16Z
 series:
   - General

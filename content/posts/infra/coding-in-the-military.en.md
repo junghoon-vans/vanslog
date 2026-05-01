@@ -1,5 +1,6 @@
 ---
 title: "Coding In The Military"
+translationKey: posts/infra/coding-in-the-military
 date: 2020-12-01
 series:
   - General

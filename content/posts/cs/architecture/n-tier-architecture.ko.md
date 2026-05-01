@@ -1,5 +1,6 @@
 ---
 title: "N Tier Architecture"
+translationKey: posts/cs/architecture/n-tier-architecture
 date: 2020-12-26T10:12:54Z
 categories:
   - General

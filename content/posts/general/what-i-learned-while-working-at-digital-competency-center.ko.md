@@ -1,5 +1,6 @@
 ---
 title: "디지털배움터에서 강사로 일하며 배운점"
+translationKey: posts/general/what-i-learned-while-working-at-digital-competency-center
 date: 2022-07-20T23:10:59+09:00
 draft: false
 categories:

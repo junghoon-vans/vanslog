@@ -1,5 +1,6 @@
 ---
 title: 기술 블로그 개편
+translationKey: posts/general/tech-blog-reorganization
 date: 2022-07-13T15:35:56+09:00
 draft: false
 categories:

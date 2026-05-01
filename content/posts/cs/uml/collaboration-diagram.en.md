@@ -1,5 +1,6 @@
 ---
 title: "Collaboration Diagram"
+translationKey: posts/cs/uml/collaboration-diagram
 date: 2021-01-16T18:48:45+09:00
 series:
   - UML

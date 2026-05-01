@@ -1,5 +1,6 @@
 ---
 title: "군대에서 코딩하기"
+translationKey: posts/infra/coding-in-the-military
 date: 2020-12-01
 series:
   - General

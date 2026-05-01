@@ -1,5 +1,6 @@
 ---
 title: "이젠 코테를 준비할 때"
+translationKey: posts/general/its-time-to-prepare-codingtest
 date: 2021-07-14T13:53:39Z
 categories:
   - Coding Test

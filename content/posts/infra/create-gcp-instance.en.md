@@ -1,5 +1,6 @@
 ---
 title: "Create Gcp Instance"
+translationKey: posts/infra/create-gcp-instance
 date: 2020-12-02
 series:
   - General

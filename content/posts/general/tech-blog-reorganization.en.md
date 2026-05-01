@@ -1,5 +1,6 @@
 ---
 title: "Tech Blog Reorganization"
+translationKey: posts/general/tech-blog-reorganization
 date: 2022-07-13T15:35:56+09:00
 draft: false
 categories:

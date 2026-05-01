@@ -1,5 +1,6 @@
 ---
 title: "[Crypto] 최근 루나 상승에 대한 내 관점"
+translationKey: posts/blockchain/my-views-on-the-recent-luna-rise
 date: 2022-02-27T07:24:42+09:00
 categories:
   - General

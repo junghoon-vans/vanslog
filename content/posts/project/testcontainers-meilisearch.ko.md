@@ -1,5 +1,6 @@
 ---
 title: "Meilisearch를 위한 Testcontainers 라이브러리 개발기"
+translationKey: posts/project/testcontainers-meilisearch
 date: 2023-07-21T22:47:52+09:00
 draft: false
 categories:

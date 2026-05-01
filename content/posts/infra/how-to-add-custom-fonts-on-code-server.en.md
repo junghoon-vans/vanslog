@@ -1,5 +1,6 @@
 ---
 title: "How To Add Custom Fonts On Code Server"
+translationKey: posts/infra/how-to-add-custom-fonts-on-code-server
 date: 2021-03-11T14:24:16Z
 categories:
   - General

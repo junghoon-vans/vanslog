@@ -1,5 +1,6 @@
 ---
 title: "[UML 2.0] 컬레보레이션 다이어그램(Collaboration Diagram)"
+translationKey: posts/cs/uml/collaboration-diagram
 date: 2021-01-16T18:48:45+09:00
 series:
   - UML

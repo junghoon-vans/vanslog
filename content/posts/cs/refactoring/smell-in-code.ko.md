@@ -1,5 +1,6 @@
 ---
 title: "[Refactoring] 코드에서 나는 악취"
+translationKey: posts/cs/refactoring/smell-in-code
 date: 2021-04-13T13:51:13Z
 series:
   - General

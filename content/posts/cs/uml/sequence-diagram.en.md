@@ -1,5 +1,6 @@
 ---
 title: "Sequence Diagram"
+translationKey: posts/cs/uml/sequence-diagram
 date: 2021-01-23T16:10:03+09:00
 series:
   - UML

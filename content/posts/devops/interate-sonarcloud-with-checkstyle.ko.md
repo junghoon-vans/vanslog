@@ -1,5 +1,6 @@
 ---
 title: "SonarCloud와 Checkstyle을 통합하여 사용하기"
+translationKey: posts/devops/interate-sonarcloud-with-checkstyle
 date: 2023-01-15T13:56:13+09:00
 draft: false
 series:

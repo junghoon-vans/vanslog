@@ -1,5 +1,6 @@
 ---
 title: "Spring Data Meilisearch #2 - 어노테이션 기반 설정"
+translationKey: posts/project/spring-data-meilisearch/support-configuration-with-annotation
 date: 2023-08-11T00:06:13+09:00
 draft: false
 series:

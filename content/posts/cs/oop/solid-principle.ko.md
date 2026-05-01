@@ -1,5 +1,6 @@
 ---
 title: "[OOP] 객체지향 설계 원칙: SOLID 원칙"
+translationKey: posts/cs/oop/solid-principle
 date: 2021-01-10T19:53:10+09:00
 series:
   - OOP

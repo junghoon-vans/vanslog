@@ -1,5 +1,6 @@
 ---
 title: "코드 서버에 커스텀 폰트 적용하기"
+translationKey: posts/infra/how-to-add-custom-fonts-on-code-server
 date: 2021-03-11T14:24:16Z
 categories:
   - General

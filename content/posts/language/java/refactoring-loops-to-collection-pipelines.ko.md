@@ -1,5 +1,6 @@
 ---
 title: "[Java] 반복문을 파이프라인으로 바꿔라"
+translationKey: posts/language/java/refactoring-loops-to-collection-pipelines
 date: 2021-07-19T13:03:57Z
 series:
   - Java

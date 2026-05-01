@@ -1,5 +1,6 @@
 ---
 title: "Deploy GitHub Pages With Actions"
+translationKey: posts/devops/deploy-github-pages-with-actions
 date: 2023-01-21T21:50:42+09:00
 draft: false
 series:
