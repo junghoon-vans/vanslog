@@ -9,10 +9,8 @@ tags:
   - Java
 draft: false
 summary: >
- The highly developed Java is indistinguishable from Scala.
+  The highly developed Java is indistinguishable from Scala.
 ---
-
-> Note: This English page scaffold was auto-generated. Full manual translation will follow.
 
 
 On September 19, 2023, the long-awaited Java 21 was released. While most people's attention is focused on `Virtual Thread`, `Pattern Matching` caught my eye. This is because I am currently working as a mentee for the `ZIO` team in `Open Source Contribution Academy` and have experience using the function frequently.
@@ -33,7 +31,7 @@ Scala provides the following keywords for pattern matching.
 - `case`: Keyword that defines a branch
 
 ```scala
-import scala.util.Random
+import scala.util. Random
 
 val x: Int = Random.nextInt(10)
 
@@ -100,7 +98,7 @@ Now let's call the method declared earlier. When `SMS` and `VoiceRecording` are 
 
 > [JEP 361: Switch Expressions](https://openjdk.java.net/jeps/361)
 
-`Switch Expressions` was introduced in `Java 14` and is an improved version of `Switch Statements`. Sometimes, Switch Expressions are introduced as improved switch statements on domestic blogs. But clearly this is a misnomer. This is because `Statements`, which only defines the behavior of the program, and `Expressions`, which returns a value, are different concepts.
+`Switch Expressions` was introduced in `Java 14` and is an improved version of `Switch Statements`. Sometimes, Switch Expressions are introduced as improved switch statements on Korean blogs. But clearly this is a misnomer. This is because `Statements`, which only defines the behavior of the program, and `Expressions`, which returns a value, are different concepts.
 
 #### AS-IS
 
@@ -110,29 +108,29 @@ Now let's call the method declared earlier. When `SMS` and `VoiceRecording` are 
 for (NodeFlag flag : source) {
  switch (flag) {
  case NOFLAGS:
- flags.add(Flag.NOFLAGS);
+ flags.add(Flag. NOFLAGS);
  break;
  case EVENTUAL_FAIL:
- flags.add(Flag.PFAIL);
+ flags.add(Flag. PFAIL);
  break;
  case FAIL:
- flags.add(Flag.FAIL);
+ flags.add(Flag. FAIL);
  break;
  case HANDSHAKE:
- flags.add(Flag.HANDSHAKE);
+ flags.add(Flag. HANDSHAKE);
  break;
  case MASTER:
- flags.add(Flag.MASTER);
+ flags.add(Flag. MASTER);
  break;
  case MYSELF:
- flags.add(Flag.MYSELF);
+ flags.add(Flag. MYSELF);
  break;
  case NOADDR:
- flags.add(Flag.NOADDR);
+ flags.add(Flag. NOADDR);
  break;
  case SLAVE:
  case REPLICA:
- flags.add(Flag.REPLICA);
+ flags.add(Flag. REPLICA);
  break;
  }
 }
@@ -147,14 +145,14 @@ The example code above clearly shows the problem with `Switch statement`. The co
 ```java
 for (NodeFlag flag : source) {
  switch (flag) {
- case NOFLAGS -> flags.add(Flag.NOFLAGS);
- case EVENTUAL_FAIL -> flags.add(Flag.PFAIL);
- case FAIL -> flags.add(Flag.FAIL);
- case HANDSHAKE -> flags.add(Flag.HANDSHAKE);
- case MASTER -> flags.add(Flag.MASTER);
- case MYSELF -> flags.add(Flag.MYSELF);
- case NOADDR -> flags.add(Flag.NOADDR);
- case SLAVE, REPLICA -> flags.add(Flag.REPLICA);
+ case NOFLAGS -> flags.add(Flag. NOFLAGS);
+ case EVENTUAL_FAIL -> flags.add(Flag. PFAIL);
+ case FAIL -> flags.add(Flag. FAIL);
+ case HANDSHAKE -> flags.add(Flag. HANDSHAKE);
+ case MASTER -> flags.add(Flag. MASTER);
+ case MYSELF -> flags.add(Flag. MYSELF);
+ case NOADDR -> flags.add(Flag. NOADDR);
+ case SLAVE, REPLICA -> flags.add(Flag. REPLICA);
  }
 }
 ```
@@ -166,15 +164,15 @@ Switch expressions use `->`, similar to lambda expressions, to express your code
 ```java
 switch (returnType) {
  case BOOLEAN:
- return ScriptOutputType.BOOLEAN;
+ return ScriptOutputType. BOOLEAN;
  case MULTI:
- return ScriptOutputType.MULTI;
+ return ScriptOutputType. MULTI;
  case VALUE:
- return ScriptOutputType.VALUE;
+ return ScriptOutputType. VALUE;
  case INTEGER:
- return ScriptOutputType.INTEGER;
+ return ScriptOutputType. INTEGER;
  case STATUS:
- return ScriptOutputType.STATUS;
+ return ScriptOutputType. STATUS;
  default:
  throw new IllegalArgumentException("Return type " + returnType + " is not a supported script output type");
 }
@@ -184,11 +182,11 @@ The example code above is slightly different from the code we looked at earlier.
 
 ```java
 return switch (returnType) {
- case BOOLEAN -> ScriptOutputType.BOOLEAN;
- case MULTI -> ScriptOutputType.MULTI;
- case VALUE -> ScriptOutputType.VALUE;
- case INTEGER -> ScriptOutputType.INTEGER;
- case STATUS -> ScriptOutputType.STATUS;
+ case BOOLEAN -> ScriptOutputType. BOOLEAN;
+ case MULTI -> ScriptOutputType. MULTI;
+ case VALUE -> ScriptOutputType. VALUE;
+ case INTEGER -> ScriptOutputType. INTEGER;
+ case STATUS -> ScriptOutputType. STATUS;
  default ->
  throw new IllegalArgumentException("Return type " + returnType + " is not a supported script output type");
 };

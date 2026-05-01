@@ -8,8 +8,6 @@ tags:
   - Pre-commit
   - Git Hooks
 ---
-> Note: This English page scaffold was auto-generated. Full manual translation will follow.
-
 
 Git Hooks
 ---
@@ -29,10 +27,10 @@ Apply pre-commit
 [pre-commit](https://pre-commit.com) is a **good solution** that easily solves this problem. You can manage the version of hooks through a configuration file within the project, and easily install them on your local machine.
 
 ### pre-commit installation
- 
+
 ```bash
-$ pip install pre-commit # pip 
-$ brew install pre-commit # homebrew 
+$ pip install pre-commit # pip
+$ brew install pre-commit # homebrew
 ```
 
 ### Create configuration file
@@ -71,7 +69,7 @@ Execute pre-commit
 
 ### Local machine
 
-If you have completed all settings through the above process, the specified hooks will operate sequentially each time you commit. If you want to force it to run without committing, you can use the following command. 
+If you have completed all settings through the above process, the specified hooks will operate sequentially each time you commit. If you want to force it to run without committing, you can use the following command.
 
 ```bash
 $ pre-commit run --all-files

@@ -12,10 +12,8 @@ tags:
   - Meilisearch
   - Library
 summary: >
- How to support annotation based configuration in spring library
+  How to support annotation based configuration in spring library
 ---
-
-> Note: This English page scaffold was auto-generated. Full manual translation will follow.
 
 
 In this article, we will learn about how to support Java-based settings.

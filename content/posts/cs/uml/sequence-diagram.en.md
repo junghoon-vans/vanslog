@@ -11,10 +11,8 @@ tags:
   - Java
 draft: false
 summary: >
- Diagram representing the interaction of objects
+  Diagram representing the interaction of objects
 ---
-> Note: This English page scaffold was auto-generated. Full manual translation will follow.
-
 
 It is one of the diagrams that represents the interaction of objects and shows the transmission of messages between objects and their order.
 

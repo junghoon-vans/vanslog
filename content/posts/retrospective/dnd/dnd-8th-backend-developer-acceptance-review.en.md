@@ -10,10 +10,8 @@ tags:
   - DND
   - General
 summary: >
- I wrote a review of passing the 8th DND class, including what I felt after participating in the orientation.
+  I wrote a review of passing the 8th DND class, including what I felt after participating in the orientation.
 ---
-
-> Note: This English page scaffold was auto-generated. Full manual translation will follow.
 
 
 ![DND acceptance email](https://user-images.githubusercontent.com/44942700/211186255-e45ad8a1-5f9e-4d4e-9ba4-c766c19d87fb.png)
@@ -46,4 +44,4 @@ These are the characteristics of teams that produced good products under their p
 
 ## Conclusion
 
-Actually, I was surprised when I received the result that I passed. This is because more people applied than I expected, and very few people were selected. We will do our best to proceed with the project as we have been given this difficult opportunity. thank you
+Actually, I was surprised when I received the result that I passed. This is because more people applied than I expected, and very few people were selected. We will do our best to proceed with the project as we have been given this difficult opportunity. thank you.

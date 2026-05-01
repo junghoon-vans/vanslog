@@ -10,10 +10,8 @@ tags:
   - GCP
 draft: false
 summary: >
- Create your own lifetime free instance
+  Create your own lifetime free instance
 ---
-> Note: This English page scaffold was auto-generated. Full manual translation will follow.
-
 
 Introduction
 ---
@@ -31,8 +29,8 @@ Representative cloud providers include `AWS(Amazon Web Service)`, `MS Azure`, an
 The benefits that GCP provides to new members are as follows.
 
 ```plaintext
-- 
-- 3 $300 
+-
+- 3 $300
 ```
 
 Create Instance

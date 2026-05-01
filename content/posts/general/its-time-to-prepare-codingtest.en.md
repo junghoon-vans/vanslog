@@ -7,10 +7,8 @@ tags:
   - Coding Test
 draft: false
 summary: >
- Why I decided to prepare for the coding test and my concerns about choosing a language
+  Why I decided to prepare for the coding test and my concerns about choosing a language
 ---
-> Note: This English page scaffold was auto-generated. Full manual translation will follow.
-
 
 Let's prepare the kote
 ---

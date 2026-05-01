@@ -12,10 +12,8 @@ tags:
   - Meilisearch
   - Library
 summary: >
- How to support namespace-based configuration in a Spring library
+  How to support namespace-based configuration in a Spring library
 ---
-
-> Note: This English page scaffold was auto-generated. Full manual translation will follow.
 
 
 While working on the [Spring Data Meilisearch](https://github.com/junghoon-vans/spring-data-meilisearch) project, we had to provide the ability to register `Meilisearch client` as a Spring bean.
@@ -77,7 +75,7 @@ XSD is a schema language that defines the structure and content of an XML docume
  <xsd:annotation>
  <xsd:documentation/>
  <xsd:appinfo>
- <tool:assignable-to type="com.meilisearch.sdk.Client"/>
+ <tool:assignable-to type="com.meilisearch.sdk. Client"/>
  </xsd:appinfo>
  </xsd:annotation>
  <xsd:complexType>
@@ -100,7 +98,7 @@ XSD is a schema language that defines the structure and content of an XML docume
  <xsd:attribute name="json-handler" default="GSON">
  <xsd:annotation>
  <xsd:documentation>
- <![CDATA[The enum value of java: io.vanslog.spring.data.meilisearch.config.JsonHandlerBuilder. The default is GSON.]]>
+ <![CDATA[The enum value of java: io.vanslog.spring.data.meilisearch.config. JsonHandlerBuilder. The default is GSON.]]>
  </xsd:documentation>
  </xsd:annotation>
  <xsd:simpleType>
@@ -170,7 +168,7 @@ public class MeilisearchNamespaceHandler extends NamespaceHandlerSupport {
 The `meilisearch-client` element defined in the previous XSD was registered through `MeilisearchNamespaceHandler`. At this time, the `MeilisearchClientBeanDefinitionParser` registered together plays the role of parsing the properties required for bean registration. We will cover this in detail later.
 
 ```properties
-http\://www.vanslog.io/spring/data/meilisearch=io.vanslog.spring.data.meilisearch.config.MeilisearchNamespaceHandler
+http\://www.vanslog.io/spring/data/meilisearch=io.vanslog.spring.data.meilisearch.config. MeilisearchNamespaceHandler
 ```
 
 Afterwards, we registered `MeilisearchNamespaceHandler` in the `spring.handlers` file so that Spring can use the handler.
@@ -280,5 +278,5 @@ Create a Meilisearch client using the `afterPropertiesSet` method of `Meilisearc
 
 ## Conclusion
 
-I defined the namespace directly and implemented the logic to register spring beans with `BeanDefinitionParser` and `FactoryBean`.
+I defined the namespace directly and implemented the logic to register Spring beans with `BeanDefinitionParser` and `FactoryBean`.
 Through this process, I was able to understand how Spring works internally, and I look forward to what other experiences I will have in future feature implementations.

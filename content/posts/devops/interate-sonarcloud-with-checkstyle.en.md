@@ -11,18 +11,16 @@ tags:
   - SonarCloud
   - Checkstyle
 summary: >
- How to check your coding style while using SonarCloud
+  How to check your coding style while using SonarCloud
 ---
-> Note: This English page scaffold was auto-generated. Full manual translation will follow.
-
 
 Recently, I am in charge of the backend development of [Side Project](https://github.com/dnd-side-project/dnd-8th-8-backend) through an external activity called DND. Before starting the full-scale project, we are working on building a CI/CD pipeline.
 
-We worked on linking `SonarCloud` and `Checkstyle` to statically analyze spring-based backend code. In this article, we will discuss why this decision was made and how the integration works.
+We worked on linking `SonarCloud` and `Checkstyle` to statically analyze Spring-based backend code. In this article, we will discuss why this decision was made and how the integration works.
 
 ## SonarCloud
 
-[SonarQube](https://www.sonarqube.org) is `static analysis tool` used to discover bugs, code smells, and security vulnerabilities. When code is pushed to a repository or a PR is created, SonarQube provides the ability to analyze the code and display the results. However, in order to use SonarQube, there is a disadvantage that it must be `running a server` running.
+[SonarQube](https://www.sonarqube.org) is a `static analysis tool` used to discover bugs, code smells, and security vulnerabilities. When code is pushed to a repository or a PR is created, SonarQube can analyze the code and display the results. However, using SonarQube directly has the disadvantage of requiring you to run and maintain a server.
 
 I thought it would be difficult to run the server myself, so I decided to use [SonarCloud](https://sonarcloud.io) instead. SonarCloud is a service that provides SonarQube as a cloud service. It supports `integration with code repositories` like GitHub and can be used for public repositories for free.
 
@@ -35,7 +33,9 @@ Introducing a linter is essential to improve code readability and maintain code 
 
 SonarCloud provides functionality that works with [External Analyzer Reports](https://docs.sonarcloud.io/enriching/external-analyzer-reports/). This function passes the results of `External Analyzer` to SonarCloud so that they can be analyzed together. This feature allows you to use Checkstyle in conjunction with SonarCloud.
 
-## Integrating SonarCloud and CheckstyleIn this table of contents, we will introduce in detail how to link `SonarCloud` and `Checkstyle`. This explanation assumes that `GitHub Actions` is used in conjunction with a `Gradle`-based project. If you want to apply it to a project using a different technology stack, please refer to this article and [SonarCloud official documentation](https://docs.sonarcloud.io/).
+## Integrating SonarCloud and Checkstyle
+
+In this section, we will introduce in detail how to link `SonarCloud` and `Checkstyle`. This explanation assumes that `GitHub Actions` is used in conjunction with a `Gradle`-based project. If you want to apply it to a project using a different technology stack, please refer to this article and [SonarCloud official documentation](https://docs.sonarcloud.io/).
 
 ### Disable SonarCloud Auto Analysis
 
@@ -67,13 +67,14 @@ sonar {
 }
 ```
 
-The above example is the settings in the `build.gradle` file of our project. `sonar.organization` and `sonar.projectKey` can be written by creating a project in SonarCloud and checking `Settings` of the project. `sonar.host.url` is the host URL that runs SonarQube. If you use SonarCloud, you can write `https://sonarcloud.io`. 
+The example above shows the settings in the `build.gradle` file of our project. `sonar.organization` and `sonar.projectKey` can be written by creating a project in SonarCloud and checking `Settings` of the project. `sonar.host.url` is the host URL that runs SonarQube. If you use SonarCloud, you can write `https://sonarcloud.io`.
 
-> The SonarQube plugin is compatible with both SonarQube and SonarCloud. If you use SonarQube, you only need to change the host URL to SonarQube's host URL.> In past versions, the task was set with the name sonarqube, but now the task must be set with the name `sonar`.
+> The SonarQube plugin is compatible with both SonarQube and SonarCloud. If you use SonarQube, you only need to change the host URL to SonarQube's host URL.
+> In past versions, the task was named `sonarqube`, but it is now named `sonar`.
 
 #### GitHub Actions settings
 
-In this table of contents, we will look at an example of delivering analysis results to SonarCloud using [GitHub Actions](https://docs.sonarcloud.io/advanced-setup/ci-based-analysis/github-actions-for-sonarcloud/). The example below shows the settings in the `.github/workflows/ci.yml` file of our project.
+In this section, we will look at an example of delivering analysis results to SonarCloud using [GitHub Actions](https://docs.sonarcloud.io/advanced-setup/ci-based-analysis/github-actions-for-sonarcloud/). The example below shows the settings in the `.github/workflows/ci.yml` file of our project.
 
 ```yaml
 name: CI
@@ -120,7 +121,7 @@ The example above requests analysis from SonarCloud when a PR is created or push
 
 ### Checkstyle plugin settings
 
-This table of contents introduces how to set up the Checkstyle plugin. If you do not want to use the Checkstyle plugin, you can skip this table of contents.
+This section introduces how to set up the Checkstyle plugin. If you do not want to use the Checkstyle plugin, you can skip this section.
 
 ```groovy
 plugins {
@@ -132,15 +133,15 @@ checkstyle {
 }
 ```
 
-The Checkstyle plugin sets it in the `build.gradle` file. The above example is the settings in the `build.gradle` file of our project. `toolVersion` refers to the version of the Checkstyle plugin.
+The Checkstyle plugin is configured in the `build.gradle` file. The example above shows the settings in the `build.gradle` file of our project. `toolVersion` refers to the version of the Checkstyle plugin.
 
-#### Checstyle configuration file
+#### Checkstyle configuration file
 
 To use the Checkstyle plugin, you must place the `checkstyle.xml` file in the `config/checkstyle` directory. Usually, [Checkstyle configuration file](https://github.com/checkstyle/checkstyle/blob/master/src/main/resources/google_checks.xml) provided by Google is used to match Google's coding style. Depending on the nature of the project, you can use Sun Microsystems' [Checkstyle configuration file](https://github.com/checkstyle/checkstyle/blob/master/src/main/resources/sun_checks.xml) or customize it yourself.
 
 ### Checkstyle report path integration
 
-Lastly, we introduce an example of linking SonarCloud and Checkstyle. If you have completed all of the previous settings, linking is very simple. Just add an attribute called `sonar.java.checkstyle.reportPaths`.
+Lastly, here is an example of linking SonarCloud and Checkstyle. If you have completed all of the previous settings, linking is very simple. Just add an attribute called `sonar.java.checkstyle.reportPaths`.
 
 ```groovy
 plugins {
@@ -161,11 +162,13 @@ sonar {
  property 'sonar.java.checkstyle.reportPaths', 'build/reports/checkstyle/main.xml'
  }
 }
-````sonar.java.checkstyle.reportPaths` passes the `main.xml` file generated by the Checkstyle plugin to SonarCloud. This setup will allow SonarCloud to check for warnings from the Checkstyle plugin.
+```
+
+`sonar.java.checkstyle.reportPaths` passes the `main.xml` file generated by the Checkstyle plugin to SonarCloud. This setup allows SonarCloud to check warnings reported by the Checkstyle plugin.
 
 ## Conclusion
 
-In this way, you can manage code quality by linking SonarCloud and Checkstyle. In this article, we introduced how to link SonarCloud and Checkstyle. However, it can also be integrated with other static analysis tools. For example, if you use `JaCoCo`, just add the `sonar.jacoco.reportPaths` property. If you want to manage code coverage by linking JaCoCo together, please refer to [Java test coverage](https://docs.sonarqube.org/latest/analyzing-source-code/test-coverage/java-test-coverage/).
+By linking SonarCloud and Checkstyle this way, you can manage code quality through the CI pipeline. However, it can also be integrated with other static analysis tools. For example, if you use `JaCoCo`, just add the `sonar.jacoco.reportPaths` property. If you want to manage code coverage by linking JaCoCo together, please refer to [Java test coverage](https://docs.sonarqube.org/latest/analyzing-source-code/test-coverage/java-test-coverage/).
 
 Our project manages code quality by linking `SonarCloud`, `Checkstyle`, and `JaCoCo`. If you want to see the configuration file directly, please refer to our project's [GitHub Actions](https://github.com/dnd-side-project/dnd-8th-8-backend/blob/d8525a13afcb3160b1dcd244b65ccbc975a4c943/.github/workflows/ci.yml) configuration file or [build.gradle](https://github.com/dnd-side-project/dnd-8th-8-backend/blob/d8525a13afcb3160b1dcd244b65ccbc975a4c943/build.gradle) file.
 
@@ -173,7 +176,7 @@ Our project manages code quality by linking `SonarCloud`, `Checkstyle`, and `JaC
 
 * [SonarCloud official site](https://sonarcloud.io/)
 * [SonarCloud official documentation](https://docs.sonarcloud.io/)
- * [SonarCloud GitHub Action](https://github.com/sonarsource/sonarcloud-github-action)
-* [SonarCloud Github Action Sample - Gradle example](https://github.com/sonarsource/sonarcloud-github-action-samples/tree/gradle)
+* [SonarCloud GitHub Action](https://github.com/sonarsource/sonarcloud-github-action)
+* [SonarCloud GitHub Action Sample - Gradle example](https://github.com/sonarsource/sonarcloud-github-action-samples/tree/gradle)
 * [SonarCloud Gradle plugin official documentation](https://docs.sonarqube.org/latest/analyzing-source-code/scanners/sonarscanner-for-gradle/)
 * [Checkstyle Gradle plugin official documentation](https://docs.gradle.org/current/userguide/checkstyle_plugin.html)

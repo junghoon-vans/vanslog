@@ -11,15 +11,13 @@ tags:
   - Java
 draft: false
 summary: >
- A tool to express design patterns in UML2.0
+  A tool to express design patterns in UML2.0
 ---
-> Note: This English page scaffold was auto-generated. Full manual translation will follow.
-
 
 - Tool to express `Design Pattern` in UML 2.0
 - Write `interaction` of the roles that objects play in specific situations
 
-> `Collaboration diagram` used in UML 1.X was changed to `Communication diagram` in 2.0. The diagram name is different depending on the version, so be careful not to get confused.
+> `Collaboration diagram` used in UML 1. X was changed to `Communication diagram` in 2.0. The diagram name is different depending on the version, so be careful not to get confused.
 
 How to write
 ---
@@ -35,7 +33,7 @@ collaboration
 
 - Collaboration showing collateral loan relationships
 - The roles `borrower`, `borrower`, and `collateral` are required.
- - Connect these roles with connectors because cooperation between them is required. 
+ - Connect these roles with connectors because cooperation between them is required.
 - Collaboration is an abstraction of the interaction of roles.
  - Can be reused in many system developments if applied in special situations
 

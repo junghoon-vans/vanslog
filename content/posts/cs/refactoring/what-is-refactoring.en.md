@@ -9,10 +9,8 @@ tags:
   - General
 draft: false
 summary: >
- Code restructuring and refactoring
+  Code restructuring and refactoring
 ---
-
-> Note: This English page scaffold was auto-generated. Full manual translation will follow.
 
 
 >This article was written with reference to Martin Fowler's `Refactoring 2nd Edition`.
@@ -22,8 +20,8 @@ Martin Fowler's Definition
 
 The term `refactoring` is widely used among engineers. Martin Fowler, author of Refactoring, defines refactoring as follows.
 
--[noun] A technique of changing the internal structure of the software to make it easier to understand and modify the code while maintaining the apparent behavior of the software.
--[verb] To reorganize software by applying various refactoring techniques while maintaining the apparent behavior of the software.
+- [noun] A technique of changing the internal structure of the software to make it easier to understand and modify the code while maintaining the apparent behavior of the software.
+- [verb] To reorganize software by applying various refactoring techniques while maintaining the apparent behavior of the software.
 
 >Here, the meaning of the expression observable behavior is that the code behavior before and after refactoring is the same.
 
@@ -38,8 +36,8 @@ When developing software, `adding features` and `refactoring` must be clearly di
 
 >Kent Beck is one of the pioneers of refactoring and helped Martin Fowler, author of `refactoring`, write the article.
 
--When adding features, wear the `add features` hat and add new features.
--When refactoring, I put on my `refactoring` hat and focus only on reorganizing the code.
+- When adding features, wear the `add features` hat and add new features.
+- When refactoring, I put on my `refactoring` hat and focus only on reorganizing the code.
 
 While adding features, if you feel that it would be easier to work if you change the structure, change hats for a while and refactor. Once the code structure has been improved to some extent, change hats again and continue adding features.
 
@@ -48,19 +46,19 @@ In this process, I must be clearly aware of the hat I am currently wearing and t
 Benefits of Refactoring
 ---
 
--good software design
+- good software design
  -If you only implement functions without understanding the architecture, the infrastructure will collapse.
  -Ultimately, it becomes difficult to understand the design when looking at the code later.
  -Refactoring prevents design corruption
--Easy to understand software
+- Easy to understand software
  -Source code isn't just for computers to read
  -Refactoring makes code more readable
  -Make the purpose of your code more evident
  -Make your intentions clearer
--Easy to find bugs
+- Easy to find bugs
  -Making code easy to understand means making it easy to find bugs.
  -A clear program structure makes it impossible to overlook bugs.
--Accelerate programming speed
+- Accelerate programming speed
  -It is easy to misunderstand that refactoring slows down development.
  -Good design provides a solid foundation to help build new features
  -Therefore, refactoring is essential for rapid development.
@@ -70,63 +68,63 @@ When to Refactor
 
 ###Refactoring for Preparation
 
--Right before adding a new feature to the code base
--Look for areas where changing the structure would make other tasks much easier.
+- Right before adding a new feature to the code base
+- Look for areas where changing the structure would make other tasks much easier.
 
 ###Refactoring for Understanding: Making Code Easier to Understand
 
--First figure out what the code does
--Look for room for refactoring to make the intent clearer.
--Comprehension Refactoring
+- First figure out what the code does
+- Look for room for refactoring to make the intent clearer.
+- Comprehension Refactoring
  -Change variables to appropriate names
  -Breaking down long functions into smaller pieces
 
 ###Garbage picking refactoring
 
--inefficient code
+- inefficient code
  -complex logic
  -Write multiple functions to do what could be done with a parameterized function
--Take your time and improve little by little
+- Take your time and improve little by little
  -Divide the work
 
 ###Planned refactoring and frequent refactoring
 
--Refactoring is not a separate activity from programming.
+- Refactoring is not a separate activity from programming.
  -This is like not setting aside time to write if statements.
  -Do it while you're doing something else
--Well-written code also needs to be refactored.
--Not that planned refactoring is a bad thing, but keep it to a minimum.
+- Well-written code also needs to be refactored.
+- Not that planned refactoring is a bad thing, but keep it to a minimum.
  -Go ahead whenever you get the chance
 
 ###Refactoring takes a long time
 
--massive refactoring
+- massive refactoring
  -Library replacement
  -Componentize some code to share it with other teams
  -Dependency cleanup
--It's not a good idea for the whole team to get hung up on problems like the above.
--It is more effective to solve the problem over a period of several weeks.
+- It's not a good idea for the whole team to get hung up on problems like the above.
+- It is more effective to solve the problem over a period of several weeks.
  -The person working on the code to be refactored improves it little by little.
  -Provide an abstract interface when changing libraries
  -Make existing code call this abstract interface
--This strategy is called `Branch By Abstraction`
+- This strategy is called `Branch By Abstraction`
 
 ###Used for code review
 
--Benefits of Code Reviews
+- Benefits of Code Reviews
  -Spread knowledge across the development team
  -Transfer of know-how from senior developers
  -understand different aspects
  -Write clean code
  -Get ideas from others
--Deriving more specific results from code reviews
+- Deriving more specific results from code reviews
  -Rather than just suggesting improvements, you can implement many of them yourself.
  -You might come up with a better idea
 
 ###When not to refactor
 
--When there is no need to modify
--When it's better to write from scratch
+- When there is no need to modify
+- When it's better to write from scratch
 
 consideration
 ---
@@ -199,16 +197,16 @@ YAGNI is another way to incorporate architecture and design into the development
 software development process
 ---
 
--Extreme Programming (XP)
+- Extreme Programming (XP)
  -Continuous Integration (CI) + Refactoring
  -The first agile software methodology
--Test Driven Development (TDD)
+- Test Driven Development (TDD)
  -Self-testing code + refactoring
--3 elements for practicing YAGNI
+- 3 elements for practicing YAGNI
  -self test code
  -continuous integration
  -Refactoring
--Continuous Delivery (CD)
+- Continuous Delivery (CD)
  -Keep software ready to be released at any time
 
 Refactoring and Performance
@@ -218,16 +216,16 @@ Refactoring and Performance
 
 ###How to Write Software Fast
 
--Time budget distribution method
+- Time budget distribution method
  -Divide the design into multiple components
  -Allocate resource (time, space) budget to each component
  -strict punctuality
--constant attention
+- constant attention
  -intuitive
  -The actual effect is insignificant
  -Spend most of your time on a small portion of your code
  -90% of all code has little optimization effect
--Optimize only the parts that affect performance
+- Optimize only the parts that affect performance
  -Don't worry about performance, just focus on code structure
  -When you reach the performance optimization stage, follow these steps:
  -Use the profiler to find spots that consume a lot of time and space
@@ -237,10 +235,10 @@ Refactoring and Performance
 
 ###Why refactoring is beneficial for performance optimization
 
--Buy time for performance tuning
+- Buy time for performance tuning
  -Saves time adding features
  -Improve performance in your spare time
--Performance can be analyzed in detail
+- Performance can be analyzed in detail
  -Profiler points to narrow code coverage
  -So easy to tune
 

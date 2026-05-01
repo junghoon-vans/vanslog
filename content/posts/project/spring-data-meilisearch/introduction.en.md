@@ -12,14 +12,12 @@ tags:
   - Meilisearch
   - Library
 summary: >
- Introducing the reasons and goals for starting the Spring Data Meilisearch project.
+  Introducing the reasons and goals for starting the Spring Data Meilisearch project.
 ---
-> Note: This English page scaffold was auto-generated. Full manual translation will follow.
-
 
 ## Open source search engine trends
 
-The reason I became interested in [Meilisearch](https://www.meilisearch.com) was because I discovered meaningful data while looking at trends in open source search engines. The graph below is data extracted from [OSS Insight](https://ossinsight.io), showing the number of stars of search engine projects registered on Github from 2011 to 2021. 
+The reason I became interested in [Meilisearch](https://www.meilisearch.com) was because I discovered meaningful data while looking at trends in open source search engines. The graph below is data extracted from [OSS Insight](https://ossinsight.io), showing the number of stars of search engine projects registered on GitHub from 2011 to 2021.
 
 ![Search engine trends](https://vanslog.s3.ap-northeast-2.amazonaws.com/image/project/Search+Engine+-+Stars.png)
 
@@ -44,7 +42,7 @@ As Meilisearch is a search engine targeting end users, it provides client librar
 
 ### Spring Data library
 
-Spring provides interfaces for easy integration with various data storages through a project called [Spring Data](https://spring.io/projects/spring-data). Search engines such as Elasticsearch and Solr all come with Spring Data libraries.
+Spring provides interfaces for easy integration with various data stores through a project called [Spring Data](https://spring.io/projects/spring-data). Search engines such as Elasticsearch and Solr all come with Spring Data libraries.
 
 To enable Meilisearch to be conveniently used in Spring, we thought the best way would be to provide an implementation of Spring Data. So we started the [Spring Data Meilisearch](https://github.com/junghoon-vans/spring-data-meilisearch) project.
 

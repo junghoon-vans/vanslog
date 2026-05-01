@@ -7,10 +7,8 @@ tags:
   - General
 draft: false
 summary: >
- $Luna to the moon 🌕
+  $Luna to the moon 🌕
 ---
-
-> Note: This English page scaffold was auto-generated. Full manual translation will follow.
 
 `Terra (Luna)` has shown a huge rise in a few days. In just three days, it rose more than 50% from $50 to $80. As a result, Terra, which was ranked 9th in terms of cryptocurrency market capitalization, rose to 7th place, surpassing Solana and Cardano.
 

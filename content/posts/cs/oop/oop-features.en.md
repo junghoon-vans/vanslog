@@ -10,10 +10,8 @@ tags:
   - Java
 draft: false
 summary: >
- Four characteristics of object-oriented programming (OOP)
+  Four characteristics of object-oriented programming (OOP)
 ---
-
-> Note: This English page scaffold was auto-generated. Full manual translation will follow.
 
 
 Abstraction
@@ -32,9 +30,9 @@ Encapsulation
 
 The design of a class should be reusable, extensible, and maintainable. For this to happen, `cohesion` must be low and `cohesion` must be high.
 
--Cohesion
+- Cohesion
  -The degree to which elements within a class or module are closely related
--Coupling
+- Coupling
  -Degree to which a function depends on other classes or modules to perform it
 
 ###information hiding
@@ -53,15 +51,15 @@ public class ArrayStack {
  this.stackSize = stackSize;
  }
 
- public void push(int item) { // item 
+ public void push(int item) { // item
  ...
  }
 
- public int pop() { // item 
+ public int pop() { // item
  ...
  }
 
- public int peak() { // item 
+ public int peak() { // item
  ...
  }
  ...
@@ -99,9 +97,9 @@ Generalization
 
 It is a process of highlighting the common characteristics of various entities and establishing them as a single concept or law.
 
--The generalization relationship is called an inheritance relationship from an object-oriented programming perspective.
--Therefore, it is often used to emphasize only the reuse of properties or functions.
--This is an extremely limited view of the generalization relationship.
+- The generalization relationship is called an inheritance relationship from an object-oriented programming perspective.
+- Therefore, it is often used to emphasize only the reuse of properties or functions.
+- This is an extremely limited view of the generalization relationship.
 
 ###Generalization for encapsulation
 
@@ -125,8 +123,8 @@ And the following constraints also exist.
 
 ![constraints-in-generalization-relationships](/images/oop/oop-features/constraints-in-generalization-relationships.jpg#center)
 
--`{disjoint}`: A child class object cannot belong to two classes at the same time.
--`{complate}`: There is only one `object of the child class` corresponding to the object of the child class and `object of the parent class` corresponding to the object of the parent class.
+- `{disjoint}`: A child class object cannot belong to two classes at the same time.
+- `{complate}`: There is only one `object of the child class` corresponding to the object of the child class and `object of the parent class` corresponding to the object of the parent class.
 
 By creating a generalization relationship from a set theory perspective, the association relationship can be simplified.
 
@@ -201,11 +199,11 @@ Peter Codd's Inheritance Rules
 
 `Peter Code` created rules that strictly limit the use of inheritance to prevent its misuse.
 
--There must not be a `role performance` relationship between the child class and the parent class.
--An instance of one class should never need to be converted to an object of another subclass.
--The child class must only perform `extends` without overriding or redefining the parent class's responsibilities.
--Child classes should not inherit `classes that perform a utility role` just to reuse some functionality.
--The child class must specialize `role`, `transaction`, `device`, etc.
+- There must not be a `role performance` relationship between the child class and the parent class.
+- An instance of one class should never need to be converted to an object of another subclass.
+- The child class must only perform `extends` without overriding or redefining the parent class's responsibilities.
+- Child classes should not inherit `classes that perform a utility role` just to reuse some functionality.
+- The child class must specialize `role`, `transaction`, `device`, etc.
 
 References
 ---

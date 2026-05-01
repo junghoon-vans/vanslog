@@ -13,8 +13,6 @@ tags:
 draft: false
 ---
 
-> Note: This English page scaffold was auto-generated. Full manual translation will follow.
-
 
 What is a class?
 ---
@@ -168,9 +166,9 @@ Indicates that one object contains another object.
 
 ![uml-aggregation-notation](/images/uml/class-diagram/uml-aggregation-notation.jpg#center)
 
--Empty diamond in class direction pointing to whole
--Can `share with other objects` partial objects
--`Lifetime` of whole object and partial object are independent
+- Empty diamond in class direction pointing to whole
+- Can `share with other objects` partial objects
+- `Lifetime` of whole object and partial object are independent
 
 ####composite relationship
 
@@ -178,9 +176,9 @@ It is a relationship in which a partial object belongs to the whole object.
 
 ![uml-composition-notation](/images/uml/class-diagram/uml-composition-notation.jpg#center)
 
--A filled diamond in the class direction pointing to the whole.
--Cannot `share with other objects` partial object
--`Lifetime` of a partial object depends on the whole object
+- A filled diamond in the class direction pointing to the whole.
+- Cannot `share with other objects` partial object
+- `Lifetime` of a partial object depends on the whole object
 
 ####difference
 
@@ -236,9 +234,9 @@ This is a relationship that appears when using functions provided by other class
 
 In general, there are three cases where one class uses another class:
 
--Reference from property of class
--Used as an argument for operations
--Reference to local object inside method
+- Reference from property of class
+- Used as an argument for operations
+- Reference to local object inside method
 
 ![dependency-relation](/images/uml/class-diagram/dependency-relation.jpg#center)
 

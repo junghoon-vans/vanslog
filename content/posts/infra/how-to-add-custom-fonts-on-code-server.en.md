@@ -8,10 +8,8 @@ tags:
   - Code-server
 draft: false
 summary: >
- Applying custom fonts to code server
+  Applying custom fonts to code server
 ---
-> Note: This English page scaffold was auto-generated. Full manual translation will follow.
-
 
 By operating `Code Server` on a personal server, we were able to create an environment in which coding and blog posting were possible anytime, anywhere as long as the Internet was available.
 

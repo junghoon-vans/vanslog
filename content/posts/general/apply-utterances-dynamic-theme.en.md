@@ -9,8 +9,6 @@ tags:
   - General
   - Blog
 ---
-> Note: This English page scaffold was auto-generated. Full manual translation will follow.
-
 
 `utterances` is an open source comment service widely used on personal technology blogs. It features a clean design of `GitHub style` and support for `dark mode`.
 
@@ -51,7 +49,7 @@ For sites that support both dark mode and night mode, `Utterances` must also cha
 
 ```
 
-First, find the part where you want to add a comment. In the case of hugo used in my blog, you can use it by overriding the theme. Those who create themes also take these things into consideration and create files in advance so that they can be overridden. So, I applied the comment function by overriding only the file called `comments.html`.
+First, find the part where you want to add a comment. In the case of Hugo used in my blog, you can use it by overriding the theme. Those who create themes also take these things into consideration and create files in advance so that they can be overridden. So, I applied the comment function by overriding only the file called `comments.html`.
 
 #### Write JavaScript code
 
@@ -72,18 +70,18 @@ const callback = (mutationsList) => {
 const mutationObserver = new MutationObserver(callback);
 mutationObserver.observe(document.body, { attributes: true });
 
-function getTheme() { // 
+function getTheme() { //
  var theme = window.localStorage && window.localStorage.getItem("pref-theme");
  if (theme == null) {
  theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
  }
- return theme === 'dark' ? 'github-dark' : 'github-light';
+ return theme === 'dark' ? 'GitHub-dark' : 'GitHub-light';
 }
 
 function loadComment() {
  let s = document.createElement('script');
  s.src = 'https://utteranc.es/client.js';
- s.setAttribute('repo', 'junghoon-vans/vanslog'); // 
+ s.setAttribute('repo', 'junghoon-vans/vanslog'); //
  s.setAttribute('issue-term', 'pathname');
  s.setAttribute('theme', getTheme());
  s.setAttribute('crossorigin', 'anonymous');

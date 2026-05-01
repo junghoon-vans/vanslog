@@ -10,10 +10,8 @@ tags:
   - Code-server
 draft: false
 summary: >
- Create your own web IDE
+  Create your own web IDE
 ---
-> Note: This English page scaffold was auto-generated. Full manual translation will follow.
-
 
 Introduction
 ---
@@ -25,12 +23,12 @@ So, while looking for a method, I found an open source called `code-server`. Thi
 Building a development environment
 ---
 
-If you think that the installation process will be as long as the introduction was, you would be greatly mistaken. Installation is very simple. I tried installing it by referring to other blog posts, but the installation method shown in [github repo](https://github.com/cdr/code-server) is easier and faster than other methods.
+If you think that the installation process will be as long as the introduction was, you would be greatly mistaken. Installation is very simple. I tried installing it by referring to other blog posts, but the installation method shown in [GitHub repo](https://github.com/cdr/code-server) is easier and faster than other methods.
 
 ### Install and Run
 ```bash
 curl -fsSL https://code-server.dev/install.sh | sh
-sudo systemctl enable --now code-server@$USER # 
+sudo systemctl enable --now code-server@$USER #
 ```
 
 If you run the above code, you will install `code-server` and complete the process of registering it to run automatically when the system boots. At the same time, `code-server` will already be in operation, but cannot be used immediately, because by default, only `localhost(127.0.0.1)` is allowed to access. Therefore, settings to enable access from outside are required.
@@ -45,7 +43,7 @@ Basically, the configuration file for `code-server` is the `config.yaml` file lo
 ```yaml
 bind-addr: 0.0.0.0:8080
 auth: password
-password: # 
+password: #
 cert: false
 ```
 
@@ -88,7 +86,7 @@ sudo apt install -y nginx
 server {
  listen 80;
  listen [::]:80;
- server_name mydomain.com; # 
+ server_name mydomain.com; #
 
  location / {
  proxy_pass http://localhost:8080/;
@@ -123,4 +121,6 @@ curl -fsSL https://code-server.dev/install.sh | sh
 If you run the same code used during installation, it will be applied immediately. Continuous and rapid updates like this are a big advantage because this project is open source. I am grateful that I can use such a great development environment for free.
 
 Additional settings
----In this way, I installed `code-server` on a personal server and created an environment that could be accessed through a web browser. The official document additionally recommends encrypting via https communication using `Nginx`, etc. Detailed information can be found through [here](https://github.com/cdr/code-server/blob/v3.7.4/doc/guide.md). This method requires a domain name, so there is no need to proceed if you do not want to bear the cost.
+---
+
+In this way, I installed `code-server` on a personal server and created an environment that can be accessed through a web browser. The official documentation also recommends encrypting traffic with HTTPS through tools such as `Nginx`. You can find more details in [the official guide](https://github.com/cdr/code-server/blob/v3.7.4/doc/guide.md). This method requires a domain name, so you can skip it if you do not want to pay for one.

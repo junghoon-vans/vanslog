@@ -11,10 +11,8 @@ tags:
   - General
 draft: false
 summary: >
- UML, a language for modeling object-oriented applications
+  UML, a language for modeling object-oriented applications
 ---
-> Note: This English page scaffold was auto-generated. Full manual translation will follow.
-
 
 concept
 ---
@@ -59,7 +57,7 @@ Features
 ---
 
 - Visualization language
- - Visually displays modeling results 
+ - Visually displays modeling results
 - Specification language
  - Modeling accurately and completely
 - Building language

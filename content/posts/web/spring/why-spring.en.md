@@ -13,8 +13,6 @@ tags:
   - EJB
 ---
 
-> Note: This English page scaffold was auto-generated. Full manual translation will follow.
-
 
 Spring is the `Application Framework` for enterprise environments and is the standard for Java-based web application development today. To fully understand Spring, you need to know its `background of appearance`.
 

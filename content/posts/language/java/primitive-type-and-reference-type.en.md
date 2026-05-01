@@ -10,10 +10,8 @@ tags:
   - General
 draft: false
 summary: >
- Let’s learn about Java’s basic data types and reference data types!
+  Let’s learn about Java’s basic data types and reference data types!
 ---
-> Note: This English page scaffold was auto-generated. Full manual translation will follow.
-
 
 Data type type
 ---
@@ -51,7 +49,7 @@ All `Class` and `Enum` inherit the `Object` class. In other words, Object is a g
 
 It is well known that `String` is not a basic data type. String is a reference data type implemented as an array of `char`.
 
-> In the case of `C/C++`, in order to use a string, a char type array is actually used directly. 
+> In the case of `C/C++`, in order to use a string, a char type array is actually used directly.
 
 The reason why Java provides the `String` type separately, unlike `C/C++`, is to provide `useful methods` in strings. You can easily manipulate strings using methods such as charAt, concat, equals, indexOf, and split.
 

@@ -11,12 +11,10 @@ tags:
   - General
   - Retrospective
 summary: >
- Completing the 8th DND activities
+  Completing the 8th DND activities
 images:
  - https://user-images.githubusercontent.com/44942700/224090941-95e8715e-5e2a-4b6e-93a9-eccd8b380306.png
 ---
-
-> Note: This English page scaffold was auto-generated. Full manual translation will follow.
 
 
 My eight-week journey at DND came to an end with the **final presentation** last Saturday (3/4). Actually, I learned a lot through this activity, but at the same time, there were some regrets. Through this article, I will try to summarize what I felt after completing the 8th DND activity.
@@ -122,7 +120,7 @@ flowchart LR
  a2 <--> a4[(Amazon RDS)]
  a2 <--> a5[(Amazon ElastiCache)]
 		end
-		
+
 		subgraph CD Pipeline
  b1[GitHub Actions] --> b2[JIB]
  b2 --> |Container Image Build & Push| b3[Amazon ECR]

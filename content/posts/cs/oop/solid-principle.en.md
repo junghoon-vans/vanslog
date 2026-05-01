@@ -10,10 +10,8 @@ tags:
   - JAVA
 draft: false
 summary: >
- Object-oriented design principles
+  Object-oriented design principles
 ---
-
-> Note: This English page scaffold was auto-generated. Full manual translation will follow.
 
 
 Single Responsibility Principle (SRP)
@@ -52,9 +50,9 @@ Good design basically requires reducing the impact as much as possible when ther
 
 So when should the `student` class be changed?
 
--When changing DB schema?
--What if a function for students to find an advisor was added?
--What if you want to print in a new format?
+- When changing DB schema?
+- What if a function for students to find an advisor was added?
+- What if you want to print in a new format?
 
 These are all reasons to change student classes. Additionally, the more responsibilities there are, the more likely it is that code performing different roles within the class will be strongly coupled.
 
@@ -148,10 +146,10 @@ But you may also have these questions. Since only a small number of mammals lay 
 
 If you use redefinition, Platypus can be defined as above, and the code can actually work fine. However, two OOP rule violations occur as follows.
 
--Does not satisfy LSP
+- Does not satisfy LSP
  -The implementation of the Platypus class is inconsistent with the behavior of the Mammal class.
--Peter Codd's violation of inheritance rules
--A rule called `The subclass does not override or override the responsibilities of the superclass, only extends it`
+- Peter Codd's violation of inheritance rules
+- A rule called `The subclass does not override or override the responsibilities of the superclass, only extends it`
 
 In Peter Code's inheritance rules, `only extend, not redefine` means the same thing as not overriding a word. Therefore, following Peter Code's inheritance rules is one way to satisfy LSP. **Do Not Override!**
 
@@ -232,5 +230,5 @@ References
 
 - [Inseong Jeong, Heungseok Chae, 『JAVA Object-Oriented Design Pattern』, Hanbit Media](http://www.yes24.com/Product/Goods/12501269)
 - [Wikipedia, Mammals](https://ko.wikipedia.org/wiki/%ED%8F%AC%EC%9C%A0%EB%A5%98)
--[wlsdud2194, [DI] What is Dependency Injection?, velog](https://velog.io/@wlsdud2194/what-is-di)
+- [wlsdud2194, [DI] What is Dependency Injection?, velog](https://velog.io/@wlsdud2194/what-is-di)
 

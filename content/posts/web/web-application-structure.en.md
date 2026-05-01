@@ -11,10 +11,8 @@ tags:
   - MPA
 draft: false
 summary: >
- We have compiled a list of terms that are trending recently in web front-end.
+  We have compiled a list of terms that are trending recently in web front-end.
 ---
-
-> Note: This English page scaffold was auto-generated. Full manual translation will follow.
 
 
 introduction
@@ -25,7 +23,7 @@ I think I have worked hard to pursue my dream of becoming a back-end developer. 
 Static Page
 ---
 
-A static page refers to a web page where files (HTML, JS) stored on a web server are delivered to the user as is. As long as the data is not directly changed, the page appears the same and has fast rendering speed. When creating a site that renders fixed content, such as a personal blog, static pages are often used. Usually, instead of creating a static site from scratch, `Static Site Generator` is used, and representative tools include `jekyll`, `hexo`, `gatsby`, and `hugo`.
+A static page refers to a web page where files (HTML, JS) stored on a web server are delivered to the user as is. As long as the data is not directly changed, the page appears the same and has fast rendering speed. When creating a site that renders fixed content, such as a personal blog, static pages are often used. Usually, instead of creating a static site from scratch, `Static Site Generator` is used, and representative tools include `jekyll`, `hexo`, `gatsby`, and `Hugo`.
 
 Dynamic Page
 ---

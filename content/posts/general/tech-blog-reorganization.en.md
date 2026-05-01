@@ -7,8 +7,6 @@ categories:
 tags:
   - Blog
 ---
-> Note: This English page scaffold was auto-generated. Full manual translation will follow.
-
 
 I started a tech blog to organize what I learned. However, due to being busy during the semester, the cycle of uploading posts to the blog became longer. There are many cases where I just think about writing a blog post but am unable to do so.
 
@@ -18,17 +16,17 @@ I decided that I should not give up on running the blog like this, so I decided 
 
 ### Change blog theme
 
-I first created this blog using `hugo` in November 2020. The reason I decided to use hugo at that time was because it was based on `golang`, so it was very fast and lightweight. Currently, `hugo` is the second most commonly used static site generator after `Next.js`. (see [Jamstack](https://jamstack.org/generators/)) 
+I first created this blog using `Hugo` in November 2020. The reason I decided to use Hugo at that time was because it was based on `Go`, so it was very fast and lightweight. Currently, `Hugo` is the second most commonly used static site generator after `Next.js`. (see [Jamstack](https://jamstack.org/generators/))
 
-So, I kept the blog based on hugo, but changed the theme of the blog with the intention of starting a new blog. The criterion for selecting the theme was `Simple Design`, which focuses on the content. Because I think the core of a blog lies in `posts`.
+So, I kept the blog based on Hugo, but changed the theme of the blog with the intention of starting a new blog. The criterion for selecting the theme was `Simple Design`, which focuses on the content. Because I think the core of a blog lies in `posts`.
 
-Then, a theme called [paper](https://github.com/nanxiaobei/hugo-paper) caught my eye. I really liked the minimalistic design, but it was lacking in functionality when actually using it. So, we applied [papermod](https://github.com/adityatelange/hugo-PaperMod), a theme that complements this.
+Then, a theme called [paper](https://github.com/nanxiaobei/Hugo-paper) caught my eye. I really liked the minimalistic design, but it was lacking in functionality when actually using it. So, we applied [papermod](https://github.com/adityatelange/Hugo-PaperMod), a theme that complements this.
 
-### Migrate from Github Pages to Vercel
+### Migrate from GitHub Pages to Vercel
 
-Previously, blog hosting was done through `Github Pages`. However, after experiencing several GitHub server errors recently, I felt that hosting my blog was unstable, and decided to migrate to another service.
+Previously, blog hosting was done through `GitHub Pages`. However, after experiencing several GitHub server errors recently, I felt that hosting my blog was unstable, and decided to migrate to another service.
 
-I was debating between the two services, `netlify` and `Vercel`, but I found out that Vercel was superior in terms of domestic service speed, so I decided to use `Vercel`.Before distributing it, I had a vague idea that it would be difficult. This is because I had experience deploying the backend on AWS, but not the frontend. However, the actual deployment process was simple enough to just link to the GitHub repository. Through this, ‘Don’t be scared by guessing before you try’ was able to learn a lesson(?).
+I was debating between the two services, `Netlify` and `Vercel`, but I found out that Vercel was superior in terms of domestic service speed, so I decided to use `Vercel`. Before distributing it, I had a vague idea that it would be difficult. This is because I had experience deploying the backend on AWS, but not the frontend. However, the actual deployment process was simple enough to just link to the GitHub repository. Through this, ‘Don’t be scared by guessing before you try’ was able to learn a lesson(?).
 
 ### Buy domain
 

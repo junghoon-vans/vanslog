@@ -10,10 +10,8 @@ tags:
   - GoF
 draft: false
 summary: >
- Design patterns for good object-oriented design
+  Design patterns for good object-oriented design
 ---
-
-> Note: This English page scaffold was auto-generated. Full manual translation will follow.
 
 
 Good object-oriented design
@@ -21,8 +19,8 @@ Good object-oriented design
 
 Designing `object-oriented software` is not easy. The following elements are essential for a good design.
 
--Maintainability
--Function expansion
+- Maintainability
+- Function expansion
 
 Software may have `changes in requirements` even during the development stage, and `feature expansion` or `maintenance` are constantly occurring during service. Therefore, software must provide the flexibility to be reused without redesign.
 
@@ -107,13 +105,13 @@ Design patterns have gained enormous popularity since `GoF(Gang of Four)` introd
 
 ###Classification according to scope
 
--class pattern
--Pattern for handling `relevance` between classes and subclasses
--Relevance mainly refers to `inheritance`
--`static` at compile time
--object pattern
+- class pattern
+- Pattern for handling `relevance` between classes and subclasses
+- Relevance mainly refers to `inheritance`
+- `static` at compile time
+- object pattern
  -Dealing with object relatedness
--`Dynamic` at runtime
+- `Dynamic` at runtime
 
 |classification|generation|structure|action|
 |:--:|:--:|:--:|:--:|

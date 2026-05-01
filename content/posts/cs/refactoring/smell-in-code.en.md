@@ -9,10 +9,8 @@ tags:
   - General
 draft: false
 summary: >
- Code smell, code smell
+  Code smell, code smell
 ---
-
-> Note: This English page scaffold was auto-generated. Full manual translation will follow.
 
 
 There are no clear rules for when to refactor. However, there are characteristics of code that desperately need refactoring. Kent Beck defines this as `smell(bad smell)`.
@@ -140,10 +138,10 @@ basic obsession
 
 There are many people who are obsessed with the basic types provided by programming languages ​​and are reluctant to directly define basic types appropriate for a given problem.
 
--Converting primitives to objects
+- Converting primitives to objects
  -It looks like it's just wrapping a basic data type.
  -Special actions can be added if necessary
--When code expressed as a basic type is used as a type code to control conditional operation
+- When code expressed as a basic type is used as a type code to control conditional operation
  -Convert type code to subclass
  -Converting conditional logic to polymorphism
  -Apply the above refactoring sequentially.
@@ -168,13 +166,13 @@ speculative generalization
 
 It comes from code that has all kinds of hooking points and special case handling logic that are not needed right now.
 
--Abstract class that does very little
+- Abstract class that does very little
  -Merge Layers
--Useless delegation code
+- Useless delegation code
  -Deleted by inlining a function or inlining a class
--Parameters not used in the body
+- Parameters not used in the body
  -Delete by replacing function declaration
--A function or class that is used nowhere else than in test code.
+- A function or class that is used nowhere else than in test code.
  -Removing dead code
 
 temporary field
@@ -182,9 +180,9 @@ temporary field
 
 Sometimes there are classes that have fields whose values ​​are set only under certain circumstances. In these cases, users are left scratching their heads trying to figure out why a seemingly unused field exists.
 
-1.If you find scattered fields, collect them with `Extract classes`.
-2.Put the code related to temporary fields into the class created earlier using `Move Function`.
-3.The conditional logic that operates after checking whether temporary fields are valid is `Add a special case`, which creates an alternative class for when the fields are invalid and removes them.
+1. If you find scattered fields, collect them with `Extract classes`.
+2. Put the code related to temporary fields into the class created earlier using `Move Function`.
+3. The conditional logic that operates after checking whether temporary fields are valid is `Add a special case`, which creates an alternative class for when the fields are invalid and removes them.
 
 
 References

@@ -14,13 +14,11 @@ tags:
   - Stack
   - Deque
 ---
-> Note: This English page scaffold was auto-generated. Full manual translation will follow.
-
 
 ## Use Deque instead of Stack?
 
 When solving algorithm problems using Java, I used to use `Deque` instead of `Stack`.
-While Googling, I often came across posts that suggested using `Deque` instead of `Stack` class.
+While searching online, I often came across posts that suggested using `Deque` instead of `Stack` class.
 
 However, I think I was using it vaguely without thinking deeply about why I should use `Deque`.
 We took this opportunity to learn more about the differences between `Stack` and `Deque`.
@@ -32,7 +30,7 @@ Deque<Integer> stack = new ArrayDeque<Integer>();
 stack.push(1);
 ```
 
-Java official documentation talks about the `Stack` class as follows: 
+Java official documentation talks about the `Stack` class as follows:
 It says to use the `Deque` interface and its implementations rather than the `Stack` class.
 
 In this post, we will take a closer look at `Queue`, `Stack`, and `Deque`.
@@ -43,7 +41,7 @@ Let’s find out what advantages `Deque` has over `Stack`.
 ###Queue
 
 `Queue` is a data structure that has the characteristics of `FIFO(First In First Out)`.
-Java provides the corresponding data type through the `java.util.Queue<E>` interface.
+Java provides the corresponding data type through the `java.util. Queue<E>` interface.
 
 #### Provided method<table>
  <thead>
@@ -93,7 +91,7 @@ queue.offer(1);
 ### Stack
 
 `Stack` is a data structure that has the characteristics of `LIFO(Last In First Out)`.
-In Java, the corresponding data type is provided through the `java.util.Stack<E>` class.
+In Java, the corresponding data type is provided through the `java.util. Stack<E>` class.
 It is implemented by inheriting the `Vector` class.
 
 #### Provided method
@@ -113,7 +111,7 @@ Stack<Integer> stack = new Stack<>();
 `Stack` is itself an implementation, so use it like this:
 
 ###Deque`Deque` is short for `Double Ended Queue`, commonly called a two-way queue.
-Java provides the corresponding data type through the `java.util.Deque<E>` interface.
+Java provides the corresponding data type through the `java.util. Deque<E>` interface.
 It is implemented by inheriting the `Queue` interface.
 
 #### Provided method
@@ -222,7 +220,7 @@ As a result, the use of the `Stack` class is also not recommended.
 | capacity increase | 2x | 1.5 times |
 
 `Vector` consists of synchronized methods, making it safe in a multi-threaded environment. However, even in a single-threaded environment, overhead for synchronization processing may occur, resulting in performance degradation.
-Therefore, in a single-threaded environment, using `ArrayList` has a performance advantage.Since Java 1.5, `Collections.synchronizedList` is provided, allowing synchronization even when using the `ArrayList` class.
+Therefore, in a single-threaded environment, using `ArrayList` has a performance advantage. Since Java 1.5, `Collections.synchronizedList` is provided, allowing synchronization even when using the `ArrayList` class.
 Therefore, it is recommended to use `ArrayList` regardless of the thread environment.
 In fact, most projects using Java today don't use `Vector`, they use `ArrayList`.
 

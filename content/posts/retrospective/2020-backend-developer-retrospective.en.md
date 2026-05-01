@@ -10,15 +10,13 @@ tags:
   - General
 draft: false
 summary: >
- Looking back on 2020 and beyond
+  Looking back on 2020 and beyond
 ---
 
-> Note: This English page scaffold was auto-generated. Full manual translation will follow.
 
+Looking back, 2020 was an eventful year. I completed my activities as part of the 7th Like Lion cohort, joined the 8th cohort's management team, and prepared for employment while helping run the program. I briefly succeeded in joining a company as an alternative to military service, but eventually left the company and enlisted. 2020 left me with many regrets, so I want to use this retrospective to look back on my shortcomings and improve from them.
 
-Looking back, this year was truly an eventful year. Like a stylish lion who has been active for a year, the 7th term was successfully completed and the 8th term management team was selected. And while conducting management training, preparation for employment was carried out at the same time. In fact, he was successful in serving in the industry, but in the end, all sorts of things happened before he quit the company and joined the military. 2020 is a year that leaves me with many regrets. Through this retrospective, we want to look back on our shortcomings and improve them.
-
-Like a stylish lion
+Like Lion
 ---
 
 ### Goals are important.
@@ -27,20 +25,20 @@ Ever since I was in middle school, I always liked computers, and I shared IT-rel
 
 ### Finding my dream while working as an executive.
 
-To me, `like a stylish lion` was like a sweet rain to me. I got to know Mutsa through the recommendation of [Friend](https://github.com/jongwooo), whom I dated during my first year of college, and thanks to that, I even applied to the 7th management team. At first, I didn't want to be an administrator because I had to stand in front of people and teach classes. But looking back now, doing `management activities` was of great help to me. In order to fulfill the role of an executive, I needed to study a lot, and this became `driving force` that constantly improved me.
+For me, `Like Lion` came at exactly the right time. I learned about the club through a [friend](https://github.com/jongwooo) I met in my first year of college, and I eventually applied to join the 7th cohort management team. At first, I did not want to take on an organizer role because it meant teaching in front of others. Looking back, however, those `management activities` helped me a lot. To fulfill the role, I had to study consistently, and that became a `driving force` that pushed me forward.
 
-His activities as a member of the 7th class of Mootsa were successfully completed with completion in early 2020. Although I did not get any special results in the hackathon during the 7th semester, the process of conducting the class itself meant a lot to me. While preparing the lesson plan, I had a goal of `backend developer`, and I came to think that coding is not difficult and fun. From then on, I started dreaming of becoming a programmer in earnest.
+My activities in the 7th Like Lion cohort ended successfully in early 2020. Although I did not achieve a notable result in the hackathon, the process of preparing and running classes meant a lot to me. While preparing lesson plans, I began to set `backend developer` as a concrete goal and realized that coding could be fun rather than merely difficult. From that point on, I seriously started dreaming of becoming a programmer.
 
 ### Disappointing points
 
-From my experience, programming theories and concepts are important, but the biggest part of what I feel and learn is by making things myself. Therefore, the class was conducted using `Practice-oriented` rather than PPT, and the necessary concepts were explained through the contents summarized in `Notion` and `Panseo`. At the time, we thought that this method would be efficient for learning, but there may have been people who did not understand the class well. As I was preparing for class and studying at the same time, I think there were a lot of things I was not prepared for during the class, and I still feel sorry for the club members for this.
+From my experience, programming theories and concepts matter, but the biggest lessons come from building things yourself. That is why I ran the classes in a `practice-oriented` style instead of relying on slides, and explained the necessary concepts through notes organized in `Notion` and on the whiteboard. At the time, I thought this would be an efficient learning method, but some members may still have found the classes hard to follow. Because I was studying while preparing the classes, there were many parts I could not prepare thoroughly, and I still feel sorry about that.
 
 Decided to get a job instead of the military.
 ---
 
-### Instrument
+### Motivation
 
-I didn't want to go to the military. I had just started planning a dream called `backend developer`, but it was difficult for me to put this aside for a while and go somewhere else. I constantly wanted to move forward, and the way to do that was to get a job in industry. Entering an industrial company not only had the advantage of not having a career break, but also the advantage of being able to receive a salary that was incomparable to military service during the three years of service. I took a leave of absence from school for the first semester of my third year, thinking that I had to go to work at all costs. Like a stylish lion, I was conducting training for the 8th class of executives and preparing for employment at the same time.
+I didn't want to go to the military. I had just started planning a dream called `backend developer`, but it was difficult for me to put this aside for a while and go somewhere else. I constantly wanted to move forward, and the way to do that was to get a job in industry. Entering an industrial company not only had the advantage of not having a career break, but also the advantage of being able to receive a salary that was incomparable to military service during the three years of service. I took a leave of absence for the first semester of my third year because I felt I had to find a job no matter what. At the same time, I was training the 8th Like Lion management team and preparing for employment.
 
 ### Become a job seeker.
 
@@ -76,9 +74,9 @@ The reasons why I had to leave the company at that time were as follows.
 - Keep your appointments on time
 - Passion(?)
 
-I don't remember exactly, but the shooter said that startups cannot afford to wait for new employees to grow sufficiently, and that they want talent who can produce `performance` right away. I have often been pointed out that the process of setting and maintaining `period` is not carried out well when carrying out certain tasks. I was also told that if I couldn't achieve results, I had to show `passion` by staying at the company late and working.
+I don't remember exactly, but my senior colleague said that startups cannot afford to wait for new employees to grow sufficiently, and that they want talent who can produce `performance` right away. I have often been pointed out that the process of setting and maintaining `period` is not carried out well when carrying out certain tasks. I was also told that if I couldn't achieve results, I had to show `passion` by staying at the company late and working.
 
-These teacher's words ultimately came back to me as a sharp reminder and served as an opportunity for me to truly reflect on my shortcomings. *Next time I join a company, I promise to become a capable person who can do my part at the company without having to stay up late.*
+Those words stayed with me as a sharp reminder and became an opportunity to reflect seriously on my shortcomings. *The next time I join a company, I want to become someone capable enough to do my part without relying on late nights to prove my effort.*
 
 > I experienced the bitter taste of life when I left the company, but ironically, the first paycheck deposited that day was very sweet.
 
@@ -95,16 +93,16 @@ As I said earlier, the reason I didn't want to go to the military was `career br
 
 ### Self-deployment, despair
 
-Even though my grades were among the top five among intelligence protection soldiers, I was assigned to the 28th Division. When I think about all my friends going to `Jijaksana Gungun` in the second half of the year, my stomach still hurts. During the last week of the second half, I felt like I was almost out of my mind. I kept wondering why I was assigned to a division. As a result, I finally realized it. **Don't gamble.** That's my conclusion. I can't help but regret that my life is something I pioneer, and that this is what happens when I entrust myself to something like the military where I don't know where I will end up. *The decision to apply to the military was made by me...*
+Even though my grades were among the top five among intelligence protection soldiers, I was assigned to the 28th Division. When I think about all my friends going to `Army Training Command` in the second half of the year, my stomach still hurts. During the last week of the second half, I felt like I was almost out of my mind. I kept wondering why I was assigned to a division. As a result, I finally realized it. **Don't gamble.** That's my conclusion. I can't help but regret that my life is something I pioneer, and that this is what happens when I entrust myself to something like the military where I don't know where I will end up. *The decision to apply to the military was made by me...*
 
-future goals
+Future Goals
 ---
 
 Since you are in the military, you can never leave before a certain period of time has passed. That's the rule of the military. So, the important thing is how much you can accomplish in that time. I want to spend my military life without regrets by making a plan and executing it. Below is a rough goal for that.
 
 - Steady blogging activities
 - Preparing for coding tests
-- Use of Baekjun problems, etc.
+- Use of Baekjoon problems, etc.
 - Study software architecture
 - GoF design pattern
 - Java object-oriented design patterns

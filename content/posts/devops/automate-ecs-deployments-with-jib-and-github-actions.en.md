@@ -1,5 +1,5 @@
 ---
-title: "Automate Ecs Deployments With Jib And Github Actions"
+title: "Automate Ecs Deployments With Jib And GitHub Actions"
 date: 2023-03-24T01:01:51+09:00
 draft: false
 categories:
@@ -10,10 +10,8 @@ tags:
   - Amazon ECR
   - Amazon ECS
 summary: >
- Build a deployment pipeline to focus on development
+  Build a deployment pipeline to focus on development
 ---
-
-> Note: This English page scaffold was auto-generated. Full manual translation will follow.
 
 
 ## outline
@@ -101,7 +99,7 @@ plugins {
 ```
 
 2. Jib settings
- 
+
 ```groovy
 jib {
  from {
@@ -110,7 +108,7 @@ jib {
  to {
  image = '<aws_account_id>.dkr.ecr.<region>.amazonaws.com/<repository_name>'
  tags = ['latest', "${project.version}".toString()]
- credHelper = 'ecr-login' 
+ credHelper = 'ecr-login'
  }
  container {
  creationTime = 'USE_CURRENT_TIMESTAMP'
@@ -130,7 +128,7 @@ If you created a repository in `Amazon ECR` in the previous table of contents, p
 
 ### Amazon ECS
 
-> If you are already running an application based on `Amazon ECS`, you can skip to [Next Chapter](#github-actions).
+> If you are already running an application based on `Amazon ECS`, you can skip to [Next Chapter](#GitHub-actions).
 
 In order to deploy `Amazon ECS`, it is recommended that you grasp several concepts.
 In particular, it is recommended to understand `cluster`, `service`, and `task definition` even briefly.
@@ -177,7 +175,7 @@ You can select the desired version of the task definition by selecting `Task Def
 
 ### Download task definition file
 
-To use the task definition created in `Amazon ECS` in `Github Actions`, a configuration file in `JSON` format is required.
+To use the task definition created in `Amazon ECS` in `GitHub Actions`, a configuration file in `JSON` format is required.
 Using `AWS CLI`, you can easily download task definition files.
 
 ```bash
@@ -187,11 +185,11 @@ aws ecs describe-task-definition \
 ```
 
 If you run this command in the project root path, a `task-definition.json` file will be created.
-Please commit the files created in this way to the `GitHub` repository so that they can be used in `Github Actions`.
+Please commit the files created in this way to the `GitHub` repository so that they can be used in `GitHub Actions`.
 
 ### GitHub Actions
 
-In this chapter, we will build a pipeline to push an image to `Amazon ECR` via `Github Actions` and deploy it to `Amazon ECS`.
+In this chapter, we will build a pipeline to push an image to `Amazon ECR` via `GitHub Actions` and deploy it to `Amazon ECS`.
 If you have not completed all settings for `Jib`, `Amazon ECR`, and `Amazon ECS`, please refer to the previous chapter to complete them.
 
 ```yaml
@@ -232,16 +230,16 @@ jobs:
 ```
 
 The above code is a GitHub Actions pipeline that builds the application using `Jib`, pushes the image to `Amazon ECR`, and then deploys to `Amazon ECS`.
-At this time, `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` must be registered in `Github Secrets`, which is the access key required to access `AWS`.
+At this time, `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` must be registered in `GitHub Secrets`, which is the access key required to access `AWS`.
 
 > Create a user in `AWS IAM console` granting `AmazonEC2ContainerRegistryFullAccess` and `AmazonECS_FullAccess` permissions,
-> Please obtain an access key and register it in `Github Secrets`.
+> Please obtain an access key and register it in `GitHub Secrets`.
 
 ## Check results and resolve errors
 
 ![Deployment pipeline execution result](https://user-images.githubusercontent.com/44942700/227918540-f6578718-0706-4dc8-ba33-55e9c34ac998.png)
 
-When a commit occurs on the `main` branch, `Github Actions` builds the application and deploys the new version to `Amazon ECS`.
+When a commit occurs on the `main` branch, `GitHub Actions` builds the application and deploys the new version to `Amazon ECS`.
 However, a Warning message may occur as shown in the image above, because the `task-definition.json` file contains items that do not need to be defined.
 You can get rid of the Warning message by removing these entries from the `task-definition.json` file.
 
@@ -253,4 +251,4 @@ This is what keeps our team focused on application development.
 
 ## References
 
-- [Building SpringBoot + Gradle jib + Github Actions + ECR + ECS pipeline](https://kevin-park.medium.com/springboot-gradle-jib-github-actions-ecr-ecs---d09dc46a6958)
+- [Building SpringBoot + Gradle jib + GitHub Actions + ECR + ECS pipeline](https://kevin-park.medium.com/springboot-gradle-jib-github-actions-ecr-ecs---d09dc46a6958)

@@ -12,10 +12,8 @@ tags:
   - Meilisearch
   - Library
 summary: >
- Building an integrated test environment with Testcontainers and the JUnit 5 extension model
+  Building an integrated test environment with Testcontainers and the JUnit 5 extension model
 ---
-> Note: This English page scaffold was auto-generated. Full manual translation will follow.
-
 
 Integration testing is a very important part of the development process of [Spring Data Meilisearch](https://github.com/junghoon-vans/spring-data-meilisearch).
 This is because the core of the project is whether it integrates with actual Meilisearch and operates properly.
@@ -77,7 +75,7 @@ Now let's look at the overall code. The code that tests the `MeilisearchTemplate
 
 ```java
 @ExtendWith(SpringExtension.class)
-@ContextConfiguration(classes = { MeilisearchTemplateTest.Config.class })
+@ContextConfiguration(classes = { MeilisearchTemplateTest. Config.class })
 class MeilisearchTemplateTest {
 
  MeilisearchContainer meilisearch;
@@ -134,7 +132,7 @@ You will also no longer need to duplicate container management logic across mult
 
 ## JUnit 5 extension model
 
-When writing test code using JUnit 5, [Extension Model](https://junit.org/junit5/docs/snapshot/user-guide/#extensions) allows you to separate cross-cutting concerns into modules. The extension model allows you to extend and use the features provided by existing JUnit 5.The most representative extension model is the `SpringExtension` class provided by Spring Framework.
+When writing test code using JUnit 5, [Extension Model](https://junit.org/junit5/docs/snapshot/user-guide/#extensions) allows you to separate cross-cutting concerns into modules. The extension model allows you to extend and use the features provided by existing JUnit 5. The most representative extension model is the `SpringExtension` class provided by Spring Framework.
 This class is responsible for creating and managing the test context of the Spring Framework, and was also implicitly used in the example code seen above.
 
 In a similar way, you can create your own reusable extension models.
@@ -142,7 +140,7 @@ In a similar way, you can create your own reusable extension models.
 ### Extension model implementation
 
 In the example code we looked at earlier, the container was run using the `@BeforeAll` annotation.
-Implementing this through the extension model is as follows: 
+Implementing this through the extension model is as follows:
 
 ```java
 public class MeilisearchExtension implements BeforeAllCallback {
@@ -206,11 +204,11 @@ You can run the container through the `MeilisearchExtension` class and test by p
 It's enough to proceed up to this point, but let's create an additional `@MeilisearchTest` annotation to write test code more concisely.
 
 ```java
-@Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.TYPE)
+@Retention(RetentionPolicy. RUNTIME)
+@Target(ElementType. TYPE)
 @ExtendWith(MeilisearchExtension.class)
 @ExtendWith(SpringExtension.class)
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+@TestMethodOrder(MethodOrderer. OrderAnnotation.class)
 public @interface MeilisearchTest {
 }
 ```
@@ -227,13 +225,15 @@ class MeilisearchTemplateTest {
 
 Now you no longer need to use the `@ExtendWith` annotation, you can simply test using the `@MeilisearchTest` annotation.
 
-## ConclusionIn this post, I introduced the methods used to build an integrated test environment.
-It was a meaningful and meaningful experience as it was an environment built with the `Testcontainers` library that I implemented myself and `extension model` of JUnit 5.
+## Conclusion
+
+In this post, I introduced the methods used to build an integrated test environment.
+It was a meaningful experience as it was an environment built with the `Testcontainers` library that I implemented myself and `extension model` of JUnit 5.
 
 I thought a lot about how to write test code in a good way, and during this time, I was able to think about it in relation to `aspect-oriented programming`.
 
-I am proud that [project initial goal](/posts/project/spring-data-meilisearch/introduction), which aims to create a spring integration environment that is lacking in the Meilisearch ecosystem, is gradually being achieved.
-We will continue to work hard to add more features so that users can use it conveniently.
+I am proud that [initial project goal](/posts/project/spring-data-meilisearch/introduction), which aims to create a Spring integration environment that is lacking in the Meilisearch ecosystem, is gradually being achieved.
+I will continue adding features so that users can use the project more conveniently.
 
 ## References
 

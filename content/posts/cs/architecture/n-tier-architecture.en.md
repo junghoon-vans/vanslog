@@ -8,10 +8,8 @@ tags:
   - General
 draft: false
 summary: >
- Multi-layer architecture discovered in a major class project
+  Multi-layer architecture discovered in a major class project
 ---
-
-> Note: This English page scaffold was auto-generated. Full manual translation will follow.
 
 
 The multi-layer architecture is typically used in `client-server` applications. I think it is a concept that must be learned as it is a basic structure used in most applications, including web applications.
@@ -21,9 +19,9 @@ layer
 
 There are three layers that make up the n-tier architecture:
 
--Presentation: User Interface (UI)
--Application (or logic): Handles business logic
--data: refers to database
+- Presentation: User Interface (UI)
+- Application (or logic): Handles business logic
+- data: refers to database
 
 The point to note here is that `tier` and `layer` are distinct concepts. Layer means physically separated, and layer is a logically separated concept.
 
@@ -34,13 +32,13 @@ The point to note here is that `tier` and `layer` are distinct concepts. Layer m
 
 ### 2-tier
 
--Client program implemented through Java, etc.
--Expresses data obtained by directly connecting to the DB.
+- Client program implemented through Java, etc.
+- Expresses data obtained by directly connecting to the DB.
 
 ### 3-tier
 
--A typical example is a web application.
--Connect to middleware without directly connecting to the DB
+- A typical example is a web application.
+- Connect to middleware without directly connecting to the DB
 
 For reference, the 2-tier structure may be implemented as a web application rather than a client program. Also, conversely, it is also possible to implement the client program as a 3-tier.
 

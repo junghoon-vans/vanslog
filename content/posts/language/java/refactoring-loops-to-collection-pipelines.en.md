@@ -11,12 +11,10 @@ tags:
   - Coding Test
 draft: false
 summary: >
- When is it best to use streams introduced in Java 8?
+  When is it best to use streams introduced in Java 8?
 ---
-> Note: This English page scaffold was auto-generated. Full manual translation will follow.
 
-
-While preparing for the coding test, I am re-solving the problems provided by `Programmer`. While solving the problem [the athlete who did not finish the race](https://programmers.co.kr/learn/courses/30/lessons/42576), I suddenly remembered that there was a saying in the book `refactoring` called [**Change loops to pipelines**](/posts/refactoring/smell-in-code/#repetition). I decided to change all the code previously written in loops to pipelines.
+While preparing for the coding test, I am re-solving the problems provided by `Programmers`. While solving the problem [the athlete who did not finish the race](https://programmers.co.kr/learn/courses/30/lessons/42576), I suddenly remembered that there was a saying in the book `refactoring` called [**Change loops to pipelines**](/posts/refactoring/smell-in-code/#repetition). I decided to change all the code previously written in loops to pipelines.
 
 > Pipeline is one of the techniques of functional programming and refers to a structure that processes data in multiple stages.
 

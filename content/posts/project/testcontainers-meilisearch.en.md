@@ -10,10 +10,8 @@ tags:
   - Meilisearch
   - Library
 summary: >
- We introduce Testcontainers Meilisearch and share what we felt while developing it.
+  We introduce Testcontainers Meilisearch and share what we felt while developing it.
 ---
-
-> Note: This English page scaffold was auto-generated. Full manual translation will follow.
 
 
 ## Project motivation
@@ -78,4 +76,4 @@ MeilisearchContainer uses port `7700` to run containers, so you can get the port
 
 Until now, there was a lack of understanding of Java's package ecosystem, but through this project, we were able to supplement this. I signed up for `Sonatype OSSRH`, linked it to Maven build settings, packaged and signed GPG, and then directly experienced the process of deploying to `Maven Central`. It was a complicated process, but I was able to proceed step by step by referring to the [Sonatype OSSRH Guide](https://central.sonatype.org/pages/ossrh-guide.html). Through this experience, we hope to continue developing various Java-based libraries.
 
-The project is still in its early stages, so many features are lacking. We plan to continue to improve in the future, and if anyone would like to contribute directly, we would appreciate it if you could leave an issue or PR in the corresponding [Github repository](https://github.com/junghoon-vans/testcontainers-meilisearch). 🤗
+The project is still in its early stages, so many features are lacking. We plan to continue to improve in the future, and if anyone would like to contribute directly, we would appreciate it if you could leave an issue or PR in the corresponding [GitHub repository](https://github.com/junghoon-vans/testcontainers-meilisearch). 🤗
