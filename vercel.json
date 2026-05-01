@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "build": {
+    "env": {
+      "HUGO_VERSION": "0.161.1"
+    }
+  },
+  "buildCommand": "hugo --gc",
+  "installCommand": "echo 'No install step required'",
+  "framework": null
+}
