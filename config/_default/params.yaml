@@ -1,5 +1,5 @@
 env: production
-description: &description "백엔드 개발자 반정훈의 기술 블로그입니다."
+description: &description "Technical blog by backend developer Junghoon Ban."
 author: junghoon-vans
 
 defaultTheme: auto

@@ -11,7 +11,7 @@ buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
 googleAnalytics: G-LRH9813WJ0
-defaultContentLanguage: ko
+defaultContentLanguage: en
 
 markup:
     goldmark:

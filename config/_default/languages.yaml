@@ -1,6 +1,24 @@
 ko:
   label: Korean
   weight: 1
+  params:
+    description: "백엔드 개발자 반정훈의 기술 블로그입니다."
+    homeInfoParams:
+      Title: "안녕하세요!"
+      Content: "백엔드 개발자 반정훈의 기술 블로그입니다."
+  taxonomies:
+    category: categories
+    tag: tags
+    series: series
+
+en:
+  label: English
+  weight: 2
+  params:
+    description: "Technical blog by backend developer Junghoon Ban."
+    homeInfoParams:
+      Title: "Hello World!"
+      Content: "Technical blog by backend developer Junghoon Ban."
   taxonomies:
     category: categories
     tag: tags

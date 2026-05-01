@@ -1,0 +1,19 @@
+main:
+  - name: Archive
+    url: archives/
+    weight: 1
+  - name: Tags
+    url: tags/
+    weight: 2
+  - name: Categories
+    url: categories/
+    weight: 3
+  - name: Series
+    url: series/
+    weight: 4
+  - name: Search
+    url: search/
+    weight: 5
+  - name: TIL
+    url: https://til.vanslog.io
+    weight: 6
