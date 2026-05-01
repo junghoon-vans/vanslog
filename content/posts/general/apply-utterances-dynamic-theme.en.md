@@ -42,9 +42,9 @@ For sites that support both dark mode and night mode, `Utterances` must also cha
 
 {{- /* Comments area start */ -}}
 <div class="comments">
- <script>
- <!-- -->
- </script>
+    <script>
+        <!-- Write JavaScript -->
+    </script>
 </div>
 {{- /* Comments area end */ -}}
 
@@ -57,38 +57,38 @@ First, find the part where you want to add a comment. In the case of Hugo used i
 ```js
 loadComment();
 const callback = (mutationsList) => {
- mutationsList.forEach(mutation => {
- if (mutation.attributeName === "class" && document.querySelector('.utterances-frame')) {
- const message = {
- type: 'set-theme',
- theme: getTheme()
- };
- const iframe = document.querySelector('.utterances-frame');
- iframe.contentWindow.postMessage(message, 'https://utteranc.es');
- }
- })
+    mutationsList.forEach(mutation => {
+        if (mutation.attributeName === "class" && document.querySelector('.utterances-frame')) {
+            const message = {
+                type: 'set-theme',
+                theme: getTheme()
+            };
+            const iframe = document.querySelector('.utterances-frame');
+            iframe.contentWindow.postMessage(message, 'https://utteranc.es');
+        }
+    })
 }
 const mutationObserver = new MutationObserver(callback);
 mutationObserver.observe(document.body, { attributes: true });
 
-function getTheme() { //
- var theme = window.localStorage && window.localStorage.getItem("pref-theme");
- if (theme == null) {
- theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
- }
- return theme === 'dark' ? 'GitHub-dark' : 'GitHub-light';
+function getTheme() { // method to get the site theme
+    var theme = window.localStorage && window.localStorage.getItem("pref-theme");
+    if (theme == null) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    return theme === 'dark' ? 'github-dark' : 'github-light';
 }
 
 function loadComment() {
- let s = document.createElement('script');
- s.src = 'https://utteranc.es/client.js';
- s.setAttribute('repo', 'junghoon-vans/vanslog'); //
- s.setAttribute('issue-term', 'pathname');
- s.setAttribute('theme', getTheme());
- s.setAttribute('crossorigin', 'anonymous');
- s.setAttribute('async', '');
- document.querySelector('div.comments').innerHTML = '';
- document.querySelector('div.comments').appendChild(s);
+    let s = document.createElement('script');
+    s.src = 'https://utteranc.es/client.js';
+    s.setAttribute('repo', 'junghoon-vans/vanslog'); // specify your repository
+    s.setAttribute('issue-term', 'pathname');
+    s.setAttribute('theme', getTheme());
+    s.setAttribute('crossorigin', 'anonymous');
+    s.setAttribute('async', '');
+    document.querySelector('div.comments').innerHTML = '';
+    document.querySelector('div.comments').appendChild(s);
 }
 ```The above code uses the `loadComments` method to load `utterances` comments, and then `mutationObserver` recognizes changes in the state of the DOM and changes the theme of the utterances. The `getTheme` method determines what mode the site is currently in and specifies the theme to apply to the comment.
 

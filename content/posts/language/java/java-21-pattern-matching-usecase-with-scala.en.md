@@ -32,15 +32,15 @@ Scala provides the following keywords for pattern matching.
 - `case`: Keyword that defines a branch
 
 ```scala
-import scala.util. Random
+import scala.util.Random
 
 val x: Int = Random.nextInt(10)
 
 x match
- case 0 => "zero"
- case 1 => "one"
- case 2 => "two"
- case _ => "other"
+  case 0 => "zero"
+  case 1 => "one"
+  case 2 => "two"
+  case _ => "other"
 ```
 
 The above example declares a variable x containing `random value` from 0 to 9, and branches depending on the value of x.
@@ -66,14 +66,14 @@ First, define a trait called `Notification` and define case classes called `Emai
 
 ```scala
 def showNotification(notification: Notification): String = {
- notification match {
- case Email(sender, title, _) =>
- s"You got an email from $sender with title: $title"
- case SMS(number, message) =>
- s"You got an SMS from $number! Message: $message"
- case VoiceRecording(name, link) =>
- s"you received a Voice Recording from $name! Click the link to hear it: $link"
- }
+  notification match {
+    case Email(sender, title, _) =>
+      s"You got an email from $sender with title: $title"
+    case SMS(number, message) =>
+      s"You got an SMS from $number! Message: $message"
+    case VoiceRecording(name, link) =>
+      s"you received a Voice Recording from $name! Click the link to hear it: $link"
+  }
 }
 ```
 
@@ -107,33 +107,33 @@ Now let's call the method declared earlier. When `SMS` and `VoiceRecording` are 
 
 ```java
 for (NodeFlag flag : source) {
- switch (flag) {
- case NOFLAGS:
- flags.add(Flag. NOFLAGS);
- break;
- case EVENTUAL_FAIL:
- flags.add(Flag. PFAIL);
- break;
- case FAIL:
- flags.add(Flag. FAIL);
- break;
- case HANDSHAKE:
- flags.add(Flag. HANDSHAKE);
- break;
- case MASTER:
- flags.add(Flag. MASTER);
- break;
- case MYSELF:
- flags.add(Flag. MYSELF);
- break;
- case NOADDR:
- flags.add(Flag. NOADDR);
- break;
- case SLAVE:
- case REPLICA:
- flags.add(Flag. REPLICA);
- break;
- }
+  switch (flag) {
+    case NOFLAGS:
+      flags.add(Flag.NOFLAGS);
+      break;
+    case EVENTUAL_FAIL:
+      flags.add(Flag.PFAIL);
+      break;
+    case FAIL:
+      flags.add(Flag.FAIL);
+      break;
+    case HANDSHAKE:
+      flags.add(Flag.HANDSHAKE);
+      break;
+    case MASTER:
+      flags.add(Flag.MASTER);
+      break;
+    case MYSELF:
+      flags.add(Flag.MYSELF);
+      break;
+    case NOADDR:
+      flags.add(Flag.NOADDR);
+      break;
+    case SLAVE:
+    case REPLICA:
+      flags.add(Flag.REPLICA);
+      break;
+  }
 }
 ```
 
@@ -145,16 +145,16 @@ The example code above clearly shows the problem with `Switch statement`. The co
 
 ```java
 for (NodeFlag flag : source) {
- switch (flag) {
- case NOFLAGS -> flags.add(Flag. NOFLAGS);
- case EVENTUAL_FAIL -> flags.add(Flag. PFAIL);
- case FAIL -> flags.add(Flag. FAIL);
- case HANDSHAKE -> flags.add(Flag. HANDSHAKE);
- case MASTER -> flags.add(Flag. MASTER);
- case MYSELF -> flags.add(Flag. MYSELF);
- case NOADDR -> flags.add(Flag. NOADDR);
- case SLAVE, REPLICA -> flags.add(Flag. REPLICA);
- }
+  switch (flag) {
+    case NOFLAGS -> flags.add(Flag.NOFLAGS);
+    case EVENTUAL_FAIL -> flags.add(Flag.PFAIL);
+    case FAIL -> flags.add(Flag.FAIL);
+    case HANDSHAKE -> flags.add(Flag.HANDSHAKE);
+    case MASTER -> flags.add(Flag.MASTER);
+    case MYSELF -> flags.add(Flag.MYSELF);
+    case NOADDR -> flags.add(Flag.NOADDR);
+    case SLAVE, REPLICA -> flags.add(Flag.REPLICA);
+  }
 }
 ```
 
@@ -164,18 +164,18 @@ Switch expressions use `->`, similar to lambda expressions, to express your code
 
 ```java
 switch (returnType) {
- case BOOLEAN:
- return ScriptOutputType. BOOLEAN;
- case MULTI:
- return ScriptOutputType. MULTI;
- case VALUE:
- return ScriptOutputType. VALUE;
- case INTEGER:
- return ScriptOutputType. INTEGER;
- case STATUS:
- return ScriptOutputType. STATUS;
- default:
- throw new IllegalArgumentException("Return type " + returnType + " is not a supported script output type");
+  case BOOLEAN:
+    return ScriptOutputType.BOOLEAN;
+  case MULTI:
+    return ScriptOutputType.MULTI;
+  case VALUE:
+    return ScriptOutputType.VALUE;
+  case INTEGER:
+    return ScriptOutputType.INTEGER;
+  case STATUS:
+    return ScriptOutputType.STATUS;
+  default:
+    throw new IllegalArgumentException("Return type " + returnType + " is not a supported script output type");
 }
 ```
 
@@ -183,13 +183,13 @@ The example code above is slightly different from the code we looked at earlier.
 
 ```java
 return switch (returnType) {
- case BOOLEAN -> ScriptOutputType. BOOLEAN;
- case MULTI -> ScriptOutputType. MULTI;
- case VALUE -> ScriptOutputType. VALUE;
- case INTEGER -> ScriptOutputType. INTEGER;
- case STATUS -> ScriptOutputType. STATUS;
- default ->
- throw new IllegalArgumentException("Return type " + returnType + " is not a supported script output type");
+  case BOOLEAN -> ScriptOutputType.BOOLEAN;
+  case MULTI -> ScriptOutputType.MULTI;
+  case VALUE -> ScriptOutputType.VALUE;
+  case INTEGER -> ScriptOutputType.INTEGER;
+  case STATUS -> ScriptOutputType.STATUS;
+  default ->
+    throw new IllegalArgumentException("Return type " + returnType + " is not a supported script output type");
 };
 ```
 
@@ -208,8 +208,8 @@ The features we will look at this time were added in Java 16. This function allo
 
 ```java
 if (obj instanceof String) {
- String s = (String)obj;
- ... use s ...
+  String s = (String)obj;
+  ... use s ...
 }
 ```
 
@@ -219,7 +219,7 @@ Are you using a version prior to Java 16? In that case, even if the type is chec
 
 ```
 if (obj instanceof String s) {
- ... use s ...
+  ... use s ...
 }
 ```
 
@@ -235,17 +235,17 @@ From here, we will finally introduce the features added to Java 21. Pattern matc
 
 ```java
 static String formatter(Object obj) {
- String formatted = "unknown";
- if (obj instanceof Integer i) {
- formatted = String.format("int %d", i);
- } else if (obj instanceof Long l) {
- formatted = String.format("long %d", l);
- } else if (obj instanceof Double d) {
- formatted = String.format("double %f", d);
- } else if (obj instanceof String s) {
- formatted = String.format("String %s", s);
- }
- return formatted;
+    String formatted = "unknown";
+    if (obj instanceof Integer i) {
+        formatted = String.format("int %d", i);
+    } else if (obj instanceof Long l) {
+        formatted = String.format("long %d", l);
+    } else if (obj instanceof Double d) {
+        formatted = String.format("double %f", d);
+    } else if (obj instanceof String s) {
+        formatted = String.format("String %s", s);
+    }
+    return formatted;
 }
 ```
 
@@ -255,13 +255,13 @@ In [Pattern Matching for instanceof](#pattern-matching-for-instanceof), which we
 
 ```java
 static String formatterPatternSwitch(Object obj) {
- return switch (obj) {
- case Integer i -> String.format("int %d", i);
- case Long l -> String.format("long %d", l);
- case Double d -> String.format("double %f", d);
- case String s -> String.format("String %s", s);
- default -> obj.toString();
- };
+    return switch (obj) {
+        case Integer i -> String.format("int %d", i);
+        case Long l    -> String.format("long %d", l);
+        case Double d  -> String.format("double %f", d);
+        case String s  -> String.format("String %s", s);
+        default        -> obj.toString();
+    };
 }
 ```
 
@@ -279,11 +279,11 @@ However, now it is possible to compare types in switch expressions rather than i
 record Point(int x, int y) {}
 
 static void printSum(Object obj) {
- if (obj instanceof Point p) {
- int x = p.x();
- int y = p.y();
- System.out.println(x+y);
- }
+    if (obj instanceof Point p) {
+        int x = p.x();
+        int y = p.y();
+        System.out.println(x+y);
+    }
 }
 ```
 
@@ -293,9 +293,9 @@ Previously, records could only access internal variables through `getter`. So, i
 
 ```java
 static void printSum(Object obj) {
- if (obj instanceof Point(int x, int y)) {
- System.out.println(x+y);
- }
+    if (obj instanceof Point(int x, int y)) {
+        System.out.println(x+y);
+    }
 }
 ```
 
@@ -317,14 +317,14 @@ Let’s look at the example of the [Pattern Matching with Scala](#Case-Class) ch
 
 ```java
 public static String showNotification(Notification notification) {
- return switch (notification) {
- case Email(String sender, String title, String body) ->
- String.format("You got an email from %s with title: %s", sender, title);
- case SMS(String caller, String message) ->
- String.format("You got an SMS from %s! Message: %s", caller, message);
- case VoiceRecording(String contactName, String link) ->
- String.format("You received a Voice Recording from %s! Click the link to hear it: %s", contactName, link);
- };
+    return switch (notification) {
+        case Email(String sender, String title, String body) ->
+            String.format("You got an email from %s with title: %s", sender, title);
+        case SMS(String caller, String message) ->
+            String.format("You got an SMS from %s! Message: %s", caller, message);
+        case VoiceRecording(String contactName, String link) ->
+            String.format("You received a Voice Recording from %s! Click the link to hear it: %s", contactName, link);
+    };
 }
 ```
 
@@ -351,14 +351,14 @@ The relevant JEPs are:
 
 ```java
 public static String showNotification(Notification notification) {
- return switch (notification) {
- case Email(String sender, String title, _) ->
- STR."You got an email from \{sender} with title: \{title}"; // String interpolation
- case SMS(String caller, String message) ->
- STR."You got an SMS from \{caller}! Message: \{message}";
- case VoiceRecording(String contactName, String link) ->
- STR."You received a Voice Recording from \{contactName}! Click the link to hear it: \{link}";
- };
+    return switch (notification) {
+        case Email(String sender, String title, _) ->
+            STR."You got an email from \{sender} with title: \{title}"; // String interpolation
+        case SMS(String caller, String message) ->
+            STR."You got an SMS from \{caller}! Message: \{message}";
+        case VoiceRecording(String contactName, String link) ->
+            STR."You received a Voice Recording from \{contactName}! Click the link to hear it: \{link}";
+    };
 }
 ```
 

@@ -56,15 +56,15 @@ Because SonarCloud uses the SonarQube plugin to perform analysis, you need to se
 
 ```groovy
 plugins {
- id 'org.sonarqube' version '3.5.0.2730'
+    id 'org.sonarqube' version '3.5.0.2730'
 }
 
 sonar {
- properties {
- property 'sonar.host.url', 'https://sonarcloud.io'
- property 'sonar.organization', 'dnd-side-project'
- property 'sonar.projectKey', 'dnd-side-project_dnd-8th-8-backend'
- }
+    properties {
+        property 'sonar.host.url', 'https://sonarcloud.io'
+        property 'sonar.organization', 'dnd-side-project'
+        property 'sonar.projectKey', 'dnd-side-project_dnd-8th-8-backend'
+    }
 }
 ```
 
@@ -80,40 +80,40 @@ In this section, we will look at an example of delivering analysis results to So
 ```yaml
 name: CI
 on:
- push:
- branches:
- - main
- pull_request:
+  push:
+    branches:
+      - main
+  pull_request:
 jobs:
- sonarcloud:
- name: SonarCloud
- runs-on: ubuntu-latest
- steps:
- - uses: actions/checkout@v3
- with:
- fetch-depth: 0
- - name: Set up JDK 17
- uses: actions/setup-java@v2
- with:
- java-version: 17
- distribution: 'zulu'
- - name: Cache Gradle packages
- uses: actions/cache@v3
- with:
- path: ~/.gradle/caches
- key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle') }}
- restore-keys: ${{ runner.os }}-gradle
- - name: Cache SonarCloud packages
- uses: actions/cache@v3
- with:
- path: ~/.sonar/cache
- key: ${{ runner.os }}-sonar
- restore-keys: ${{ runner.os }}-sonar
- - name: Build and analyze
- run: ./gradlew build jacocoTestReport sonar --info
- env:
- GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
- SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+  sonarcloud:
+    name: SonarCloud
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Set up JDK 17
+        uses: actions/setup-java@v2
+        with:
+          java-version: 17
+          distribution: 'zulu'
+      - name: Cache Gradle packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.gradle/caches
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle') }}
+          restore-keys: ${{ runner.os }}-gradle
+      - name: Cache SonarCloud packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.sonar/cache
+          key: ${{ runner.os }}-sonar
+          restore-keys: ${{ runner.os }}-sonar
+      - name: Build and analyze
+        run: ./gradlew build jacocoTestReport sonar --info
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 ```
 
 The example above requests analysis from SonarCloud when a PR is created or pushed to branch `main`. `GITHUB_TOKEN` and `SONAR_TOKEN` are the tokens to use in GitHub Actions. `GITHUB_TOKEN` does not need to be created separately, but `SONAR_TOKEN` must be created in `Settings` of the project in SonarCloud and registered in `GitHub Secrets`.
@@ -126,11 +126,11 @@ This section introduces how to set up the Checkstyle plugin. If you do not want 
 
 ```groovy
 plugins {
- id 'checkstyle'
+    id 'checkstyle'
 }
 
 checkstyle {
- toolVersion = "10.4"
+    toolVersion = "10.4"
 }
 ```
 
@@ -146,22 +146,22 @@ Lastly, here is an example of linking SonarCloud and Checkstyle. If you have com
 
 ```groovy
 plugins {
- id 'checkstyle'
- id 'org.sonarqube' version '3.5.0.2730'
+    id 'checkstyle'
+    id 'org.sonarqube' version '3.5.0.2730'
 }
 
 checkstyle {
- maxWarnings = 0
- toolVersion = "10.4"
+    maxWarnings = 0
+    toolVersion = "10.4"
 }
 
 sonar {
- properties {
- property 'sonar.host.url', 'https://sonarcloud.io'
- property 'sonar.organization', 'dnd-side-project'
- property 'sonar.projectKey', 'dnd-side-project_dnd-8th-8-backend'
- property 'sonar.java.checkstyle.reportPaths', 'build/reports/checkstyle/main.xml'
- }
+    properties {
+        property 'sonar.host.url', 'https://sonarcloud.io'
+        property 'sonar.organization', 'dnd-side-project'
+        property 'sonar.projectKey', 'dnd-side-project_dnd-8th-8-backend'
+        property 'sonar.java.checkstyle.reportPaths', 'build/reports/checkstyle/main.xml'
+    }
 }
 ```
 

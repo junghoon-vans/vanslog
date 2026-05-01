@@ -27,10 +27,10 @@ My eight-week journey at DND came to an end with the **final presentation** last
 ### Project introduction
 
 ```
-When preparing for a wedding, is it hard to know what to prepare, when, and where?
-But hiring a planner or agency can be expensive 🤔
-"Is there a service that helps engaged couples prepare their wedding schedule?"
-After discussing this challenge, we created "My Wedding Planner, WeddingMap."
+Are you unsure when, where, and what to prepare for your wedding?
+Hiring a planner or agency can be expensive, too. 🤔
+“Could there be a service that helps engaged couples prepare their wedding schedule?”
+After thinking through this problem, we created “My Wedding Planner, WeddingMap.”
 ```
 
 ### Project duration
@@ -115,17 +115,17 @@ All deployment processes are automated using `GitHub Actions`.
 ```mermaid
 flowchart LR
 		subgraph Service Architecture
- Front-End <-->|Request & Response| a1{Amazon ELB}
- a1 <--> a2[Amazon ECS]
- a2 <--> a3[(Amazon S3)]
- a2 <--> a4[(Amazon RDS)]
- a2 <--> a5[(Amazon ElastiCache)]
+    Front-End <-->|Request & Response| a1{Amazon ELB}
+    a1 <--> a2[Amazon ECS]
+    a2 <--> a3[(Amazon S3)]
+    a2 <--> a4[(Amazon RDS)]
+    a2 <--> a5[(Amazon ElastiCache)]
 		end
-
+		
 		subgraph CD Pipeline
- b1[GitHub Actions] --> b2[JIB]
- b2 --> |Container Image Build & Push| b3[Amazon ECR]
- b3 --> |Deploy to ECS| a2
+    b1[GitHub Actions] --> b2[JIB]
+    b2 --> |Container Image Build & Push| b3[Amazon ECR]
+    b3 --> |Deploy to ECS| a2
 		end
 ```
 

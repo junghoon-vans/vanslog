@@ -34,12 +34,12 @@ By defining the following in `namespace.xml`, you can create a Meilisearch clien
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xmlns:meilisearch="http://www.vanslog.io/spring/data/meilisearch"
- xsi:schemaLocation="http://www.vanslog.io/spring/data/meilisearch http://www.vanslog.io/spring/data/meilisearch/spring-meilisearch-1.0.xsd
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:meilisearch="http://www.vanslog.io/spring/data/meilisearch"
+  xsi:schemaLocation="http://www.vanslog.io/spring/data/meilisearch http://www.vanslog.io/spring/data/meilisearch/spring-meilisearch-1.0.xsd
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
- <meilisearch:meilisearch-client id="meilisearchClient"/>
+  <meilisearch:meilisearch-client id="meilisearchClient"/>
 </beans>
 ```
 
@@ -63,75 +63,75 @@ XSD is a schema language that defines the structure and content of an XML docume
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
- xmlns:beans="http://www.springframework.org/schema/beans"
- xmlns:tool="http://www.springframework.org/schema/tool"
- xmlns="http://www.vanslog.io/spring/data/meilisearch"
- targetNamespace="http://www.vanslog.io/spring/data/meilisearch"
- elementFormDefault="qualified" attributeFormDefault="unqualified">
+            xmlns:beans="http://www.springframework.org/schema/beans"
+            xmlns:tool="http://www.springframework.org/schema/tool"
+            xmlns="http://www.vanslog.io/spring/data/meilisearch"
+            targetNamespace="http://www.vanslog.io/spring/data/meilisearch"
+            elementFormDefault="qualified" attributeFormDefault="unqualified">
 
- <xsd:import namespace="http://www.springframework.org/schema/beans"/>
- <xsd:import namespace="http://www.springframework.org/schema/tool"/>
+    <xsd:import namespace="http://www.springframework.org/schema/beans"/>
+    <xsd:import namespace="http://www.springframework.org/schema/tool"/>
 
- <xsd:element name="meilisearch-client">
- <xsd:annotation>
- <xsd:documentation/>
- <xsd:appinfo>
- <tool:assignable-to type="com.meilisearch.sdk. Client"/>
- </xsd:appinfo>
- </xsd:annotation>
- <xsd:complexType>
- <xsd:complexContent>
- <xsd:extension base="beans:identifiedType">
- <xsd:attribute name="host-url" type="xsd:string" default="http://localhost:7700">
- <xsd:annotation>
- <xsd:documentation>
- <![CDATA[The host address of the Meilisearch server. The default is http://localhost:7700.]]>
- </xsd:documentation>
- </xsd:annotation>
- </xsd:attribute>
- <xsd:attribute name="api-key" type="xsd:string">
- <xsd:annotation>
- <xsd:documentation>
- <![CDATA[The API key of the Meilisearch server.]]>
- </xsd:documentation>
- </xsd:annotation>
- </xsd:attribute>
- <xsd:attribute name="json-handler" default="GSON">
- <xsd:annotation>
- <xsd:documentation>
- <![CDATA[The enum value of java: io.vanslog.spring.data.meilisearch.config. JsonHandlerBuilder. The default is GSON.]]>
- </xsd:documentation>
- </xsd:annotation>
- <xsd:simpleType>
- <xsd:restriction base="xsd:string">
- <xsd:enumeration value="GSON">
- <xsd:annotation>
- <xsd:documentation>
- <![CDATA[Use GSON as the JSON handler.]]>
- </xsd:documentation>
- </xsd:annotation>
- </xsd:enumeration>
- <xsd:enumeration value="JACKSON">
- <xsd:annotation>
- <xsd:documentation>
- <![CDATA[Use JACKSON as the JSON handler.]]>
- </xsd:documentation>
- </xsd:annotation>
- </xsd:enumeration>
- </xsd:restriction>
- </xsd:simpleType>
- </xsd:attribute>
- <xsd:attribute name="client-agents" type="xsd:string">
- <xsd:annotation>
- <xsd:documentation>
- <![CDATA[The comma delimited string array of client agents.]]>
- </xsd:documentation>
- </xsd:annotation>
- </xsd:attribute>
- </xsd:extension>
- </xsd:complexContent>
- </xsd:complexType>
- </xsd:element>
+    <xsd:element name="meilisearch-client">
+        <xsd:annotation>
+            <xsd:documentation/>
+            <xsd:appinfo>
+                <tool:assignable-to type="com.meilisearch.sdk.Client"/>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexType>
+            <xsd:complexContent>
+                <xsd:extension base="beans:identifiedType">
+                    <xsd:attribute name="host-url" type="xsd:string" default="http://localhost:7700">
+                        <xsd:annotation>
+                            <xsd:documentation>
+                                <![CDATA[The host address of the Meilisearch server. The default is http://localhost:7700.]]>
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:attribute>
+                    <xsd:attribute name="api-key" type="xsd:string">
+                        <xsd:annotation>
+                            <xsd:documentation>
+                                <![CDATA[The API key of the Meilisearch server.]]>
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:attribute>
+                    <xsd:attribute name="json-handler" default="GSON">
+                        <xsd:annotation>
+                            <xsd:documentation>
+                                <![CDATA[The enum value of java: io.vanslog.spring.data.meilisearch.config.JsonHandlerBuilder. The default is GSON.]]>
+                            </xsd:documentation>
+                        </xsd:annotation>
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:enumeration value="GSON">
+                                    <xsd:annotation>
+                                        <xsd:documentation>
+                                            <![CDATA[Use GSON as the JSON handler.]]>
+                                        </xsd:documentation>
+                                    </xsd:annotation>
+                                </xsd:enumeration>
+                                <xsd:enumeration value="JACKSON">
+                                    <xsd:annotation>
+                                        <xsd:documentation>
+                                            <![CDATA[Use JACKSON as the JSON handler.]]>
+                                        </xsd:documentation>
+                                    </xsd:annotation>
+                                </xsd:enumeration>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:attribute>
+                    <xsd:attribute name="client-agents" type="xsd:string">
+                        <xsd:annotation>
+                            <xsd:documentation>
+                                <![CDATA[The comma delimited string array of client agents.]]>
+                            </xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:attribute>
+                </xsd:extension>
+            </xsd:complexContent>
+        </xsd:complexType>
+    </xsd:element>
 
 </xsd:schema>
 
@@ -159,17 +159,17 @@ The above XSD defines the `meilisearch-client` element. The element has the foll
 ```java
 public class MeilisearchNamespaceHandler extends NamespaceHandlerSupport {
 
- @Override
- public void init() {
- registerBeanDefinitionParser("meilisearch-client", new MeilisearchClientBeanDefinitionParser());
- }
+  @Override
+  public void init() {
+    registerBeanDefinitionParser("meilisearch-client", new MeilisearchClientBeanDefinitionParser());
+  }
 }
 ```
 
 The `meilisearch-client` element defined in the previous XSD was registered through `MeilisearchNamespaceHandler`. At this time, the `MeilisearchClientBeanDefinitionParser` registered together plays the role of parsing the properties required for bean registration. We will cover this in detail later.
 
 ```properties
-http\://www.vanslog.io/spring/data/meilisearch=io.vanslog.spring.data.meilisearch.config. MeilisearchNamespaceHandler
+http\://www.vanslog.io/spring/data/meilisearch=io.vanslog.spring.data.meilisearch.config.MeilisearchNamespaceHandler
 ```
 
 Afterwards, we registered `MeilisearchNamespaceHandler` in the `spring.handlers` file so that Spring can use the handler.
@@ -178,46 +178,46 @@ Afterwards, we registered `MeilisearchNamespaceHandler` in the `spring.handlers`
 
 ```java
 public class MeilisearchClientBeanDefinitionParser
- extends AbstractBeanDefinitionParser {
+        extends AbstractBeanDefinitionParser {
 
- @Override
- protected AbstractBeanDefinition parseInternal(Element element,
- ParserContext parserContext) {
- BeanDefinitionBuilder builder =
- BeanDefinitionBuilder.rootBeanDefinition(
- MeilisearchClientFactoryBean.class);
- setLocalSettings(element, builder);
- return getSourcedBeanDefinition(builder, element, parserContext);
- }
+    @Override
+    protected AbstractBeanDefinition parseInternal(Element element,
+                                                   ParserContext parserContext) {
+        BeanDefinitionBuilder builder =
+                BeanDefinitionBuilder.rootBeanDefinition(
+                        MeilisearchClientFactoryBean.class);
+        setLocalSettings(element, builder);
+        return getSourcedBeanDefinition(builder, element, parserContext);
+    }
 
- private void setLocalSettings(Element element,
- BeanDefinitionBuilder builder) {
+    private void setLocalSettings(Element element,
+                                  BeanDefinitionBuilder builder) {
 
- Assert.hasText(element.getAttribute("api-key"),
- "The attribute 'api-key' is required.");
+        Assert.hasText(element.getAttribute("api-key"),
+                "The attribute 'api-key' is required.");
 
- builder.addPropertyValue("hostUrl", element.getAttribute("host-url"));
- builder.addPropertyValue("apiKey", element.getAttribute("api-key"));
- builder.addPropertyValue("clientAgents",
- element.getAttribute("client-agents"));
+        builder.addPropertyValue("hostUrl", element.getAttribute("host-url"));
+        builder.addPropertyValue("apiKey", element.getAttribute("api-key"));
+        builder.addPropertyValue("clientAgents",
+                element.getAttribute("client-agents"));
 
- String jsonHandlerName = element.getAttribute("json-handler");
- Assert.isTrue(JsonHandlerBuilder.contains(jsonHandlerName),
- "JsonHandler must be one of "
- + Arrays.toString(JsonHandlerBuilder.values()));
+        String jsonHandlerName = element.getAttribute("json-handler");
+        Assert.isTrue(JsonHandlerBuilder.contains(jsonHandlerName),
+                "JsonHandler must be one of "
+                        + Arrays.toString(JsonHandlerBuilder.values()));
 
- JsonHandlerBuilder handlerBuilder =
- JsonHandlerBuilder.valueOf(jsonHandlerName.toUpperCase());
- builder.addPropertyValue("jsonHandler", handlerBuilder.build());
- }
+        JsonHandlerBuilder handlerBuilder =
+                JsonHandlerBuilder.valueOf(jsonHandlerName.toUpperCase());
+        builder.addPropertyValue("jsonHandler", handlerBuilder.build());
+    }
 
- private AbstractBeanDefinition getSourcedBeanDefinition(
- BeanDefinitionBuilder builder, Element source,
- ParserContext context) {
- AbstractBeanDefinition definition = builder.getBeanDefinition();
- definition.setSource(context.extractSource(source));
- return definition;
- }
+    private AbstractBeanDefinition getSourcedBeanDefinition(
+            BeanDefinitionBuilder builder, Element source,
+            ParserContext context) {
+        AbstractBeanDefinition definition = builder.getBeanDefinition();
+        definition.setSource(context.extractSource(source));
+        return definition;
+    }
 }
 ```
 
@@ -229,49 +229,49 @@ There are four pieces of information required to create a Meilisearch client. So
 
 ```java
 public final class MeilisearchClientFactoryBean
- implements FactoryBean<Client>, InitializingBean {
+        implements FactoryBean<Client>, InitializingBean {
 
- @Nullable private String hostUrl;
- @Nullable private String apiKey;
- @Nullable private JsonHandler jsonHandler;
- private String[] clientAgents;
- @Nullable private Client client;
+    @Nullable private String hostUrl;
+    @Nullable private String apiKey;
+    @Nullable private JsonHandler jsonHandler;
+    private String[] clientAgents;
+    @Nullable private Client client;
 
- private MeilisearchClientFactoryBean() {
- this.clientAgents = new String[0];
- }
+    private MeilisearchClientFactoryBean() {
+        this.clientAgents = new String[0];
+    }
 
- @Override
- public Client getObject() {
- return client;
- }
+    @Override
+    public Client getObject() {
+        return client;
+    }
 
- @Override
- public Class<? extends Client> getObjectType() {
- return Client.class;
- }
+    @Override
+    public Class<? extends Client> getObjectType() {
+        return Client.class;
+    }
 
- @Override
- public void afterPropertiesSet() throws Exception {
- Config config = new Config(hostUrl, apiKey, jsonHandler, clientAgents);
- client = new Client(config);
- }
+    @Override
+    public void afterPropertiesSet() throws Exception {
+        Config config = new Config(hostUrl, apiKey, jsonHandler, clientAgents);
+        client = new Client(config);
+    }
 
- public void setHostUrl(String hostUrl) {
- this.hostUrl = hostUrl;
- }
+    public void setHostUrl(String hostUrl) {
+        this.hostUrl = hostUrl;
+    }
 
- public void setApiKey(String apiKey) {
- this.apiKey = apiKey;
- }
+    public void setApiKey(String apiKey) {
+        this.apiKey = apiKey;
+    }
 
- public void setJsonHandler(JsonHandler jsonHandler) {
- this.jsonHandler = jsonHandler;
- }
+    public void setJsonHandler(JsonHandler jsonHandler) {
+        this.jsonHandler = jsonHandler;
+    }
 
- public void setClientAgents(String[] clientAgents) {
- this.clientAgents = clientAgents;
- }
+    public void setClientAgents(String[] clientAgents) {
+        this.clientAgents = clientAgents;
+    }
 }
 ```
 

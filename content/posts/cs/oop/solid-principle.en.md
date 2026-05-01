@@ -30,14 +30,14 @@ For example, let's assume that the `student` class adds or searches courses, sto
 
 ```java
 public class Student {
- public void getCourses() { ... }
- public void addCourse(Course c) { ... }
+    public void getCourses() { ... }
+    public void addCourse(Course c) { ... }
 
- public void save() { ... }
- public Student load() { ... }
+    public void save() { ... }
+    public Student load() { ... }
 
- public void printOnReportCard() { ... }
- public void printOnAttendanceBook() { ... }
+    public void printOnReportCard() { ... }
+    public void printOnAttendanceBook() { ... }
 }
 ```
 
@@ -171,17 +171,17 @@ In object-orientation, `abstract class` or `interface` is used to express abstra
 
 ```java
 public class Person {
- private Beverage beverage
+    private Beverage beverage
 
- public void Person() {
- this.beverage = new Water();
- // this.beverage = new Coffee();
- // this.beverage = new Coke();
- }
+    public void Person() {
+        this.beverage = new Water();
+        // this.beverage = new Coffee();
+        // this.beverage = new Coke();
+    }
 
- public void drink(){
- beverage.drink();
- }
+    public void drink(){
+        beverage.drink();
+    }
 }
 ```
 
@@ -189,15 +189,15 @@ First, let's look at the case where dependency injection is not used. Depending 
 
 ```java
 public class Person {
- private Beverage beverage
+    private Beverage beverage
 
- public void setBeverage(Beverage beverage) {
- this.beverage = beverage;
- }
+    public void setBeverage(Beverage beverage) {
+        this.beverage = beverage;
+    }
 
- public void drink(){
- beverage.drink();
- }
+    public void drink(){
+        beverage.drink();
+    }
 }
 ```
 

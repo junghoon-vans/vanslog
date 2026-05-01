@@ -27,14 +27,14 @@ In general, here's how to configure it using the `@Configuration` annotation: If
 ```java
 @Configuration
 public class MeilisearchConfiguration {
- @Bean
- public Client meilisearchClient() {
- Config meilisearchConfig = new Config(
- "http://localhost:7700",
- "masterKey"
- );
- return new Client(meilisearchConfig);
- }
+    @Bean
+    public Client meilisearchClient() {
+        Config meilisearchConfig = new Config(
+            "http://localhost:7700",
+            "masterKey"
+        );
+        return new Client(meilisearchConfig);
+    }
 }
 ```
 
@@ -48,13 +48,13 @@ First of all, rather than using the method of directly registering a bean, it su
 @Configuration
 class CustomConfiguration extends MeilisearchConfiguration {
 
- @Override
- public ClientConfiguration clientConfiguration() {
- return ClientConfiguration.builder()
- .connectedToLocalhost()
- .withApiKey("masterKey")
- .build();
- }
+    @Override
+    public ClientConfiguration clientConfiguration() {
+        return ClientConfiguration.builder()
+            .connectedToLocalhost()
+            .withApiKey("masterKey")
+            .build();
+    }
 }
 ```
 

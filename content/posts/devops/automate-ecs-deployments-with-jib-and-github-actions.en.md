@@ -36,10 +36,10 @@ So, I recently deployed the wedding map project from DND to `Amazon ECS` and bui
 
 ```mermaid
 flowchart LR
- a1[GitHub Actions] --> a2[Jib] --> |Build Container Image| a3[Amazon ECR]
- a1 --> a4[Task Definition]
- a4 --> |Deploy to ECS| a5[Amazon ECS]
- a4 --> |Container Image| a3
+  a1[GitHub Actions] --> a2[Jib] --> |Build Container Image| a3[Amazon ECR]
+  a1 --> a4[Task Definition]
+  a4 --> |Deploy to ECS| a5[Amazon ECS]
+  a4 --> |Container Image| a3
 ```
 
 1. Build `Container Image` from `GitHub Actions` using `Jib`.
@@ -95,7 +95,7 @@ Add the `Jib` plugin to `build.gradle`.
 
 ```groovy
 plugins {
- id 'com.google.cloud.tools.jib' version '3.1.4'
+  id 'com.google.cloud.tools.jib' version '3.1.4'
 }
 ```
 
@@ -103,20 +103,20 @@ plugins {
 
 ```groovy
 jib {
- from {
- image = 'eclipse-temurin:17-jdk-alpine'
- }
- to {
- image = '<aws_account_id>.dkr.ecr.<region>.amazonaws.com/<repository_name>'
- tags = ['latest', "${project.version}".toString()]
- credHelper = 'ecr-login'
- }
- container {
- creationTime = 'USE_CURRENT_TIMESTAMP'
- jvmFlags = ['-Dspring.profiles.active=prod', '-XX:+UseContainerSupport', '-Dserver.port=8080', '-Dfile.encoding=UTF-8']
- ports = ['8080']
- user = 'nobody:nogroup'
- }
+    from {
+        image = 'eclipse-temurin:17-jdk-alpine'
+    }
+    to {
+        image = '<aws_account_id>.dkr.ecr.<region>.amazonaws.com/<repository_name>'
+        tags = ['latest', "${project.version}".toString()]
+        credHelper = 'ecr-login' 
+    }
+    container {
+        creationTime = 'USE_CURRENT_TIMESTAMP'
+        jvmFlags = ['-Dspring.profiles.active=prod', '-XX:+UseContainerSupport', '-Dserver.port=8080', '-Dfile.encoding=UTF-8']
+        ports = ['8080']
+        user = 'nobody:nogroup'
+    }
 }
 ```
 
@@ -181,8 +181,8 @@ Using `AWS CLI`, you can easily download task definition files.
 
 ```bash
 aws ecs describe-task-definition \
- --task-definition {task-definition-family} \
- --query taskDefinition > task-definition.json
+   --task-definition {task-definition-family} \
+   --query taskDefinition > task-definition.json
 ```
 
 If you run this command in the project root path, a `task-definition.json` file will be created.
@@ -196,38 +196,38 @@ If you have not completed all settings for `Jib`, `Amazon ECR`, and `Amazon ECS`
 ```yaml
 name: CD
 on:
- push:
- branches:
- - main
+  push:
+    branches:
+      - main
 jobs:
- deploy:
- name: Deploy to AWS
- runs-on: ubuntu-latest
- steps:
- - uses: actions/checkout@v3
- - name: Configure AWS credentials
- uses: aws-actions/configure-aws-credentials@v1
- with:
- aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
- aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
- aws-region: <AWS_REGION>
- - name: Login to Amazon ECR
- uses: aws-actions/amazon-ecr-login@v1
- - name: Set up JDK 17
- uses: actions/setup-java@v2
- with:
- java-version: 17
- distribution: 'temurin'
- cache: 'gradle'
- - name: Build and push image to Amazon ECR
- run: ./gradlew clean jib -x test
- - name: Deploy to AWS ECS
- uses: aws-actions/amazon-ecs-deploy-task-definition@v1
- with:
- task-definition: task-definition.json
- cluster: <ECS_CLUSTER_NAME>
- service: <ECS_SERVICE_NAME>
- wait-for-service-stability: true
+  deploy:
+    name: Deploy to AWS
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: <AWS_REGION>
+      - name: Login to Amazon ECR
+        uses: aws-actions/amazon-ecr-login@v1
+      - name: Set up JDK 17
+        uses: actions/setup-java@v2
+        with:
+          java-version: 17
+          distribution: 'temurin'
+          cache: 'gradle'
+      - name: Build and push image to Amazon ECR
+        run: ./gradlew clean jib -x test
+      - name: Deploy to AWS ECS
+        uses: aws-actions/amazon-ecs-deploy-task-definition@v1
+        with:
+          task-definition: task-definition.json
+          cluster: <ECS_CLUSTER_NAME>
+          service: <ECS_SERVICE_NAME>
+          wait-for-service-stability: true
 ```
 
 The above code is a GitHub Actions pipeline that builds the application using `Jib`, pushes the image to `Amazon ECR`, and then deploys to `Amazon ECS`.

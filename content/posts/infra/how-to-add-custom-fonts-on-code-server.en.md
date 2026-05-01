@@ -39,11 +39,11 @@ Afterwards, create a `fonts.css` file in the same path and set the font in a sim
 
 ```html
 @font-face {
- font-family: 'D2Coding ligature';
- src: url('../media/D2Coding-ligature.woff2') format('woff2'),
- url('../media/D2Coding-ligature.woff') format('woff');
- font-weight: 400;
- font-style: normal;
+    font-family: 'D2Coding ligature';
+    src: url('../media/D2Coding-ligature.woff2') format('woff2'),
+        url('../media/D2Coding-ligature.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
 }
 ```
 

@@ -30,8 +30,8 @@ Apply pre-commit
 ### pre-commit installation
 
 ```bash
-$ pip install pre-commit # pip
-$ brew install pre-commit # homebrew
+$ pip install pre-commit  # install with pip
+$ brew install pre-commit  # install with Homebrew 
 ```
 
 ### Create configuration file
@@ -41,18 +41,18 @@ Create a file named `.pre-commit-config.yaml` in the project root path. Afterwar
 
 ```yaml
 repos:
- - repo: https://github.com/asottile/setup-cfg-fmt
- rev: v2.0.0
- hooks:
- - id: setup-cfg-fmt
- - repo: https://github.com/asottile/reorder_python_imports
- rev: v3.8.3
- hooks:
- - id: reorder-python-imports
- - repo: https://github.com/asottile/add-trailing-comma
- rev: v2.3.0
- hooks:
- - id: add-trailing-comma
+  - repo: https://github.com/asottile/setup-cfg-fmt
+    rev: v2.0.0
+    hooks:
+    - id: setup-cfg-fmt
+  - repo: https://github.com/asottile/reorder_python_imports
+    rev: v3.8.3
+    hooks:
+    - id: reorder-python-imports
+  - repo: https://github.com/asottile/add-trailing-comma
+    rev: v2.3.0
+    hooks:
+    - id: add-trailing-comma
 ```
 
 > You can search for a list of supported hooks in [the site](https://pre-commit.com/hooks.html).

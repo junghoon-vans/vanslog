@@ -35,15 +35,15 @@ The [Testcontainers Meilisearch](https://testcontainers.com/modules/meilisearch/
 @ExtendWith(SpringExtension.class)
 class MeilisearchTemplateTest {
 
- MeilisearchContainer meilisearch;
+  MeilisearchContainer meilisearch;
 
- @BeforeAll
- static void beforeAll() {
- meilisearch = new MeilisearchContainer().withMasterKey("masterKey");
- meilisearch.start();
- }
+  @BeforeAll
+  static void beforeAll() {
+    meilisearch = new MeilisearchContainer().withMasterKey("masterKey");
+    meilisearch.start();
+  }
 
- // ...
+  // ...
 }
 ```
 
@@ -57,12 +57,12 @@ Now let's connect to the Meilisearch instance in our test code.
 ```java
 @Configuration
 class Config extends MeilisearchConfiguration {
- @Override
- public ClientConfiguration clientConfiguration() {
- return ClientConfiguration.builder()
- .connectedTo("http://localhost:" + meilisearch.getMappedPort(7700))
- .withApiKey("masterKey").build();
- }
+  @Override
+  public ClientConfiguration clientConfiguration() {
+    return ClientConfiguration.builder()
+            .connectedTo("http://localhost:" + meilisearch.getMappedPort(7700))
+            .withApiKey("masterKey").build();
+  }
 }
 ```
 
@@ -76,27 +76,27 @@ Now let's look at the overall code. The code that tests the `MeilisearchTemplate
 
 ```java
 @ExtendWith(SpringExtension.class)
-@ContextConfiguration(classes = { MeilisearchTemplateTest. Config.class })
+@ContextConfiguration(classes = { MeilisearchTemplateTest.Config.class })
 class MeilisearchTemplateTest {
 
- MeilisearchContainer meilisearch;
+  MeilisearchContainer meilisearch;
 
- @BeforeAll
- static void beforeAll() {
- meilisearch = new MeilisearchContainer().withMasterKey("masterKey");
- meilisearch.start();
- }
+  @BeforeAll
+  static void beforeAll() {
+    meilisearch = new MeilisearchContainer().withMasterKey("masterKey");
+    meilisearch.start();
+  }
 
- // ...
+  // ...
 
- @Configuration
- static class Config extends MeilisearchConfiguration {
- public ClientConfiguration clientConfiguration() {
- return ClientConfiguration.builder()
- .connectedTo("http://localhost:" + meilisearch.getMappedPort(7700))
- .withApiKey("masterKey").build();
- }
- }
+  @Configuration
+  static class Config extends MeilisearchConfiguration {
+    public ClientConfiguration clientConfiguration() {
+      return ClientConfiguration.builder()
+              .connectedTo("http://localhost:" + meilisearch.getMappedPort(7700))
+              .withApiKey("masterKey").build();
+    }
+  }
 }
 ```
 
@@ -148,15 +148,15 @@ public class MeilisearchExtension implements BeforeAllCallback {
 
 private final Lock initLock = new ReentrantLock();
 
- @Override
- public void beforeAll(ExtensionContext context) {
- initLock.lock();
- try {
- new MeilisearchConnection();
- } finally {
- initLock.unlock();
- }
- }
+  @Override
+  public void beforeAll(ExtensionContext context) {
+    initLock.lock();
+    try {
+      new MeilisearchConnection();
+    } finally {
+      initLock.unlock();
+    }
+  }
 }
 ```
 
@@ -172,17 +172,17 @@ Now let's implement the `MeilisearchTestConfiguration` class, which provides set
 @Configuration
 public class MeilisearchTestConfiguration extends MeilisearchConfiguration {
 
- private static final String HTTP = "http://";
+  private static final String HTTP = "http://";
 
- private final MeilisearchConnectionInfo meilisearchConnectionInfo
- = MeilisearchConnection.meilisearchConnectionInfo();
+  private final MeilisearchConnectionInfo meilisearchConnectionInfo
+    = MeilisearchConnection.meilisearchConnectionInfo();
 
- @Override
- public ClientConfiguration clientConfiguration() {
- return ClientConfiguration.builder()
- .connectedTo(HTTP + meilisearchConnectionInfo.getHost() + ":" + meilisearchConnectionInfo.getPort())
- .withApiKey(meilisearchConnectionInfo.getMasterKey()).build();
- }
+  @Override
+  public ClientConfiguration clientConfiguration() {
+    return ClientConfiguration.builder()
+            .connectedTo(HTTP + meilisearchConnectionInfo.getHost() + ":" + meilisearchConnectionInfo.getPort())
+            .withApiKey(meilisearchConnectionInfo.getMasterKey()).build();
+  }
 }
 ```
 
@@ -193,7 +193,7 @@ The `MeilisearchTestConfiguration` class provides settings to connect to the Mei
 @ExtendWith(MeilisearchExtension.class)
 @ContextConfiguration(classes = { MeilisearchTestConfiguration.class })
 class MeilisearchTemplateTest {
- // ...
+  // ...
 }
 ```
 
@@ -205,11 +205,11 @@ You can run the container through the `MeilisearchExtension` class and test by p
 It's enough to proceed up to this point, but let's create an additional `@MeilisearchTest` annotation to write test code more concisely.
 
 ```java
-@Retention(RetentionPolicy. RUNTIME)
-@Target(ElementType. TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.TYPE)
 @ExtendWith(MeilisearchExtension.class)
 @ExtendWith(SpringExtension.class)
-@TestMethodOrder(MethodOrderer. OrderAnnotation.class)
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public @interface MeilisearchTest {
 }
 ```
@@ -220,7 +220,7 @@ The `@MeilisearchTest` annotation launches a container through the `MeilisearchE
 @MeilisearchTest
 @ContextConfiguration(classes = { MeilisearchTestConfiguration.class })
 class MeilisearchTemplateTest {
- // ...
+  // ...
 }
 ```
 

@@ -37,10 +37,10 @@ testImplementation 'io.vanslog:testcontainers-meilisearch:1.0.0'
 
 ```xml
 <dependency>
- <groupId>io.vanslog</groupId>
- <artifactId>testcontainers-meilisearch</artifactId>
- <version>1.0.0</version>
- <scope>test</scope>
+  <groupId>io.vanslog</groupId>
+  <artifactId>testcontainers-meilisearch</artifactId>
+  <version>1.0.0</version>
+  <scope>test</scope>
 </dependency>
 ```
 
@@ -52,18 +52,18 @@ For example, if you are writing test code that requires logic to access Meilisea
 @Testcontainers
 class MeilisearchContainerTest {
 
- @Container
- private final MeilisearchContainer container = new MeilisearchContainer()
- .withMasterKey("masterKey");
+  @Container
+  private final MeilisearchContainer container = new MeilisearchContainer()
+    .withMasterKey("masterKey");
 
- @Test
- void shouldConnectToMeilisearch() throws MeilisearchException {
- Config config = new Config(
- "http://" + container.getHost() + ":" + container.getMappedPort(7700),
- "masterKey"
- );
- Client client = new Client(config);
- assertThat(client.isHealthy()).isTrue();
+  @Test
+  void shouldConnectToMeilisearch() throws MeilisearchException {
+    Config config = new Config(
+      "http://" + container.getHost() + ":" + container.getMappedPort(7700),
+      "masterKey"
+    );
+    Client client = new Client(config);
+    assertThat(client.isHealthy()).isTrue();
 }
 ```
 

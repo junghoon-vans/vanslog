@@ -42,28 +42,28 @@ Information that does not need to be known is restricted from being accessed fro
 
 ```java
 public class ArrayStack {
- public int top;
- public int[] itemArray;
- public int stackSize;
+    public int top;
+    public int[] itemArray;
+    public int stackSize;
 
- public ArrayStack(int stackSize) {
- itemArray = new int[stackSize];
- top = -1;
- this.stackSize = stackSize;
- }
+    public ArrayStack(int stackSize) {
+        itemArray = new int[stackSize];
+        top = -1;
+        this.stackSize = stackSize;
+    }
 
- public void push(int item) { // item
- ...
- }
+    public void push(int item) { // add item
+        ...
+    }
 
- public int pop() { // item
- ...
- }
+    public int pop() { // return item
+        ...
+    }
 
- public int peak() { // item
- ...
- }
- ...
+    public int peak() { // print item
+        ...
+    }
+    ...
 }
 ```
 
@@ -71,11 +71,11 @@ public class ArrayStack {
 
 ```java
 public class StackClient {
- public static void main(String[] args){
- ArrayStack st = new ArrayStack(10);
- st.itemArray[++st.top] = 20;
- System.out.print(st.itemArray[st.top]);
- }
+    public static void main(String[] args){
+        ArrayStack st = new ArrayStack(10);
+        st.itemArray[++st.top] = 20;
+        System.out.print(st.itemArray[st.top]);
+    }
 }
 ```
 
@@ -85,11 +85,11 @@ If the implementation of the stack changes, the source code of `StackClient` may
 
 ```java
 public class StackClient {
- public static void main(String[] args){
- ArrayStack st = new ArrayStack(10);
- st.push(20);
- System.out.print(st.peek());
- }
+    public static void main(String[] args){
+        ArrayStack st = new ArrayStack(10);
+        st.push(20);
+        System.out.print(st.peek());
+    }
 }
 ```
 
@@ -162,32 +162,32 @@ Let’s consider the car example we saw earlier in [Generalization for encapsula
 
 ```java
 abstract class Car {
- public abstract void ride();
+    public abstract void ride();
 }
 
 public class BMW extends Car {
- public void ride() { ... }
+    public void ride() { ... }
 }
 
 public class HYUNDAI extends Car {
- public void ride() { ... }
+    public void ride() { ... }
 }
 
 public class BENZ extends Car {
- public void ride() { ... }
+    public void ride() { ... }
 }
 
 public class Main {
- public static void rideCars(Car[] cars) {
- for(Car car: cars){
- car.ride();
- }
- }
+    public static void rideCars(Car[] cars) {
+        for(Car car: cars){
+            car.ride();
+        }
+    }
 
- public static void main(String[] args){
- Car[] cars = {new BMW(), new HYUNDAI(), new BENZ()};
- rideCars(cars);
- }
+    public static void main(String[] args){
+        Car[] cars = {new BMW(), new HYUNDAI(), new BENZ()};
+        rideCars(cars);
+    }
 }
 ```
 

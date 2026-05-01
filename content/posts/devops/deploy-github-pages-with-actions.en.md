@@ -49,47 +49,47 @@ The following actions are used to deploy GitHub Pages using GitHub Actions.
 ```yaml
 name: API Docs
 on:
- push:
- branches:
- - main
- pull_request:
+  push:
+    branches:
+      - main
+  pull_request:
 
-permissions: #
- contents: read # for actions/configure-pages
- pages: write # for actions/deploy-pages
- id-token: write # for actions/deploy-pages
+permissions: # permission settings
+  contents: read # for actions/configure-pages
+  pages: write # for actions/deploy-pages
+  id-token: write # for actions/deploy-pages
 
-concurrency: #
- group: "pages"
- cancel-in-progress: true
+concurrency: # limit concurrent runs
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
- deploy:
- name: API Docs
- environment:
- name: github-pages
- url: ${{ steps.deployment.outputs.page_url }} # URL
- runs-on: ubuntu-latest
- steps:
- - name: Checkout
- uses: actions/checkout@v3
- - name: Set up Pages
- uses: actions/configure-pages@v2
- - name: Set up JDK 17
- uses: actions/setup-java@v2
- with:
- java-version: 17
- distribution: 'zulu'
- cache: 'gradle'
- - name: Build Asciidoc
- run: ./gradlew asciidoctor
- - name: Upload pages artifact
- uses: actions/upload-pages-artifact@v1
- with:
- path: './build/docs/asciidoc'
- - name: Deploy to GitHub Pages
- id: deployment
- uses: actions/deploy-pages@v1
+  deploy:
+    name: API Docs
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }} # URL of the deployed page
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Set up Pages
+        uses: actions/configure-pages@v2 
+      - name: Set up JDK 17
+        uses: actions/setup-java@v2
+        with:
+          java-version: 17
+          distribution: 'zulu'
+          cache: 'gradle'
+      - name: Build Asciidoc
+        run: ./gradlew asciidoctor
+      - name: Upload pages artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: './build/docs/asciidoc'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
 ```
 
 ### Error resolution

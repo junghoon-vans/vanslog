@@ -242,11 +242,11 @@ So how can we use it safely in a multi-threaded environment?
 
 ```java
 class SyncStack<E> {
- private final Deque<E> stack = new ArrayDeque<>();
+    private final Deque<E> stack = new ArrayDeque<>();
 
- public synchronized void push(E e) {
- stack.push(e);
- }
+    public synchronized void push(E e) {
+        stack.push(e);
+    }
 }
 ```
 

@@ -24,22 +24,22 @@ Another way to define a class is to see it as `a blueprint for creating an insta
 
 ```java
 public class Student{
- private String name;
- private String major = "SW";
+    private String name;
+    private String major = "SW";
 
- public Student(String name){
- this.name = name;
- }
+    public Student(String name){
+        this.name = name;
+    }
 
- public void study() {
- System.out.println(" .");
- }
+    public void study() {
+        System.out.println("Taking an object-oriented modeling class.");
+    }
 }
 ```
 
 ```java
-Student student1 = new Student("1");
-Student student2 = new Student("2");
+Student student1 = new Student("student1");
+Student student2 = new Student("student2");
 
 student1.study();
 student2.study();
@@ -191,17 +191,17 @@ Let’s find out the difference between the two using the example of assembling 
 
 ```java
 public class Computer {
- private MainBoard mainBoard;
- private CPU cpu;
- private Memory memory;
- private PowerSupply powerSupply;
+    private MainBoard mainBoard;
+    private CPU cpu;
+    private Memory memory;
+    private PowerSupply powerSupply;
 
- public Computer(MainBoard mainBoard, CPU cpu, Memory memory, PowerSupply powerSupply){
- this.mainBoard = mainBoard;
- this.cpu = cpu;
- this.memory = memory;
- this.powerSupply = powerSupply;
- }
+    public Computer(MainBoard mainBoard, CPU cpu, Memory memory, PowerSupply powerSupply){
+        this.mainBoard = mainBoard;
+        this.cpu = cpu;
+        this.memory = memory;
+        this.powerSupply = powerSupply;
+    }
 }
 ```
 
@@ -211,17 +211,17 @@ Computer objects are created by receiving an externally created motherboard, CPU
 
 ```java
 public class Computer {
- private MainBoard mainBoard;
- private CPU cpu;
- private Memory memory;
- private PowerSupply powerSupply;
+    private MainBoard mainBoard;
+    private CPU cpu;
+    private Memory memory;
+    private PowerSupply powerSupply;
 
- public Computer(){
- this.mainBoard = new MainBoard();
- this.cpu = new CPU();
- this.memory = new Memory();
- this.powerSupply = new PowerSupply();
- }
+    public Computer(){
+        this.mainBoard = new MainBoard();
+        this.cpu = new CPU();
+        this.memory = new Memory();
+        this.powerSupply = new PowerSupply();
+    }
 }
 ```
 
@@ -245,19 +245,19 @@ The diagram above shows that a person owns a car and recharges the car at a gas 
 
 ```java
 public class Person {
- private Car car;
+    private Car car;
 
- public void setCar(Car car){
- this.car = car;
- }
- ...
+    public void setCar(Car car){
+        this.car = car;
+    }
+    ...
 }
 
 public class Car {
- public void fillGas(GasPump p){
- p.getGas(amount);
- ...
- }
+    public void fillGas(GasPump p){
+        p.getGas(amount);
+        ...
+    }
 }
 ```
 

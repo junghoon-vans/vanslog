@@ -29,7 +29,7 @@ If you think that the installation process will be as long as the introduction w
 ### Install and Run
 ```bash
 curl -fsSL https://code-server.dev/install.sh | sh
-sudo systemctl enable --now code-server@$USER #
+sudo systemctl enable --now code-server@$USER # enable automatic startup on system boot
 ```
 
 If you run the above code, you will install `code-server` and complete the process of registering it to run automatically when the system boots. At the same time, `code-server` will already be in operation, but cannot be used immediately, because by default, only `localhost(127.0.0.1)` is allowed to access. Therefore, settings to enable access from outside are required.
@@ -44,7 +44,7 @@ Basically, the configuration file for `code-server` is the `config.yaml` file lo
 ```yaml
 bind-addr: 0.0.0.0:8080
 auth: password
-password: #
+password: # enter the password to set
 cert: false
 ```
 
@@ -85,17 +85,17 @@ sudo apt install -y nginx
 
 ```nginx
 server {
- listen 80;
- listen [::]:80;
- server_name mydomain.com; #
+    listen 80;
+    listen [::]:80;
+    server_name mydomain.com; # change this if you have a domain
 
- location / {
- proxy_pass http://localhost:8080/;
- proxy_set_header Host $host;
- proxy_set_header Upgrade $http_upgrade;
- proxy_set_header Connection upgrade;
- proxy_set_header Accept-Encoding gzip;
- }
+    location / {
+      proxy_pass http://localhost:8080/;
+      proxy_set_header Host $host;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection upgrade;
+      proxy_set_header Accept-Encoding gzip;
+    }
 }
 ```
 
