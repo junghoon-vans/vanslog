@@ -12,6 +12,8 @@ tags:
   - Spring
   - J2EE
   - EJB
+summary: >
+  J2EE, 애플리케이션 서버, EJB의 복잡성, Spring의 핵심 가치를 통해 Spring이 등장한 배경을 설명합니다.
 ---
 
 스프링은 엔터프라이즈 환경을 위한 `애플리케이션 프레임워크`이며, 오늘날 자바 기반 웹 애플리케이션 개발의 표준입니다. 스프링을 완전히 이해하기 위해서는 이것의 `등장 배경`을 알고 있을 필요가 있습니다. 
@@ -38,7 +40,7 @@ J2EE에는 기본적으로 앞서 말한 것과 같이 J2SE를 기반으로 하�
 
 `J2EE`는 반드시 이것의 스펙을 만족하는 `J2EE 애플리케이션 서버(J2EE Application Server)`를 필요로 합니다. 이것을 통상적으로 `WAS(Web Application Server)`라고 했습니다. 대표적인 WAS로는 `JEUS`, `Weblogic`, `WebSphere` 등이 있습니다.
 
-> 💡 최근에는 자바뿐 아니라 `Node.js`나 `Flask`와 같이 다른 언어로도 백엔드 서버를 구축할 수 있으므로 더 이상 `WAS == J2EE Applcation Server`라는 말할 수는 없습니다.
+> 💡 최근에는 자바뿐 아니라 `Node.js`나 `Flask`와 같이 다른 언어로도 백엔드 서버를 구축할 수 있으므로 더 이상 `WAS == J2EE Application Server`라는 말할 수는 없습니다.
 
 ### 문제점
 

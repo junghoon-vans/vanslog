@@ -30,8 +30,8 @@ Representative cloud providers include `AWS(Amazon Web Service)`, `MS Azure`, an
 The benefits that GCP provides to new members are as follows.
 
 ```plaintext
--
-- 3 $300
+- Lifetime free instance
+- $300 credit available for 3 months
 ```
 
 Create Instance

@@ -12,6 +12,8 @@ tags:
   - Spring
   - J2EE
   - EJB
+summary: >
+  Explains why Spring emerged by looking at J2EE, application servers, EJB complexity, and Spring's core values.
 ---
 
 
@@ -39,11 +41,11 @@ J2EE is basically based on J2SE as mentioned above, and adds elements necessary 
 
 `J2EE` requires `J2EE Application Server` that satisfies its specifications. This was commonly referred to as `WAS(Web Application Server)`. Representative WAS includes `JEUS`, `Weblogic`, and `WebSphere`.
 
-> 💡 Nowadays, you can build backend servers not only in Java but also in other languages ​​such as `Node.js` or `Flask`, so you can no longer say `WAS == J2EE Applcation Server`.
+> 💡 Nowadays, you can build backend servers not only in Java but also in other languages ​​such as `Node.js` or `Flask`, so you can no longer say `WAS == J2EE Application Server`.
 
 ### Problem
 
-Crucially, there is a `three` reason for the paradigm change from J2EE to Spring.
+Crucially, there are `three` reasons for the paradigm change from J2EE to Spring.
 
 #### Operating costs
 

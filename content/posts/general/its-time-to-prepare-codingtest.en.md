@@ -11,7 +11,7 @@ summary: >
   Why I decided to prepare for the coding test and my concerns about choosing a language
 ---
 
-Let's prepare the kote
+Let's prepare for coding tests
 ---
 
 Recently, I decided to prepare for a coding test. This is because it is considered an essential element in preparing for future employment or supporting external activities after discharge from the military. Even before enlistment, I tried to study little by little, but little by little I became lax and eventually stopped doing it. This time, I'm going to hold on to my heart and try hard.
@@ -36,6 +36,6 @@ To this end, I decided that there was more to be gained from studying Java than 
 Now all that's left is practice
 ---
 
-I decided to do kote and also decided on the language. Now all that remains is to put it into practice. While writing this article, it suddenly occurred to me that the way to prepare well for the exam is to consistently solve problems. I exercise whenever I have time in the military, and recently I have been experiencing muscle growth that I did not feel before enlisting. Before I started exercising consistently, I didn't feel any stimulation or growth, but now I'm slowly seeing changes in my body. These small, noticeable changes keep me motivated to exercise more.
+I decided to prepare for coding tests and also decided on the language. Now all that remains is to put it into practice. While writing this article, it suddenly occurred to me that the way to prepare well for the exam is to consistently solve problems. I exercise whenever I have time in the military, and recently I have been experiencing muscle growth that I did not feel before enlisting. Before I started exercising consistently, I didn't feel any stimulation or growth, but now I'm slowly seeing changes in my body. These small, noticeable changes keep me motivated to exercise more.
 
 I think the same goes for Côte. When you first start, it is difficult to feel that you are growing, and you may feel frustrated because you cannot answer correctly. However, if you consistently solve coding test problems, the day will surely come when you can taste the fruits of your efforts.

@@ -14,7 +14,7 @@ summary: >
   Let’s learn about Java’s basic data types and reference data types!
 ---
 
-Data type type
+Data types
 ---
 
 ![java data types](http://www.btechsmartclass.com/java/java_images/java-data-types.jpg#center)

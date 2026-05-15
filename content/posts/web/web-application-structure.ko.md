@@ -30,7 +30,7 @@ Dynamic Page
 
 말 그대로 동적인 웹페이지를 말한다. 정적 페이지와 달리 애플리케이션에서 전달하는 데이터에 따라 동일한 페이지여도 다른 정보를 표현할 수 있다. 예를 들어 `페이스북`에 접속했을 때 사용자별로 보이는 정보는 각자 다르다. 하지만 분명히 동일한 페이지(www.facebook.com)에 접속하고 있다는 사실은 모두가 잘 알고 있을 것이다. 현대의 대다수의 웹페이지는 이러한 방식을 통해 만들어지고 있다. 
 
-### CSR(Clent-Side Rendering)
+### CSR(Client-Side Rendering)
 
 ![csr](/images/web/web-application-structure/csr.png)
 

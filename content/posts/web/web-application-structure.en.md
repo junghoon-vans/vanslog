@@ -31,7 +31,7 @@ Dynamic Page
 
 It literally refers to a dynamic web page. Unlike static pages, the same page can express different information depending on the data delivered by the application. For example, when accessing ‘Facebook’, the information displayed for each user is different. However, everyone is clearly aware that they are accessing the same page (www.facebook.com). The majority of modern web pages are created using this method.
 
-### CSR(Clent-Side Rendering)
+### CSR(Client-Side Rendering)
 
 ![csr](/images/web/web-application-structure/csr.png)
 
