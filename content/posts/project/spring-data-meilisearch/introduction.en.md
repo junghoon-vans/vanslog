@@ -1,5 +1,5 @@
 ---
-title: "Introduction"
+title: "Spring Data Meilisearch #0 - Project Introduction"
 translationKey: posts/project/spring-data-meilisearch/introduction
 date: 2023-06-28T13:48:31+09:00
 draft: false

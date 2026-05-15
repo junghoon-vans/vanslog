@@ -1,5 +1,5 @@
 ---
-title: "What I Learned While Working At Digital Competency Center"
+title: "What I Learned as an Instructor at the Digital Competency Center"
 translationKey: posts/general/what-i-learned-while-working-at-digital-competency-center
 date: 2022-07-20T23:10:59+09:00
 draft: false

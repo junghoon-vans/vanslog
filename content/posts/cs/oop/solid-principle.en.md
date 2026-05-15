@@ -1,5 +1,5 @@
 ---
-title: "Solid Principle"
+title: "[OOP] Object-Oriented Design Principles: SOLID"
 translationKey: posts/cs/oop/solid-principle
 date: 2021-01-10T19:53:10+09:00
 series:

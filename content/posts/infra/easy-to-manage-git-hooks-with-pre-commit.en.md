@@ -1,5 +1,5 @@
 ---
-title: "Easy To Manage Git Hooks With Pre Commit"
+title: "Managing Git Hooks Easily with pre-commit"
 translationKey: posts/infra/easy-to-manage-git-hooks-with-pre-commit
 date: 2022-10-12T00:15:32+09:00
 draft: false

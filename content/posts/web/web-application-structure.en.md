@@ -1,5 +1,5 @@
 ---
-title: "Web Application Structure"
+title: "Web Application Structure (SSR, CSR, SPA, MPA)"
 translationKey: posts/web/web-application-structure
 date: 2020-12-26T14:06:55Z
 categories:

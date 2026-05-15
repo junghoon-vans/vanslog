@@ -1,5 +1,5 @@
 ---
-title: "Dnd 8th Weddingmap Project Retrospective"
+title: "[DND 8th] Weddingmap Project Retrospective"
 translationKey: posts/retrospective/dnd/dnd-8th-weddingmap-project-retrospective
 date: 2023-03-08T22:43:47+09:00
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: "My Views On The Recent Luna Rise"
+title: "[Crypto] My Take on the Recent LUNA Rise"
 translationKey: posts/blockchain/my-views-on-the-recent-luna-rise
 date: 2022-02-27T07:24:42+09:00
 categories:

@@ -1,5 +1,5 @@
 ---
-title: "Tech Blog Reorganization"
+title: "Reorganizing the Tech Blog"
 translationKey: posts/general/tech-blog-reorganization
 date: 2022-07-13T15:35:56+09:00
 draft: false

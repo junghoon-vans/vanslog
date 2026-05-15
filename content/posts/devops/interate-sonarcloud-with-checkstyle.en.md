@@ -1,5 +1,5 @@
 ---
-title: "Interate Sonarcloud With Checkstyle"
+title: "Integrating SonarCloud with Checkstyle"
 translationKey: posts/devops/interate-sonarcloud-with-checkstyle
 date: 2023-01-15T13:56:13+09:00
 draft: false

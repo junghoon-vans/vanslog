@@ -1,5 +1,5 @@
 ---
-title: "Primitive Type And Reference Type"
+title: "[Java] Primitive Types and Reference Types"
 translationKey: posts/language/java/primitive-type-and-reference-type
 date: 2021-07-16T14:06:26Z
 series:

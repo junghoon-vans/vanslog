@@ -1,5 +1,5 @@
 ---
-title: "Build Web Ide Using Code Server"
+title: "Building a Web IDE with code-server"
 translationKey: posts/infra/build-web-ide-using-code-server
 date: 2020-12-03T04:34:19Z
 series:

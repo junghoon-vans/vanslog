@@ -1,5 +1,5 @@
 ---
-title: "Java 21 Pattern Matching Usecase With Scala"
+title: "Using Java 21 Pattern Matching Effectively (with Scala)"
 translationKey: posts/language/java/java-21-pattern-matching-usecase-with-scala
 date: 2023-09-21T22:27:53+09:00
 series:

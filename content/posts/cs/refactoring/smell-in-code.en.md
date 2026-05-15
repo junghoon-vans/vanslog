@@ -1,5 +1,5 @@
 ---
-title: "Smell In Code"
+title: "[Refactoring] Bad Smells in Code"
 translationKey: posts/cs/refactoring/smell-in-code
 date: 2021-04-13T13:51:13Z
 series:

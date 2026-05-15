@@ -1,5 +1,5 @@
 ---
-title: "Automate Ecs Deployments With Jib And GitHub Actions"
+title: "Automating ECS Deployments with Jib and GitHub Actions"
 translationKey: posts/devops/automate-ecs-deployments-with-jib-and-github-actions
 date: 2023-03-24T01:01:51+09:00
 draft: false

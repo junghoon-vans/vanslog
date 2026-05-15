@@ -1,5 +1,5 @@
 ---
-title: "Build Integration Test Environment"
+title: "Spring Data Meilisearch #3 - Building an Integration Test Environment"
 translationKey: posts/project/spring-data-meilisearch/build-integration-test-environment
 date: 2023-08-30T14:03:48+09:00
 draft: false

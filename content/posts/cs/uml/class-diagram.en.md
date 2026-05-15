@@ -1,5 +1,5 @@
 ---
-title: "Class Diagram"
+title: "[UML 2.0] Class Diagram"
 translationKey: posts/cs/uml/class-diagram
 date: 2021-01-08T19:20:43+09:00
 series:
