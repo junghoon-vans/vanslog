@@ -12,6 +12,8 @@ tags:
   - Java
   - General
 draft: false
+summary: >
+  Explains UML class diagrams through class concepts, access modifiers, properties, operations, relationships, and Java examples.
 ---
 
 

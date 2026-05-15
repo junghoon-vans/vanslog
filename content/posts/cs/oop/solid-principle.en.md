@@ -8,7 +8,7 @@ categories:
   - OOP
 tags:
   - OOP
-  - JAVA
+  - Java
 draft: false
 summary: >
   Object-oriented design principles
@@ -232,4 +232,3 @@ References
 - [Inseong Jeong, Heungseok Chae, 『JAVA Object-Oriented Design Pattern』, Hanbit Media](http://www.yes24.com/Product/Goods/12501269)
 - [Wikipedia, Mammals](https://ko.wikipedia.org/wiki/%ED%8F%AC%EC%9C%A0%EB%A5%98)
 - [wlsdud2194, [DI] What is Dependency Injection?, velog](https://velog.io/@wlsdud2194/what-is-di)
-

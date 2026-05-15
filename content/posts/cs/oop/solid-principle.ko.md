@@ -8,7 +8,7 @@ categories:
   - OOP
 tags:
   - OOP
-  - JAVA
+  - Java
 draft: false
 summary: >
   객제지향 설계 원칙
@@ -231,4 +231,3 @@ public class Person {
 - [정인성, 채흥석,『JAVA 객체지향 디자인 패턴』, 한빛미디어](http://www.yes24.com/Product/Goods/12501269)
 - [위키피디아, 포유류](https://ko.wikipedia.org/wiki/%ED%8F%AC%EC%9C%A0%EB%A5%98)
 - [wlsdud2194, [DI] Dependency Injection이란 무엇일까?, velog](https://velog.io/@wlsdud2194/what-is-di)
-

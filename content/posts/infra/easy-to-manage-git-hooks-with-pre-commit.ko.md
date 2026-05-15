@@ -8,6 +8,8 @@ categories:
 tags:
   - Pre-commit
   - Git Hooks
+summary: >
+  pre-commit을 사용해 Git Hooks를 프로젝트 설정으로 공유하고 버전 관리하며 실행하는 방법을 정리합니다.
 ---
 
 Git Hooks

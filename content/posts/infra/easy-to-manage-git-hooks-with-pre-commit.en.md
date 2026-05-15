@@ -8,6 +8,8 @@ categories:
 tags:
   - Pre-commit
   - Git Hooks
+summary: >
+  Explains how pre-commit helps share, version, install, and run Git hooks consistently across a project.
 ---
 
 Git Hooks

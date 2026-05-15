@@ -12,6 +12,8 @@ tags:
   - Java
   - General
 draft: false
+summary: >
+  클래스 개념부터 접근 제어자, 속성, 연산, 관계 표현까지 UML 클래스 다이어그램의 기본 요소를 정리합니다.
 ---
 
 클래스란?

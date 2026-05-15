@@ -7,6 +7,8 @@ categories:
   - Blog
 tags:
   - Blog
+summary: >
+  Looks back on reorganizing the tech blog, changing the theme, moving hosting to Vercel, and renewing the motivation to write.
 ---
 
 I started a tech blog to organize what I learned. However, due to being busy during the semester, the cycle of uploading posts to the blog became longer. There are many cases where I just think about writing a blog post but am unable to do so.

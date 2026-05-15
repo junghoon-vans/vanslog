@@ -14,6 +14,8 @@ tags:
   - Queue
   - Stack
   - Deque
+summary: >
+  Compares Queue, Stack, and Deque in Java and explains why Deque is preferred over the legacy Stack class.
 ---
 
 ## Use Deque instead of Stack?

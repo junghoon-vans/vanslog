@@ -8,6 +8,8 @@ categories:
 tags:
   - General
   - Blog
+summary: >
+  Reflects on teaching at the Digital Competency Center and how explaining concepts revealed the value of writing technical blog posts.
 ---
 
 I have recently been teaching as an instructor at `Digital Learning Center (a digital competency education project promoted by the government)`. When I first became an instructor, the first concern I had was what kind of lectures I should teach. Because the main purpose of the project was to strengthen the capabilities of `digitally vulnerable classes`, programming classes were not in high demand.

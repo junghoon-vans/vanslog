@@ -14,6 +14,8 @@ tags:
   - Queue
   - Stack
   - Deque
+summary: >
+  Java의 Queue, Stack, Deque를 비교하고 레거시 Stack 클래스 대신 Deque 사용이 권장되는 이유를 정리합니다.
 ---
 
 ## Stack 대신 Deque를 사용하라?

@@ -9,6 +9,8 @@ tags:
   - Utterances
   - General
   - Blog
+summary: >
+  Shows how to apply Utterances comments and synchronize their theme with a Hugo site's dynamic dark/light mode.
 ---
 
 `utterances` is an open source comment service widely used on personal technology blogs. It features a clean design of `GitHub style` and support for `dark mode`.
