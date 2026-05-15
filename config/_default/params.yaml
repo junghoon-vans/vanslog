@@ -3,12 +3,33 @@ description: &description "Technical blog by backend developer Junghoon Ban."
 author: junghoon-vans
 
 defaultTheme: auto
+displayFullLangName: true
 ShowReadingTime: true
+ShowWordCount: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
 ShowCodeCopyButtons: true
+ShowShareButtons: true
+ShowAllPagesInArchive: true
+ShowPageNums: true
+ShowRssButtonInSectionTermList: true
 showtoc: true
+UseHugoToc: true
 comments: true
+
+fuseOpts:
+  isCaseSensitive: false
+  shouldSort: true
+  threshold: 0.4
+  distance: 100
+  ignoreLocation: true
+  minMatchCharLength: 2
+  limit: 10
+  keys:
+    - title
+    - permalink
+    - summary
+    - content
 
 homeInfoParams:
   Title: "Hello World!"

@@ -3,6 +3,7 @@ ko:
   weight: 1
   params:
     description: "백엔드 개발자 반정훈의 기술 블로그입니다."
+    languageAltTitle: Korean
     homeInfoParams:
       Title: "안녕하세요!"
       Content: "백엔드 개발자 반정훈의 기술 블로그입니다."
@@ -16,6 +17,7 @@ en:
   weight: 2
   params:
     description: "Technical blog by backend developer Junghoon Ban."
+    languageAltTitle: English
     homeInfoParams:
       Title: "Hello World!"
       Content: "Technical blog by backend developer Junghoon Ban."
