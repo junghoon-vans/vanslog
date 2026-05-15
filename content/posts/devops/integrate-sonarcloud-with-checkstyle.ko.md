@@ -1,6 +1,6 @@
 ---
 title: "SonarCloud와 Checkstyle을 통합하여 사용하기"
-translationKey: posts/devops/interate-sonarcloud-with-checkstyle
+translationKey: posts/devops/integrate-sonarcloud-with-checkstyle
 date: 2023-01-15T13:56:13+09:00
 draft: false
 series:
@@ -13,6 +13,8 @@ tags:
   - Checkstyle
 summary: >
   SonarCloud를 사용하면서 코딩 스타일을 체크하는 방법
+aliases:
+  - /posts/devops/interate-sonarcloud-with-checkstyle/
 ---
 
 최근 DND라는 대외활동을 통해 [사이드 프로젝트](https://github.com/dnd-side-project/dnd-8th-8-backend)의 백엔드 개발을 맡고 있습니다. 본격적인 프로젝트 시작에 앞서 CI/CD 파이프라인을 구축하는 작업을 진행하고 있습니다.

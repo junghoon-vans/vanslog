@@ -1,6 +1,6 @@
 ---
 title: "Integrating SonarCloud with Checkstyle"
-translationKey: posts/devops/interate-sonarcloud-with-checkstyle
+translationKey: posts/devops/integrate-sonarcloud-with-checkstyle
 date: 2023-01-15T13:56:13+09:00
 draft: false
 series:
@@ -13,6 +13,8 @@ tags:
   - Checkstyle
 summary: >
   How to check your coding style while using SonarCloud
+aliases:
+  - /posts/devops/interate-sonarcloud-with-checkstyle/
 ---
 
 Recently, I am in charge of the backend development of [Side Project](https://github.com/dnd-side-project/dnd-8th-8-backend) through an external activity called DND. Before starting the full-scale project, we are working on building a CI/CD pipeline.

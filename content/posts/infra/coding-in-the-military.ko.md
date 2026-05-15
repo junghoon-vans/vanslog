@@ -33,7 +33,7 @@ summary: >
 
 앞으로 포스팅을 통해서 서버를 생성해 개발환경을 구축하는 방법을 소개하고자 한다. 준비해야 할 단계는 딱 두 개뿐이다. 서버를 생성하고 개발환경을 구성한다.
 
-- 1편 [GCP 인스턴스 만들기](../create-gcp-instance)
-- 2편 [`Code-Server`로 웹 IDE 구축하기](../build-web-ide-using-code-server)
+- 1편 [GCP 인스턴스 만들기](/ko/posts/infra/create-gcp-instance/)
+- 2편 [`Code-Server`로 웹 IDE 구축하기](/ko/posts/infra/build-web-ide-using-code-server/)
 
 서버가 꼭 GCP로 구성되어야 하는 것은 아니다. 개인 서버를 이용해도 좋고 다른 서비스를 이용해도 좋으나, 나는 이번에 GCP를 활용해보았고 그 방법을 정리해보게 되었다.

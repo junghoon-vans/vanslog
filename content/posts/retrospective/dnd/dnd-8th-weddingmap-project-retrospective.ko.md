@@ -96,7 +96,7 @@ images:
 > 실제 테스트 커버리지는 [웨딩맵 SonarCloud 대시보드](https://sonarcloud.io/summary/new_code?id=dnd-side-project_dnd-8th-8-backend)에서 자세히 확인하실 수 있습니다.
 
 > 웨딩맵 백엔드는 `SonarCloud`와 `Checkstyle`을 함께 연동하여 사용하고 있습니다.
-> 해당 방법이 궁금하신 분은 [SonarCloud와 Checkstyle을 통합하여 사용하기](/posts/devops/interate-sonarcloud-with-checkstyle) 글을 참고해주세요.
+> 해당 방법이 궁금하신 분은 [SonarCloud와 Checkstyle을 통합하여 사용하기](/ko/posts/devops/integrate-sonarcloud-with-checkstyle/) 글을 참고해주세요.
 
 ### API 문서화
 

@@ -33,7 +33,7 @@ As I found out through searching online, there were several developers who used 
 
 In future posts, I will introduce how to create a server and build a development environment. There are only two steps to prepare. Create a server and configure the development environment.
 
-- Part 1 [Creating a GCP instance](../create-gcp-instance)
-- Part 2 [Building a web IDE with `code-server`](../build-web-ide-using-code-server)
+- Part 1 [Creating a GCP instance](/posts/infra/create-gcp-instance/)
+- Part 2 [Building a web IDE with `code-server`](/posts/infra/build-web-ide-using-code-server/)
 
 The server does not necessarily have to be configured with GCP. You can use a personal server or another service, but this time I tried using GCP and summarized the method.

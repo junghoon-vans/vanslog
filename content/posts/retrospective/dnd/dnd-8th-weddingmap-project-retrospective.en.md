@@ -97,7 +97,7 @@ Before new features were merged, code below a certain coverage level was set to 
 > You can check the actual test coverage in detail at [Wedding Map SonarCloud Dashboard](https://sonarcloud.io/summary/new_code?id=dnd-side-project_dnd-8th-8-backend).
 
 > The wedding map backend uses `SonarCloud` and `Checkstyle` together.
-> If you are curious about this method, please refer to the [Integrating SonarCloud and Checkstyle](/posts/devops/interate-sonarcloud-with-checkstyle) article.
+> If you are curious about this method, please refer to the [Integrating SonarCloud and Checkstyle](/posts/devops/integrate-sonarcloud-with-checkstyle/) article.
 
 ### API documentation
 
