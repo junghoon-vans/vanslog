@@ -1,5 +1,6 @@
 ko:
   label: Korean
+  locale: ko-KR
   weight: 1
   params:
     description: "백엔드 개발자 반정훈의 기술 블로그입니다."
@@ -14,6 +15,7 @@ ko:
 
 en:
   label: English
+  locale: en-US
   weight: 2
   params:
     description: "Technical blog by backend developer Junghoon Ban."
