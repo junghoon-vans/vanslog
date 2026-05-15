@@ -81,7 +81,9 @@ $ pre-commit run --all-files
 
 The image above is a screen that runs while I was developing a Python package called [checkstyle-cli](https://github.com/junghoon-vans/checkstyle-cli). You can create a consistent source code style through the process of activating multiple `linter` or `formatter` for each commit.
 
-### pre-commit.ci[pre-commit.ci](https://pre-commit.ci) is a service that runs `pre-commit hook` when source code is pushed to GitHub. You can install and use the app in the GitHub repository, and no separate settings are required as long as you have the `.pre-commit-config.yaml` file.
+### pre-commit.ci
+
+[pre-commit.ci](https://pre-commit.ci) is a service that runs `pre-commit hook` when source code is pushed to GitHub. You can install and use the app in the GitHub repository, and no separate settings are required as long as you have the `.pre-commit-config.yaml` file.
 
 Thanks to excellent caching performance, hook execution speed is very fast compared to other CIs. In addition, maintenance is easy because the bot periodically sends out PRs by `check for latest version` of the hook in the configuration file.
 

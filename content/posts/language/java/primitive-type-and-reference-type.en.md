@@ -38,7 +38,9 @@ Data types are largely divided into `basic data types` and `reference data types
 
 > Unlike C/C++, Java does not have an unsigned type among integer types. Strictly speaking, from Java 8 onwards, several static methods can be used through `int`, `long` types and, in some cases, `Wrapper Class`.
 
-### Reference Type `Reference Type` is a data type created based on `Basic Data Type`. Representative examples include `Class`, `Interface`, and `Enum` such as String, Array, Map, and Set provided by Java. Additionally, users can define reference types as needed.
+### Reference Type
+
+`Reference Type` is a data type created based on `Basic Data Type`. Representative examples include `Class`, `Interface`, and `Enum` such as String, Array, Map, and Set provided by Java. Additionally, users can define reference types as needed.
 
 #### Object
 
@@ -66,7 +68,9 @@ System.out.println(array instanceof Object);
 
 Since all classes are inheritance classes of Object, you can see from the code above that the array is not a basic type. If the array was a basic type, the result of executing the above code should be `false`.
 
-#### Wrapper class`Wrapper Class` is a class that wraps the basic data type. Representative examples include Byte, Short, Integer, Long, Float, Double, Character, and Boolean. The reason for using this is the same as the reason for using `String` explained earlier. The advantage of wrapping a basic data type with `class` is that you can `provide useful methods`.
+#### Wrapper class
+
+`Wrapper Class` is a class that wraps the basic data type. Representative examples include Byte, Short, Integer, Long, Float, Double, Character, and Boolean. The reason for using this is the same as the reason for using `String` explained earlier. The advantage of wrapping a basic data type with `class` is that you can `provide useful methods`.
 
 But a more important reason lies in `Generic`. The parameter `T` used in generics can only accept `Object` data type. This means that only objects defined as classes are received. However, when writing code, there are times when generics need to be applied to basic data types. In this case, using `Wrapper Class` solves the problem.
 
@@ -78,7 +82,7 @@ Previously, we learned what basic data types and reference data types are, and w
 
 - Reference data types can have methods, unlike basic data types.
 - The default value of the reference data type is `null`.
- - Therefore, if a reference object is not initialized, `nullPointerException` occurs.
+   - Therefore, if a reference object is not initialized, `nullPointerException` occurs.
 - Refer to [Table](#primitive-type) above for the default values ​​​​of basic data types.
 
 References

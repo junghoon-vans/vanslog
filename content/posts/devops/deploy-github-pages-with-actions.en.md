@@ -38,13 +38,15 @@ Recently GitHub added a way to use Actions to deploy `GitHub Pages`. The advanta
 The following actions are used to deploy GitHub Pages using GitHub Actions.
 
 - [actions/configure-pages](https://github.com/actions/configure-pages)
- - Set up the environment to deploy GitHub Pages
+   - Set up the environment to deploy GitHub Pages
 - [actions/upload-pages-artifact](https://github.com/actions/upload-pages-artifact)
- - Upload build results to distribute GitHub Pages
+   - Upload build results to distribute GitHub Pages
 - [actions/deploy-pages](https://github.com/actions/deploy-pages)
- - Distribution of GitHub Pages
+   - Distribution of GitHub Pages
 
-### Example codeThe example below uses Spring REST Docs to generate API documentation and deploy it to GitHub Pages. Written based on code provided by [GitHub Starter Workflows](https://github.com/actions/starter-workflows/blob/main/pages/static.yml).
+### Example code
+
+The example below uses Spring REST Docs to generate API documentation and deploy it to GitHub Pages. Written based on code provided by [GitHub Starter Workflows](https://github.com/actions/starter-workflows/blob/main/pages/static.yml).
 
 ```yaml
 name: API Docs

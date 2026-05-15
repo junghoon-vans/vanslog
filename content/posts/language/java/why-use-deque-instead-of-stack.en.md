@@ -39,12 +39,14 @@ Let’s find out what advantages `Deque` has over `Stack`.
 
 ## Queue/Stack/Deque
 
-###Queue
+### Queue
 
 `Queue` is a data structure that has the characteristics of `FIFO(First In First Out)`.
 Java provides the corresponding data type through the `java.util. Queue<E>` interface.
 
-#### Provided method<table>
+#### Provided method
+
+<table>
  <thead>
  <tr>
  <td></td>
@@ -75,10 +77,10 @@ Java provides the corresponding data type through the `java.util. Queue<E>` inte
 Depending on which method you use, it is determined whether `an error occurred` or `Special Value` is returned when an exception occurs.
 
 - `offer` method
- - If insertion was successful, `true` is returned.
- - If insertion is not done properly, `false` is returned.
+   - If insertion was successful, `true` is returned.
+   - If insertion is not done properly, `false` is returned.
 - `poll` and `peek` methods
- - If data does not exist, `null` is returned.
+   - If data does not exist, `null` is returned.
 
 #### Usage example
 
@@ -111,7 +113,9 @@ Stack<Integer> stack = new Stack<>();
 
 `Stack` is itself an implementation, so use it like this:
 
-###Deque`Deque` is short for `Double Ended Queue`, commonly called a two-way queue.
+### Deque
+
+`Deque` is short for `Double Ended Queue`, commonly called a two-way queue.
 Java provides the corresponding data type through the `java.util. Deque<E>` interface.
 It is implemented by inheriting the `Queue` interface.
 
@@ -154,7 +158,9 @@ It is implemented by inheriting the `Queue` interface.
  <td>peekLast()</td>
  </tr>
  </tbody>
-</table>Provides the ability to insert and delete data in both directions. It is separated into a method that does `Return Special Value`, which is the same as `Queue`, and a method that generates an error.
+</table>
+
+Provides the ability to insert and delete data in both directions. It is separated into a method that does `Return Special Value`, which is the same as `Queue`, and a method that generates an error.
 
 #### Stack/Queue methods vs. Deque method
 
@@ -181,7 +187,9 @@ It is implemented by inheriting the `Queue` interface.
 
 But then I suddenly became curious. How does `Deque` support the methods of `Queue` and `Stack`? So, I looked at the actual Java code using IntelliJ.
 
-![How to implement the Stack function](https://vanslog.s3.ap-northeast-2.amazonaws.com/image/+2023-05-10++3.34.15.png)The `ArrayDeque` class, which is an implementation of Deque, provides Stack methods as follows.
+![How to implement the Stack function](https://vanslog.s3.ap-northeast-2.amazonaws.com/image/+2023-05-10++3.34.15.png)
+
+The `ArrayDeque` class, which is an implementation of Deque, provides Stack methods as follows.
 When you use a method in `Stack`, such as the `push`, `pop`, and `peek` methods, you delegate to calling the corresponding method in `Deque`.
 This also applies to the method of `Queue`.
 
@@ -258,7 +266,9 @@ If synchronization is performed externally as shown in the example above, `Deque
 This was an opportunity to take a closer look at Java data structures.
 I decided to become a developer who can properly understand and use it rather than blindly using it because I was told to use it.
 
-### Summary- `Stack` is implemented by inheriting `Vector`.
+### Summary
+
+- `Stack` is implemented by inheriting `Vector`.
 - `Vector` is not recommended for use due to poor performance in a single-threaded environment.
 - Therefore, it is best not to use `Stack`, which inherits `Vector`.
 - `ArrayDeque` is an implementation of `Deque` and supports both methods of `Stack` and `Queue`.

@@ -120,7 +120,7 @@ A smell that arises when a function interacts more with other modules than with 
 |Moving functions|<li>Close related functions and data|
 |Extracting Functions|<li>If you prefer a function to only part of a function</li> <li>Extract that part and an independent function</li> <li>Move to the desired module with `Move function`</li>|
 
->If it's not clear where to move, move to the module that contains the most data.
+> If it's not clear where to move, move to the module that contains the most data.
 
 bunch of data
 ---
@@ -132,7 +132,7 @@ A bundle of data that always moves together deserves a separate home.
 |Extracting classes|<li>Bundle of field-type data into one object</li>|
 |Creating a parameter object / Passing the entire object|<li>For chunks of data in method signatures</li> <li>Apply this refactoring to reduce number of parameters</li>|
 
->Taking a class gives you the opportunity to spread a good scent.
+> Taking a class gives you the opportunity to spread a good scent.
 
 basic obsession
 ---
@@ -140,12 +140,12 @@ basic obsession
 There are many people who are obsessed with the basic types provided by programming languages ​​and are reluctant to directly define basic types appropriate for a given problem.
 
 - Converting primitives to objects
- -It looks like it's just wrapping a basic data type.
- -Special actions can be added if necessary
+   - It looks like it's just wrapping a basic data type.
+   - Special actions can be added if necessary
 - When code expressed as a basic type is used as a type code to control conditional operation
- -Convert type code to subclass
- -Converting conditional logic to polymorphism
- -Apply the above refactoring sequentially.
+   - Convert type code to subclass
+   - Converting conditional logic to polymorphism
+   - Apply the above refactoring sequentially.
 
 Repeated switch statement
 ---
@@ -168,13 +168,13 @@ speculative generalization
 It comes from code that has all kinds of hooking points and special case handling logic that are not needed right now.
 
 - Abstract class that does very little
- -Merge Layers
+   - Merge Layers
 - Useless delegation code
- -Deleted by inlining a function or inlining a class
+   - Deleted by inlining a function or inlining a class
 - Parameters not used in the body
- -Delete by replacing function declaration
+   - Delete by replacing function declaration
 - A function or class that is used nowhere else than in test code.
- -Removing dead code
+   - Removing dead code
 
 temporary field
 ---

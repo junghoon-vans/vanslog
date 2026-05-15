@@ -30,4 +30,6 @@ Even though I had used Spring Boot through a team project class at school, I lac
 
 This is because the act of writing a blog post is not limited to simply writing an article. In the process of writing, think about `whether you understand properly`, and through this, you can achieve `distinguish between what you know and what you do not know`. You can also study what you don't know and turn it into something you know.
 
-*"If you repeat this process countless times, you will be able to increase what you know and decrease what you do not know."*Through this experience, I was able to feel once again the importance of writing blog posts, and I set a goal to organize and completely understand spring-related concepts.
+*"If you repeat this process countless times, you will be able to increase what you know and decrease what you do not know."*
+
+Through this experience, I was able to feel once again the importance of writing blog posts, and I set a goal to organize and completely understand spring-related concepts.

@@ -75,7 +75,9 @@ Isn't that always a good thing?
 
 In `refactoring` and `clean code`, performance aspects are important, but **ultimately, code that is easier for people to read is better code**. If you think about it that way, doesn't pipelined code have only advantages? The same task can be written with easy-to-read code. However, contrary to what I thought, there was negative content on the Internet.
 
-One article said that you should refrain from using `repeat` and `Stream` because there is a dramatic difference in performance. In fact, I was curious about the speed difference between code written with loops and code using a pipeline, so I compared the speed difference between the two codes.| | loop | pipeline |
+One article said that you should refrain from using `repeat` and `Stream` because there is a dramatic difference in performance. In fact, I was curious about the speed difference between code written with loops and code using a pipeline, so I compared the speed difference between the two codes.
+
+| | loop | pipeline |
 |--------|--------|-----------|
 | Test 1 | 1.58ms | 1.42ms |
 | Test 2 | 2.17ms | 2.16ms |

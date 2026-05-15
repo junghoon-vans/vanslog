@@ -39,9 +39,9 @@ The way to solve the problem caused by the uncertainty of fiat-collateralized st
 Terra implemented an algorithmic stable coin by operating with two types of coins: Terra, a stable coin, and Luna, which supports it. Terra (UST) is recognized in the cryptocurrency market and ranks 4th in market cap (1st among algorithmic stable coins) following Tether, Circle, and Binance USD.
 
 - Terra: A stablecoin that tracks each country’s fiat currency.
- - UST (USD Terra) that tracks the value of the dollar and KRT (KRW Terra) that corresponds to the won, etc.
+   - UST (USD Terra) that tracks the value of the dollar and KRT (KRW Terra) that corresponds to the won, etc.
 - Luna: A coin used on the Terra blockchain and helps Terra to be stable.
- - Ticker is `$Luna`
+   - Ticker is `$Luna`
 
 #### How prices are maintained
 
@@ -54,7 +54,7 @@ Luna🌕 Perspective on the reason for the rise
 
 I believe the increased availability of `Terra(UST)` is driving `Luna incineration`, which is currently driving Luna's `price increase`. I think the bottom has been proven through the recent private token sale.
 
-###Demand for stablecoins increases due to global crisis
+### Demand for stablecoins increases due to global crisis
 
 The international situation is engulfed in uncertainty due to the recent `Ukraine-Russia` incident. On the day Russia invaded Ukraine, the Russian stock market plunged close to -40%, and in Ukraine, local people are purchasing Tether, a stablecoin, at a 10% premium due to the government's restrictions on cash withdrawals.
 
@@ -114,9 +114,9 @@ summary
 - Terra is a Layer-1 blockchain based on a stablecoin.
 - As Terra usage increases, Luna burns occur, which naturally leads to price appreciation.
 - The use of Terra is increasing for the following reasons.
- - The demand for stablecoins increases amid the unstable international situation
- - Increase in Anchor Protocol deposits during bear markets
- - Luna ecosystem expansion after Columbus-5 update
+   - The demand for stablecoins increases amid the unstable international situation
+   - Increase in Anchor Protocol deposits during bear markets
+   - Luna ecosystem expansion after Columbus-5 update
 - LFG's private token sale has already proven the bottom
 - Luna's Rice Cake Gazua
 

@@ -27,16 +27,16 @@ Encapsulation
 
 `Encapsulation` is an object-oriented design principle that allows `high cohesion` and `low cohesion` through information hiding.
 
-###Cohesion and binding
+### Cohesion and binding
 
 The design of a class should be reusable, extensible, and maintainable. For this to happen, `cohesion` must be low and `cohesion` must be high.
 
 - Cohesion
- -The degree to which elements within a class or module are closely related
+   - The degree to which elements within a class or module are closely related
 - Coupling
- -Degree to which a function depends on other classes or modules to perform it
+   - Degree to which a function depends on other classes or modules to perform it
 
-###information hiding
+### information hiding
 
 Information that does not need to be known is restricted from being accessed from the outside. We can drive a car without knowing how it works, and we can use a computer well without knowing how it works.
 
@@ -102,7 +102,7 @@ It is a process of highlighting the common characteristics of various entities a
 - Therefore, it is often used to emphasize only the reuse of properties or functions.
 - This is an extremely limited view of the generalization relationship.
 
-###Generalization for encapsulation
+### Generalization for encapsulation
 
 Generalization can also be seen as the concept of `encapsulation (or hiding)` a child class to the outside world.
 
@@ -110,7 +110,7 @@ Generalization can also be seen as the concept of `encapsulation (or hiding)` a 
 
 For example, when we classify cars, we classify them into various manufacturers such as BMW, Hyundai, and Benz. Assuming a situation where a designated driver is driving, the vehicle type does not have a significant effect on driving. From the perspective of the `person` class, you only need to be interested in the `car` class, not the specific car. Therefore, the specific car class can be seen as `concealed`.
 
-###Generalization from a set theory perspective
+### Generalization from a set theory perspective
 
 The generalization relationship can also be interpreted from a ‘set theory’ perspective.
 
@@ -137,7 +137,7 @@ If an online shopping mall is classifying `VIP customer` and `regular customer`,
 
 In other words, the association relationship with the object class is `common association relationship` of the child class of the object class. Therefore, we can `simplify` the diagram by associating object classes with member classes.
 
->Generalization from a set theoretic perspective can be viewed as a process of dividing something into mutually exclusive subsets.
+> Generalization from a set theoretic perspective can be viewed as a process of dividing something into mutually exclusive subsets.
 
 What should we do if criteria for classifying members are added? Web shopping malls sometimes provide services not only to domestic members but also to `foreign members`. When providing different services depending on the member's country, this distinction will be necessary.
 

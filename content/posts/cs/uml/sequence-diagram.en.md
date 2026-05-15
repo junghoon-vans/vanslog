@@ -43,8 +43,8 @@ message
 - Format
 - `[sequence number][guard]: return value:=message name([argument list])`
 - Indicated by arrow
- - Beginning: Sending object
- - End part: receiving object
+   - Beginning: Sending object
+   - End part: receiving object
 - Guard
 - `Conditions that must be satisfied` until the message is sent
 
@@ -62,10 +62,10 @@ message
 ### Stereotypes
 
 - <<create>>
- - Message that creates an object
+   - Message that creates an object
 - <<destroy>>
- - Message that destroys an object
- - Put `X` at the end of the life line.
+   - Message that destroys an object
+   - Put `X` at the end of the life line.
 
 frame
 ---
@@ -73,9 +73,9 @@ frame
 - Provides a place for labels including boundaries, types, and names in every diagram (UML 2.0)
 - Displayed as a box surrounding the diagram
 - Display the diagram type and name in the left corner of the box
- - sd: sequential diagram
- - uc: Use case diagram
- - act: activity diagram
+   - sd: sequential diagram
+   - uc: Use case diagram
+   - act: activity diagram
 
 ![sequence-diagram-using-frame](/images/uml/sequence-diagram/sequence-diagram-using-frame.jpg#center)
 
@@ -85,7 +85,9 @@ The process of lending books to members in a library is displayed in a sequentia
 
 In this case, you can use `alt keyword` to allow interaction to be performed selectively based on conditions.
 
-![sequence-diagram-using-loop-keyword](/images/uml/sequence-diagram/sequence-diagram-using-loop-keyword.jpg#center)If you want to express repeating the process of verifying a member's password several times, you can use `loop keyword`.
+![sequence-diagram-using-loop-keyword](/images/uml/sequence-diagram/sequence-diagram-using-loop-keyword.jpg#center)
+
+If you want to express repeating the process of verifying a member's password several times, you can use `loop keyword`.
 
 > When simply referencing another sequential diagram, use `ref keyword`.
 

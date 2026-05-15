@@ -71,7 +71,7 @@ When you create a repository like this, a URI is created as above.
 These URIs are used to build and upload `container image`.
 Please copy it as it will be used in the very next chapter.
 
->💡 The name of the repository must be set the same as the name of `container image`. The name you specify when retrieving an image from Docker Hub has the same concept as this.
+> 💡 The name of the repository must be set the same as the name of `container image`. The name you specify when retrieving an image from Docker Hub has the same concept as this.
 
 ### Jib
 

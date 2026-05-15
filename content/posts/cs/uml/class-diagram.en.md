@@ -47,7 +47,7 @@ student2.study();
 
 Through the above code, two student objects with the same specifications were created. Both objects have the same characteristics except for their names. The major attribute is the same as `SW`, and the same sentence is output when the `study()` method is executed. This is why classes are the blueprint for creating objects.
 
->The same object is always created in the same blueprint.
+> The same object is always created in the same blueprint.
 
 UML Modeling
 ---
@@ -56,7 +56,7 @@ UML Modeling
 
 The result of notating the `Student` class using `UML` is as above. From the top, `ClassName`, `Property`, and `Operation` are described for each section. If there are no properties or operations, they can be omitted.
 
-###access controller
+### access controller
 
 |access controller|mark|explanation|
 |-------------|------|------|
@@ -67,7 +67,7 @@ The result of notating the `Student` class using `UML` is as above. From the top
 
 When defining class properties and operations, symbols such as `-` or `+` are used, which are access modifiers that define `visualization`. You can think of `private` and `public` in Java as written as above.
 
-###Properties and Operations
+### Properties and Operations
 
 |division|notation|
 |------|--------|
@@ -76,20 +76,20 @@ When defining class properties and operations, symbols such as `-` or `+` are us
 
 The format for notating properties and operations is as above. Class diagrams are widely used from the concept analysis stage to implementation, but in `analysis stage`, the main purpose is to define properties or operations rather than express them in detail. Afterwards, specific type information or visualization information is described in `design phase`.
 
->It means that anything contained in `[]` can be omitted.
+> It means that anything contained in `[]` can be omitted.
 
 relationship
 ---
 
 In object-oriented programming, you rarely use just one object. Usually, objects are divided by function, and their interaction makes one software run. The relationship between these classes is expressed in `UML` as follows.
 
-###association
+### association
 
 It means that the classes are conceptually connected and is indicated by a solid line.
 
 ![uml-association-notation](/images/uml/class-diagram/uml-association-notation.jpg#center)
 
-####two-way association
+#### two-way association
 
 A case of `recognizing each other`, such as the relationship between a professor and a student class, is called a two-way relationship and is indicated by a `no arrow` solid line.
 
@@ -97,7 +97,7 @@ A case of `recognizing each other`, such as the relationship between a professor
 
 If you want to indicate that they are consulting, you can specify it in the solid line `top` as shown above. `rule name` in the association relationship can also be determined by defining `both ends` in the solid line. This can be used as `property` to refer to each other in the later stages of program implementation.
 
-####one-way association
+#### one-way association
 
 One student can take multiple classes. If this is modeled through UML, it can be expressed as follows.
 
@@ -107,9 +107,9 @@ At this time, the arrow is pointing from the student to the class, which means i
 
 In the diagram above, there is a notation called `1..*`, which represents `multiplicity`. Multiplicity means `number of related objects`.
 
->`*` means `0 or more`, and `..` represents the range. Therefore, `1..*` means `1 or more`. If there is only one object, it may be omitted.
+> `*` means `0 or more`, and `..` represents the range. Therefore, `1..*` means `1 or more`. If there is only one object, it may be omitted.
 
-####Many-to-many associations
+#### Many-to-many associations
 
 If you think about the previous example carefully, you may realize that something is strange. In the real world, there is never a case where only one student takes a class. Usually, multiple students take multiple classes. If you express this, the picture below will appear.
 
@@ -129,9 +129,9 @@ However, it is missing information about who earned the grade in which class. Th
 
 The actual implementation of `associative class` is achieved by converting `generic class` to `one-way association`.
 
->When actually implementing a program, `two-way association` is not used!
+> When actually implementing a program, `two-way association` is not used!
 
-####recursive association
+#### recursive association
 
 ![superior-subordinate-relation](/images/uml/class-diagram/superior-subordinate-relation.jpg#center)
 
@@ -143,9 +143,9 @@ In this case, a contradiction arises where the class called soldier belongs to t
 
 However, the problem of `relationship loop` remains in recursive associations. For example, `rock, paper, scissors` is a game where scissors beats paper, paper beats rock, and rock beats scissors. If a loop exists like this, it must be excluded by setting a constraint to `{hierarchy}`.
 
->`{Hierarchy}` means that `hierarchy` exists between objects and `cycle` does not exist.
+> `{Hierarchy}` means that `hierarchy` exists between objects and `cycle` does not exist.
 
-###generalization relationship
+### generalization relationship
 
 It is a relationship between two classes when one class contains another class `super concept`.
 
@@ -157,11 +157,11 @@ It is a relationship between two classes when one class contains another class `
 
 Usually, a generalization relationship is called a `is-a-kind-of` relationship. The relationship between home appliances and washing machines can be described as `washing machine is-a-kind-of home appliance`.
 
-###set relationship
+### set relationship
 
 A set relationship is a special case of an association relationship and is used when you want to clearly specify the relationship between the whole and the parts. There are two types of set relationships: `aggregation` and `composition`.
 
-####intensive relationship
+#### intensive relationship
 
 Indicates that one object contains another object.
 
@@ -171,7 +171,7 @@ Indicates that one object contains another object.
 - Can `share with other objects` partial objects
 - `Lifetime` of whole object and partial object are independent
 
-####composite relationship
+#### composite relationship
 
 It is a relationship in which a partial object belongs to the whole object.
 
@@ -181,7 +181,7 @@ It is a relationship in which a partial object belongs to the whole object.
 - Cannot `share with other objects` partial object
 - `Lifetime` of a partial object depends on the whole object
 
-####difference
+#### difference
 
 Aggregation relationships and composition relationships may seem similar at first glance, but they have a big difference. The most important difference is `Lifetime`. When the entire object is destroyed `if the partial object remains` it is `aggregate relation`. In the opposite case, you can think of it as `composite relationship`.
 
@@ -227,7 +227,7 @@ public class Computer {
 
 Unlike the previous example, the code above creates the computer and its components are created at the same time. Therefore, the life cycle of the elements depends on the entire object. It can be viewed as `composite relationship` because partial objects disappear at the same time as the computer is destroyed.
 
-###dependency
+### dependency
 
 This is a relationship that appears when using functions provided by other classes.
 
@@ -263,11 +263,11 @@ public class Car {
 
 Since the car people ride does not change every time, the `Car` object is referred to as an attribute of the `Person` class. On the other hand, the main element of refueling the car is not the same every time, so it is implemented through `argument` or `local object`.
 
-###materialization relationship
+### materialization relationship
 
 It is the relationship between an interface and the class that instantiates its `responsibilities`s.
 
->Responsibility refers to `what an object must do` to `what it can do`.
+> Responsibility refers to `what an object must do` to `what it can do`.
 
 ![uml-realization-notation](/images/uml/class-diagram/uml-realization-notation.jpg#center)
 

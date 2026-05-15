@@ -49,20 +49,20 @@ Implementation example
 [University course registration system](https://github.com/junghoon-vans/Course-Enrollment-System), which I worked on as a major project during my second year of college, is a good example to explain the multi-layered structure. This program, implemented over two semesters, started with a 1-tier structure and evolved into a 3-tier structure. Below is a brief summary of the characteristics of each program version.
 
 - v1.0
- - 1-tier Program
- -A simple client program that runs locally
- -Contains and loads data files related to course registration.
- -UI, business logic, and data all in one place
+   - 1-tier Program
+   - A simple client program that runs locally
+   - Contains and loads data files related to course registration.
+   - UI, business logic, and data all in one place
 - v2.0
- - 2-tier Program
- -The client program simply has presentation functions.
- -Create a server program to handle client requests
- -The client expresses only the UI, and the server processes logic and data.
+   - 2-tier Program
+   - The client program simply has presentation functions.
+   - Create a server program to handle client requests
+   - The client expresses only the UI, and the server processes logic and data.
 - v2.1+
- - 3-tier Program
- -Migrate data files to MySQL DB
- -The DB is deployed to `aws-rds`
- -Structure where all functions are physically separated
+   - 3-tier Program
+   - Migrate data files to MySQL DB
+   - The DB is deployed to `aws-rds`
+   - Structure where all functions are physically separated
 
 Looking back now, I think I didn't realize the true value of the project when I was working on it last year. I tried my best to create it according to the professor's class, but could I say that I didn't understand all the content contained in it? Why didn't I know earlier that the project that had been in progress for a year had a multi-layered evolution process?
 

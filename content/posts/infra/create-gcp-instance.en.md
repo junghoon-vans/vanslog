@@ -43,7 +43,9 @@ Before creating an instance, join [Google Cloud Platform (GCP)](https://cloud.go
 
 Once all of the previous processes have been completed, an instance is created. In the created project, click the hamburger menu and click `Compute Engine-VM instance` to enter, and click the plus button shown in the photo above to start creating an instance.
 
-![create-gcp-instance2](/images/development-environment/create-gcp-instance/create-gcp-instance2.png#center)Here, you can name it whatever you want, and the important parts are the region and machine configuration. There are conditions to create `Lifetime Free Instance`. First, the region must use `us-east1-b` and the machine type must use `f1-micro`.
+![create-gcp-instance2](/images/development-environment/create-gcp-instance/create-gcp-instance2.png#center)
+
+Here, you can name it whatever you want, and the important parts are the region and machine configuration. There are conditions to create `Lifetime Free Instance`. First, the region must use `us-east1-b` and the machine type must use `f1-micro`.
 
 > If your goal is to use the $300 credit provided, we recommend configuring it with a different region and machine type. This is because the performance of lifetime free instances is very low.
 

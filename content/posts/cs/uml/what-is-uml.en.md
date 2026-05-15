@@ -58,21 +58,21 @@ Features
 ---
 
 - Visualization language
- - Visually displays modeling results
+   - Visually displays modeling results
 - Specification language
- - Modeling accurately and completely
+   - Modeling accurately and completely
 - Building language
- - Allows you to build a system
+   - Allows you to build a system
 - Documentation language
- - Role of control, evaluation, and communication of the system
+   - Role of control, evaluation, and communication of the system
 
 tools
 ---
 
 - [draw.io](http://www.draw.io)
- - Free web-based UML drawing application
+   - Free web-based UML drawing application
 - starUML
- - Free desktop-based UML drawing application
+   - Free desktop-based UML drawing application
 
 References
 ---

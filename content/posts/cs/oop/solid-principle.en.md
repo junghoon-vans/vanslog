@@ -18,9 +18,9 @@ summary: >
 Single Responsibility Principle (SRP)
 ---
 
->`Single Responsiblity Principle (SRP)`: The principle of having only `Single Responsiblity`
+> `Single Responsiblity Principle (SRP)`: The principle of having only `Single Responsiblity`
 
-###meaning of responsibility
+### meaning of responsibility
 
 The basic unit of responsibility in SRP refers to `object`. Therefore, it means that *an object should have only one responsibility*.
 
@@ -43,7 +43,7 @@ public class Student {
 
 In this case, the `student` class has to carry too many responsibilities. In order to satisfy `Single Responsibility Principle (SRP)`, only the responsibilities that the `student` class can do best (add/check courses) are left. There is a lot of room for other classes to do well in DB work or report card/attendance printing.
 
-###change
+### change
 
 In order to create an effective design that follows SRP, responsibility needs to be understood as a more realistic concept. The reason we learn design principles is to design ‘System structure that is flexible and scalable to unexpected changes’.
 
@@ -57,11 +57,11 @@ So when should the `student` class be changed?
 
 These are all reasons to change student classes. Additionally, the more responsibilities there are, the more likely it is that code performing different roles within the class will be strongly coupled.
 
-###separation of responsibilities
+### separation of responsibilities
 
 The `student` class performs multiple responsibilities, so there is bound to be a lot of code that needs its help. Therefore, if any changes are made to the `Student` class, all directly or indirectly related code must be retested.
 
->For reference, the test that evaluates whether changes affect existing system functions is called `regression test`.
+> For reference, the test that evaluates whether changes affect existing system functions is called `regression test`.
 
 In order to avoid testing all of your code, you should not assign too much responsibility to one class and only perform `only one responsibility`, thereby consolidating all possible reasons for change. This is called `separation of responsibility`.
 
@@ -69,7 +69,7 @@ In order to avoid testing all of your code, you should not assign too much respo
 
 In the case of the `Student` class, there are three possible reasons for change: changes in the student's `Proprietary Information`, `DB Schema`, and `Output Format`. Therefore, it is better to have the student class perform only its own role and separate the DB work into the DAO (Data Access Object) class and the class responsible for printing the attendance list and report card.
 
-###shotgun surgery
+### shotgun surgery
 
 So far we have looked at situations where a class has multiple responsibilities. Conversely, even in the case of `single responsibility spread across multiple classes`, the design must be changed based on the single responsibility principle. This case is called `shotgun surgery`.
 
@@ -86,7 +86,7 @@ There is a technique called `Interest Oriented Programming(AOP)` as a way to sol
 Open-Closed Principle (OCP)
 ---
 
->`Open-Closed Principle (OCP)`: The principle that the design should allow functions to be added without changing the existing code.
+> `Open-Closed Principle (OCP)`: The principle that the design should allow functions to be added without changing the existing code.
 
 ![case-that-violate-ocp](/images/oop/solid-principle/case-that-violate-ocp.jpg#center)
 
@@ -101,7 +101,7 @@ To ensure that adding a new function does not affect the `Client` class, you mus
 Liskov Substitution Principle (LSP)
 ---
 
->`Liskov Substitution Principle (LSP)`: The principle that a child class must be able to perform at least the actions that its parent class can perform.
+> `Liskov Substitution Principle (LSP)`: The principle that a child class must be able to perform at least the actions that its parent class can perform.
 
 The generalization relationship is also called the `is-a-kind-of` relationship. For example, a corresponding relationship exists between monkeys and mammals (monkey is a kind of mammal). At this time, you can set `Mammal` as the parent class and `Monkey` as the child class.
 
@@ -121,7 +121,7 @@ The above explains various characteristics of mammals.
 
 `Liskov Substitution Principle` allows a child class to perform actions that are possible in the parent class. Therefore, the characteristics of mammals can also be performed by monkeys.
 
-###Is the platypus a mammal?
+### Is the platypus a mammal?
 
 ```plaintext
 - .
@@ -133,9 +133,9 @@ Let's apply this same situation to `Platypus`. Although the platypus is a mammal
 
 *To satisfy LSP, `instance of parent class` must be replaced by `instance of child class`.*
 
->In reality, `viviparous` is not used as a standard for classifying mammals. For reference, mammals that lay eggs are called `monotremes`. Therefore, the proposition ‘Mammals except monotremes are viviparous’ is true.
+> In reality, `viviparous` is not used as a standard for classifying mammals. For reference, mammals that lay eggs are called `monotremes`. Therefore, the proposition ‘Mammals except monotremes are viviparous’ is true.
 
-###overriding
+### overriding
 
 But you may also have these questions. Since only a small number of mammals lay eggs, shouldn't `override` be used only in exceptional cases?
 
@@ -148,7 +148,7 @@ But you may also have these questions. Since only a small number of mammals lay 
 If you use redefinition, Platypus can be defined as above, and the code can actually work fine. However, two OOP rule violations occur as follows.
 
 - Does not satisfy LSP
- -The implementation of the Platypus class is inconsistent with the behavior of the Mammal class.
+   - The implementation of the Platypus class is inconsistent with the behavior of the Mammal class.
 - Peter Codd's violation of inheritance rules
 - A rule called `The subclass does not override or override the responsibilities of the superclass, only extends it`
 
@@ -157,7 +157,7 @@ In Peter Code's inheritance rules, `only extend, not redefine` means the same th
 Dependency Inversion Principle (DIP)
 ---
 
->`Dependency Inversion Principle (DIP)`: The principle of relying on things that are difficult to change or that rarely change when forming a dependency relationship.
+> `Dependency Inversion Principle (DIP)`: The principle of relying on things that are difficult to change or that rarely change when forming a dependency relationship.
 
 Let's assume a person drinks a beverage. We drink water every day, but we also drink coffee or enjoy cola. What specifically you drink is easy to change, but the fact of drinking something itself is difficult to change.
 
@@ -165,7 +165,7 @@ Let's assume a person drinks a beverage. We drink water every day, but we also d
 
 In object-orientation, `abstract class` or `interface` is used to express abstract things that are difficult to change like this. In order to satisfy DIP, it must be designed to have a dependency relationship with `interface` or `abstract class` rather than a concrete class.
 
-###Dependency Injection (DI)
+### Dependency Injection (DI)
 
 `Dependency Injection (DI)` is a technique that injects dependencies from outside the class into the instance variable of the target object. Using this, you can change the external dependent objects of the target object from outside without changing the target object.
 
@@ -206,7 +206,7 @@ When using dependency injection, you can reduce the coupling between objects and
 Interface Separation Principle (ISP)
 ---
 
->`Interface Segregation Principle (ISP)`: The principle that the client should not be affected by functions that it does not use.
+> `Interface Segregation Principle (ISP)`: The principle that the client should not be affected by functions that it does not use.
 
 ![multifunction-machine-class-diagram](/images/oop/solid-principle/multifunction-machine-class-diagram.jpg#center)
 
@@ -218,7 +218,7 @@ Clients using the print function should not be affected by the fax or copy funct
 
 It was designed so that each object that uses a multifunction device is provided with `interface`, which contains only the methods of interest. By designing it this way, the interface performs a kind of `firewall role` so that the client is not affected by changes made to its `deprecated` method.
 
-###SRPs and ISPs
+### SRPs and ISPs
 
 If a class performs `multiple responsibilities` without performing a single responsibility, it will result in a bloated class with `vast methods`. You can `Satisfy Your ISP` by splitting these classes into multiple classes with a single responsibility according to `SRP` and providing their own interfaces.
 

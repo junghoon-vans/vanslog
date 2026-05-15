@@ -34,9 +34,9 @@ collaboration
 
 - Collaboration showing collateral loan relationships
 - The roles `borrower`, `borrower`, and `collateral` are required.
- - Connect these roles with connectors because cooperation between them is required.
+   - Connect these roles with connectors because cooperation between them is required.
 - Collaboration is an abstraction of the interaction of roles.
- - Can be reused in many system developments if applied in special situations
+   - Can be reused in many system developments if applied in special situations
 
 Collaboration Occurrence
 ---
@@ -48,9 +48,9 @@ Collaboration Occurrence
 ![collaboration-occurence](/images/uml/collaboration-diagram/collaboration-occurence.jpg#center)
 
 - `Collateral loan` collaboration is applied when a bank borrows money using a house as collateral.
- - Borrower = Bank
- -Collateral = house
- - Borrower = person
+   - Borrower = Bank
+   - Collateral = house
+   - Borrower = person
 - In this case, `bank home mortgage loan` is an example of `mortgage loan` and is a collaboration occurrence.
 
 References
